@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Haberdash Books</title>
+    <link>https://haberdashbooks.com</link>
+    <description>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</description>
+    <language>en-us</language>
+    <copyright>Public Domain</copyright>
+    <lastBuildDate>Thu, 28 May 2026 03:06:35 +0000</lastBuildDate>
+    <atom:link href="https://haberdashbooks.com/podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <itunes:author>Haberdash Books</itunes:author>
+    <itunes:summary>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</itunes:summary>
+    <itunes:category text="Arts">
+      <itunes:category text="Books"/>
+    </itunes:category>
+    <itunes:image href="https://archive.org/download/haberdash-books-podcast-artwork/cover.jpg"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <item>
+      <title>He Wrote America's Greatest Frontier Epic. Then He Was Completely Forgotten.</title>
+      <description>Book title: The Covered Wagon (The Covered Wagon)
+
+Published in 1922 and adapted into a blockbuster silent film, Emerson Hough's masterpiece vanished from literary memory—despite changing American culture forever.
+
+'The Covered Wagon' follows Jesse Wingate and four hundred families as they gather at the Missouri River in 1848, preparing for a perilous two-thousand-mile journey to Oregon. Through their eyes, we witness the hopes, conflicts, and desperate choices that defined westward expansion. But beneath the adventure lies a profound meditation on ambition, sacrifice, and the human cost of building a nation.
+
+This video contains chapter one. Find the complete audiobook at haberdashbooks.com
+
+Narrated by AI voice in a calm British accent for relaxed listening.
+
+CHAPTERS
+0:00 — Introduction
+0:21 — Haberdash Books
+0:34 — About Emerson Hough
+2:00 — The Covered Wagon, Chapter 1
+21:25 — More from Haberdash Books
+
+🎧 Full audiobook: https://haberdashbooks.com
+📚 Full catalogue: https://haberdashbooks.com/catalogue
+❤️  Support us on Patreon: https://patreon.com/haberdashbooks
+
+#Audiobook #FreeAudiobook #PublicDomainAudiobook #ForgottenClassic #Chapter1</description>
+      <enclosure url="https://archive.org/download/haberdash-books-work-000001/podcast_audio.mp3" length="31125148" type="audio/mpeg"/>
+      <guid isPermaLink="false">haberdash-work-1</guid>
+      <pubDate>Thu, 28 May 2026 03:06:35 +0000</pubDate>
+      <itunes:duration>21:36</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>2</itunes:episode>
+    </item>
+    <item>
+      <title>Finland's Greatest Novelist Was Erased From History. We Found His Masterpiece.</title>
+      <description>Book title: Rautatie (The Railway)
+
+A Finnish literary giant vanished from English consciousness—but his masterpiece about progress, longing, and village life endures as proof of his genius.
+
+In 1911, Juhani Aho crafted a novel about a railway arriving in a frozen Finnish village, where ordinary lives brush against extraordinary change. Through vivid prose and subtle observation, he explores how tradition and modernity collide, how a single moment reshapes a community forever. This is a story about the roads we take and those we leave behind—rich, atmospheric, deeply human.
+
+This video contains the translator's foreword and chapter one. Find the complete audiobook at haberdashbooks.com
+
+Narrated by AI voice in a calm British accent for relaxed listening.
+
+CHAPTERS
+0:00 — Introduction
+0:23 — Haberdash Books
+0:33 — About Juhani Aho
+2:15 — Translator's Note
+4:48 — Rautatie, Chapter 1
+31:54 — More from Haberdash Books
+
+🎧 Full audiobook: https://haberdashbooks.com
+📚 Full catalogue: https://haberdashbooks.com/catalogue
+❤️  Support us on Patreon: https://patreon.com/haberdashbooks
+
+#Audiobook #FreeAudiobook #PublicDomainAudiobook #ForgottenClassic #Chapter1</description>
+      <enclosure url="https://archive.org/download/haberdash-books-work-000126/podcast_audio.mp3" length="46236253" type="audio/mpeg"/>
+      <guid isPermaLink="false">haberdash-work-126</guid>
+      <pubDate>Thu, 28 May 2026 03:00:15 +0000</pubDate>
+      <itunes:duration>32:06</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>1</itunes:episode>
+    </item>
+  </channel>
+</rss>
