@@ -9,7 +9,7 @@
     <description>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</description>
     <language>en-us</language>
     <copyright>Public Domain</copyright>
-    <lastBuildDate>Fri, 29 May 2026 00:29:12 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 21:05:04 +0000</lastBuildDate>
     <atom:link href="https://Samus117.github.io/haberdash-podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Haberdash Books</itunes:author>
     <itunes:summary>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</itunes:summary>
@@ -19,6 +19,38 @@
     <itunes:image href="https://archive.org/download/haberdash-books-podcast-artwork/cover.jpg"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>He Wrote Sweden's Radical Novel. The World Forgot Him Entirely.</title>
+      <description>Book title: Det går an (It Can Be Done)
+
+Swedish literature's most radical early voice was erased from English for nearly two centuries — and his greatest work was the reason why.
+
+Almqvist's 1839 novella explores an unmarried couple reimagining love and freedom on their own terms. It's a quiet philosophical romance that treats unconventional living not as scandal but as genuine human possibility. The prose is intimate, the stakes are real, and the central question — *can it be done?* — has only become more urgent.
+
+This video contains chapter one. Find the complete audiobook at haberdashbooks.com
+
+Narrated by AI voice in a calm British accent for relaxed listening.
+
+CHAPTERS
+0:00 — Introduction
+0:17 — About Carl Jonas Love Almqvist
+1:45 — Find the Full Audiobook
+1:58 — Det går an, Chapter 1
+2:44 — More from Haberdash Books
+
+🎧 Full audiobook: https://haberdashbooks.com
+📚 Full catalogue: https://haberdashbooks.com/catalogue
+📧 Free weekly forgotten classic: https://subscribe.haberdashbooks.com
+❤️  Support us on Patreon: https://patreon.com/haberdashbooks
+
+#Audiobook #FreeAudiobook #PublicDomainAudiobook #ForgottenClassic #ClassicLiterature</description>
+      <enclosure url="https://archive.org/download/haberdash-books-work-000124/podcast_audio.mp3" length="4285272" type="audio/mpeg"/>
+      <guid isPermaLink="false">haberdash-work-124</guid>
+      <pubDate>Fri, 29 May 2026 21:05:04 +0000</pubDate>
+      <itunes:duration>2:58</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>4</itunes:episode>
+    </item>
     <item>
       <title>He Died Publishing His Masterpiece. Then the World Forgot.</title>
       <description>Book title: Tre croci (Three Crosses)
