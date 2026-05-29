@@ -9,8 +9,8 @@
     <description>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</description>
     <language>en-us</language>
     <copyright>Public Domain</copyright>
-    <lastBuildDate>Thu, 28 May 2026 03:06:35 +0000</lastBuildDate>
-    <atom:link href="https://haberdashbooks.com/podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Fri, 29 May 2026 00:29:12 +0000</lastBuildDate>
+    <atom:link href="https://Samus117.github.io/haberdash-podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Haberdash Books</itunes:author>
     <itunes:summary>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</itunes:summary>
     <itunes:category text="Arts">
@@ -19,6 +19,39 @@
     <itunes:image href="https://archive.org/download/haberdash-books-podcast-artwork/cover.jpg"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>He Died Publishing His Masterpiece. Then the World Forgot.</title>
+      <description>Book title: Tre croci (Three Crosses)
+
+A psychological masterpiece of Italian realism, buried for a century until now—the story of three brothers whose desperation drives them toward a crime that will unravel their lives.
+
+Giulio runs a failing bookshop in Siena. When financial ruin looms, he and his brothers turn to forgery. What begins as petty crime becomes a devastating exploration of shame, guilt, and the corrosive power of secrets. Federigo Tozzi, a master of psychological realism, dissects the human condition with surgical precision, offering readers a portrait of moral collapse as relevant today as when he wrote it in 1920—the year of his death.
+
+This video contains the translator's foreword and chapter one. Find the complete audiobook at haberdashbooks.com
+
+Narrated by AI voice in a calm British accent for relaxed listening.
+
+CHAPTERS
+0:00 — Introduction
+0:21 — Haberdash Books
+0:34 — About Federigo Tozzi
+2:22 — Translator's Note
+5:18 — Tre croci, Chapter 1
+39:18 — More from Haberdash Books
+
+🎧 Full audiobook: https://haberdashbooks.com
+📚 Full catalogue: https://haberdashbooks.com/catalogue
+📧 Free weekly forgotten classic: https://samus117.github.io/haberdash-podcast/subscribe.html
+❤️  Support us on Patreon: https://patreon.com/haberdashbooks
+
+#Audiobook #FreeAudiobook #PublicDomainAudiobook #ForgottenClassic #ClassicLiterature</description>
+      <enclosure url="https://archive.org/download/haberdash-books-work-000419/podcast_audio.mp3" length="57049066" type="audio/mpeg"/>
+      <guid isPermaLink="false">haberdash-work-419</guid>
+      <pubDate>Fri, 29 May 2026 00:29:12 +0000</pubDate>
+      <itunes:duration>39:36</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>3</itunes:episode>
+    </item>
     <item>
       <title>He Wrote America's Greatest Frontier Epic. Then He Was Completely Forgotten.</title>
       <description>Book title: The Covered Wagon (The Covered Wagon)
