@@ -9,7 +9,7 @@
     <description>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</description>
     <language>en-us</language>
     <copyright>Public Domain</copyright>
-    <lastBuildDate>Fri, 29 May 2026 21:05:04 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 21:15:15 +0000</lastBuildDate>
     <atom:link href="https://Samus117.github.io/haberdash-podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Haberdash Books</itunes:author>
     <itunes:summary>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</itunes:summary>
@@ -19,6 +19,39 @@
     <itunes:image href="https://archive.org/download/haberdash-books-podcast-artwork/cover.jpg"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Denmark's Greatest Novelist Was Erased From English Literature. His Masterpiece Resurfaces.</title>
+      <description>Book title: Det graa Hus (The Grey House)
+
+Denmark's greatest novelist vanished from English literature entirely—his lyrical masterpiece, *The Grey House*, remained trapped in obscurity for 140 years.
+
+Herman Bang's 1880 novel captures His Excellency, a dying aristocrat haunted by memories of grandeur, moving through the shadowed halls of his crumbling estate. Bang's impressionistic prose—intimate, psychological, almost whispered—reveals the quiet devastation of a life defined by what is lost. This is modernist fiction before modernism, exploring isolation and the weight of memory with astonishing subtlety and depth.
+
+This video contains the translator's foreword and chapter one. Find the complete audiobook at haberdashbooks.com
+
+Narrated by AI voice in a calm British accent for relaxed listening.
+
+CHAPTERS
+0:00 — Introduction
+0:21 — Haberdash Books
+0:35 — About Herman Bang
+2:08 — Translator's Note
+4:24 — Det graa Hus, Chapter 1
+59:37 — More from Haberdash Books
+
+🎧 Full audiobook: https://haberdashbooks.com
+📚 Full catalogue: https://haberdashbooks.com/catalogue
+📧 Free weekly forgotten classic: https://subscribe.haberdashbooks.com
+❤️  Support us on Patreon: https://patreon.com/haberdashbooks
+
+#Audiobook #FreeAudiobook #PublicDomainAudiobook #ForgottenClassic #ClassicLiterature</description>
+      <enclosure url="https://archive.org/download/haberdash-books-work-000125/podcast_audio.mp3" length="86327107" type="audio/mpeg"/>
+      <guid isPermaLink="false">haberdash-work-125</guid>
+      <pubDate>Sat, 30 May 2026 21:15:15 +0000</pubDate>
+      <itunes:duration>59:56</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>5</itunes:episode>
+    </item>
     <item>
       <title>He Wrote Sweden's Radical Novel. The World Forgot Him Entirely.</title>
       <description>Book title: Det går an (It Can Be Done)
