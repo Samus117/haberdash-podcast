@@ -9,7 +9,7 @@
     <description>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</description>
     <language>en-us</language>
     <copyright>Public Domain</copyright>
-    <lastBuildDate>Sat, 30 May 2026 21:15:15 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 22:06:09 +0000</lastBuildDate>
     <atom:link href="https://Samus117.github.io/haberdash-podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Haberdash Books</itunes:author>
     <itunes:summary>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</itunes:summary>
@@ -19,6 +19,44 @@
     <itunes:image href="https://archive.org/download/haberdash-books-podcast-artwork/cover.jpg"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>He Was Called Greece's Dostoevsky. The World Forgot His Name.</title>
+      <description>Book title: I Fonissa (The Murderess)
+
+Alexandros Papadiamantis was hailed as the Dostoevsky of Greece—celebrated across Europe during his lifetime—and yet today, his name is almost entirely unknown to English readers. 'The Murderess' is his masterwork: a psychological horror story disguised as a tale of rural Greek island life, a meditation on maternal love so dark it becomes morally ambiguous and deeply unsettling.
+
+Aunt Hadoula, known as Frankissa, keeps vigil by her granddaughter's cradle through endless nights. Her thoughts spiral between tenderness and something darker—a conviction that some lives might be better never lived. Papadiamantis weaves a narrative of such lyrical beauty that you don't immediately realise you're witnessing the slow erosion of a woman's moral boundaries. It's a story about poverty, duty, desperation, and the violence that can hide behind the word 'love.'
+
+This video contains chapter one. Find the complete audiobook at haberdashbooks.com
+
+Narrated by AI voice in a calm British accent for relaxed listening.
+
+CHAPTERS
+0:00 — Introduction
+0:22 — About Alexandros Papadiamantis
+2:03 — Find the Full Audiobook
+2:16 — Translator's Note
+4:44 — I Fonissa, Chapter 1
+1:04:30 — More from Haberdash Books
+
+📥 CLAIM YOUR FREE AUDIOBOOK — THE LOST LIBRARY PASS
+Subscribe to Haberdash Books, then choose any full audiobook from our public domain catalogue.
+MP3 download yours to keep. EPUB included when available.
+Bring a friend who subscribes and you both get another free audiobook. No limit.
+Claim here → https://haberdashbooks.com/free
+
+🎧 Complete audiobook: https://haberdashbooks.com
+📚 Full catalogue: https://haberdashbooks.com/catalogue
+❤️  Support us on Patreon: https://patreon.com/haberdashbooks
+
+#Audiobook #FreeAudiobook #PublicDomainAudiobook #ForgottenClassic #ClassicLiterature</description>
+      <enclosure url="https://archive.org/download/haberdash-books-work-000130/podcast_audio.mp3" length="93364495" type="audio/mpeg"/>
+      <guid isPermaLink="false">haberdash-work-130</guid>
+      <pubDate>Sun, 31 May 2026 22:06:09 +0000</pubDate>
+      <itunes:duration>1:04:50</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>6</itunes:episode>
+    </item>
     <item>
       <title>Denmark's Greatest Novelist Was Erased From English Literature. His Masterpiece Resurfaces.</title>
       <description>Book title: Det graa Hus (The Grey House)
