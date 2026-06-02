@@ -9,7 +9,7 @@
     <description>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</description>
     <language>en-us</language>
     <copyright>Public Domain</copyright>
-    <lastBuildDate>Sun, 31 May 2026 22:06:09 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 18:17:30 +0000</lastBuildDate>
     <atom:link href="https://Samus117.github.io/haberdash-podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Haberdash Books</itunes:author>
     <itunes:summary>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</itunes:summary>
@@ -19,6 +19,43 @@
     <itunes:image href="https://archive.org/download/haberdash-books-podcast-artwork/cover.jpg"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>He Won the Nobel Prize. The World Forgot His Masterpiece.</title>
+      <description>Book title: Hunger (English translation of Norwegian original)
+
+Knut Hamsun won the Nobel Prize in Literature, yet his masterpiece Hunger has been almost completely erased from English literary consciousness for over a century.
+
+This 1890 novel is a psychological descent into the fragmented mind of a starving writer in Oslo—a work of stream-of-consciousness brilliance that predated Joyce and rewrote what fiction could do. It is bleak, disorienting, intimate, and utterly unlike anything written before or since.
+
+This video contains chapter one. Find the complete audiobook at haberdashbooks.com
+
+Narrated by AI voice in a calm British accent for relaxed listening.
+
+CHAPTERS
+0:00 — Introduction
+0:53 — About Knut Hamsun
+2:16 — Find the Full Audiobook
+2:54 — Hunger, Chapter 1
+4:16 — More from Haberdash Books
+
+📥 CLAIM YOUR FREE AUDIOBOOK — THE LOST LIBRARY PASS
+Subscribe to Haberdash Books, then choose any full audiobook from our public domain catalogue.
+MP3 download yours to keep. EPUB included when available.
+Bring a friend who subscribes and you both get another free audiobook. No limit.
+Claim here → https://haberdashbooks.com/free
+
+🎧 Complete audiobook: https://haberdashbooks.com
+📚 Full catalogue: https://haberdashbooks.com/catalogue
+❤️  Support us on Patreon: https://patreon.com/haberdashbooks
+
+#Audiobook #FreeAudiobook #PublicDomainAudiobook #ForgottenClassic #ClassicLiterature</description>
+      <enclosure url="https://archive.org/download/haberdash-books-work-000506/podcast_audio.mp3" length="6725945" type="audio/mpeg"/>
+      <guid isPermaLink="false">haberdash-work-506</guid>
+      <pubDate>Tue, 02 Jun 2026 18:17:30 +0000</pubDate>
+      <itunes:duration>4:40</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>7</itunes:episode>
+    </item>
     <item>
       <title>He Was Called Greece's Dostoevsky. The World Forgot His Name.</title>
       <description>Book title: I Fonissa (The Murderess)
