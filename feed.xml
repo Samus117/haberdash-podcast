@@ -9,7 +9,7 @@
     <description>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</description>
     <language>en-us</language>
     <copyright>Public Domain</copyright>
-    <lastBuildDate>Tue, 02 Jun 2026 18:17:30 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 19:40:45 +0000</lastBuildDate>
     <atom:link href="https://Samus117.github.io/haberdash-podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Haberdash Books</itunes:author>
     <itunes:summary>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</itunes:summary>
@@ -19,6 +19,39 @@
     <itunes:image href="https://archive.org/download/haberdash-books-podcast-artwork/cover.jpg"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Italy's Nobel Prize Winner Was Completely Forgotten. This is Why.</title>
+      <description>Book title: Il vecchio della montagna (The Old Man of the Mountain)
+
+Italy's first female Nobel laureate was erased from literary history. Grazia Deledda's masterpieces of psychological insight and lyrical beauty vanished from English readers' consciousness—but her genius remains undeniable.
+
+*Il vecchio della montagna* follows Melchior, a young shepherd consumed by jealousy after his cousin abandons him on the eve of their wedding. Climbing into the mountains of Sardinia, he carries more than heartbreak—he carries shame, rage, and the weight of isolation. Deledda transforms this intimate tragedy into a profound exploration of desire, morality, and the inescapable connection between the human soul and the landscape that shapes it. Written in 1900, this novel reveals why she became one of Europe's most celebrated writers in her lifetime, and why her absence from modern literature is a tragedy of forgetting.
+
+This video contains the translator's foreword and chapter one. Find the complete audiobook at haberdashbooks.com
+
+Narrated by AI voice in a calm British accent for relaxed listening.
+
+CHAPTERS
+0:00 — Introduction
+0:21 — Haberdash Books
+0:34 — About Grazia Deledda
+2:09 — Translator's Note
+4:59 — The Old Man of the Mountain, Chapter 1
+20:35 — More from Haberdash Books
+
+🎧 Full audiobook: https://haberdashbooks.com
+📚 Full catalogue: https://haberdashbooks.com/catalogue
+📧 Free weekly forgotten classic: https://subscribe.haberdashbooks.com
+❤️  Support us on Patreon: https://patreon.com/haberdashbooks
+
+#Audiobook #FreeAudiobook #PublicDomainAudiobook #ForgottenClassic #ClassicLiterature</description>
+      <enclosure url="https://archive.org/download/haberdash-books-work-000410/podcast_audio.mp3" length="30123300" type="audio/mpeg"/>
+      <guid isPermaLink="false">haberdash-work-410</guid>
+      <pubDate>Thu, 04 Jun 2026 19:40:45 +0000</pubDate>
+      <itunes:duration>20:55</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>8</itunes:episode>
+    </item>
     <item>
       <title>He Won the Nobel Prize. The World Forgot His Masterpiece.</title>
       <description>Book title: Hunger (English translation of Norwegian original)
