@@ -9,7 +9,7 @@
     <description>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</description>
     <language>en-us</language>
     <copyright>Public Domain</copyright>
-    <lastBuildDate>Thu, 04 Jun 2026 19:40:45 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 09:56:12 +0000</lastBuildDate>
     <atom:link href="https://Samus117.github.io/haberdash-podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Haberdash Books</itunes:author>
     <itunes:summary>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</itunes:summary>
@@ -19,6 +19,57 @@
     <itunes:image href="https://archive.org/download/haberdash-books-podcast-artwork/cover.jpg"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>America's Bestselling Western Author Was Almost Forgotten. Here's Why.</title>
+      <description>Book title: Riders of the Purple Sage
+
+America's most celebrated Western author was erased from modern memory—but his 1912 masterpiece remains a monument to frontier literature.
+
+Riders of the Purple Sage follows the mysterious gunslinger Lassiter as he arrives in a remote Mormon settlement seeking vengeance for his sister's disappearance. What unfolds is a gripping tale of justice, love, and moral redemption set against the breathtaking Utah landscape. Zane Grey's vivid prose and complex characters elevated the Western genre to literary art, and this novel exemplifies why it outsold contemporary classics and captivated millions of readers.
+
+This video contains chapter one of this unforgettable frontier epic. Find the complete audiobook at haberdashbooks.com.
+
+Narrated by AI voice in a calm British accent for relaxed listening.
+
+CHAPTERS
+0:00 — Introduction
+0:18 — Haberdash Books
+0:31 — About Zane Grey
+2:00 — Riders of the Purple Sage, Chapter 1
+2:12 — More from Haberdash Books
+
+🎧 Full audiobook: https://haberdashbooks.com
+📚 Full catalogue: https://haberdashbooks.com/catalogue
+📧 Free weekly forgotten classic: https://subscribe.haberdashbooks.com
+❤️  Support us on Patreon: https://patreon.com/haberdashbooks
+
+#Audiobook #FreeAudiobook #PublicDomainAudiobook #ForgottenClassic #ClassicLiterature
+
+CHAPTERS
+0:00 — Introduction
+0:18 — About Zane Grey
+1:47 — Find the Full Audiobook
+2:00 — Riders of the Purple Sage, Chapter 1
+14:50 — More from Haberdash Books
+
+📥 CLAIM YOUR FREE AUDIOBOOK — THE LOST LIBRARY PASS
+Subscribe to Haberdash Books, then choose any full audiobook from our public domain catalogue.
+MP3 download yours to keep. EPUB included when available.
+Bring a friend who subscribes and you both get another free audiobook. No limit.
+Claim here → https://haberdashbooks.com/free
+
+🎧 Complete audiobook: https://haberdashbooks.com
+📚 Full catalogue: https://haberdashbooks.com/catalogue
+❤️  Support us on Patreon: https://patreon.com/haberdashbooks
+
+#Audiobook #FreeAudiobook</description>
+      <enclosure url="https://archive.org/download/haberdash-books-work-000002/podcast_audio.mp3" length="21749279" type="audio/mpeg"/>
+      <guid isPermaLink="false">haberdash-work-2</guid>
+      <pubDate>Thu, 11 Jun 2026 09:56:12 +0000</pubDate>
+      <itunes:duration>15:06</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>9</itunes:episode>
+    </item>
     <item>
       <title>Italy's Nobel Prize Winner Was Completely Forgotten. This is Why.</title>
       <description>Book title: Il vecchio della montagna (The Old Man of the Mountain)
