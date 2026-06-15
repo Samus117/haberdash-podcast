@@ -9,7 +9,7 @@
     <description>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</description>
     <language>en-us</language>
     <copyright>Public Domain</copyright>
-    <lastBuildDate>Thu, 11 Jun 2026 09:56:12 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2026 08:52:20 +0000</lastBuildDate>
     <atom:link href="https://Samus117.github.io/haberdash-podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Haberdash Books</itunes:author>
     <itunes:summary>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</itunes:summary>
@@ -19,6 +19,38 @@
     <itunes:image href="https://archive.org/download/haberdash-books-podcast-artwork/cover.jpg"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>The Western With a Hidden Poem That Confused Readers for 100 Years</title>
+      <description>Book title: The Lone Star Ranger (The Lone Star Ranger)
+
+A brutal Texas frontier tale haunted by hidden poetry—why did Zane Grey embed a Portuguese love poem in his most psychological Western?
+
+Buck Duane kills a man in self-defense and becomes an outlaw, forced into a violent frontier world that tests his morality and identity. As he struggles between lawlessness and redemption across unforgiving Texas landscapes, readers encounter something entirely unexpected: Marília de Dirceu, a classical Portuguese pastoral poem by Tomás António Gonzaga, woven into the narrative. This rare hybrid of frontier violence and European lyrical beauty creates a multi-dimensional tale of human yearning and moral complexity that has baffled and captivated readers since 1914.
+
+This video contains chapter one. Find the complete audiobook at haberdashbooks.com
+
+Narrated by AI voice in a calm British accent for relaxed listening.
+
+CHAPTERS
+0:00 — Introduction
+0:17 — Haberdash Books
+0:30 — About Zane Grey
+1:59 — The Lone Star Ranger, Chapter 1
+51:26 — More from Haberdash Books
+
+🎧 Full audiobook: https://haberdashbooks.com
+📚 Full catalogue: https://haberdashbooks.com/catalogue
+📧 Free weekly forgotten classic: https://subscribe.haberdashbooks.com
+❤️  Support us on Patreon: https://patreon.com/haberdashbooks
+
+#Audiobook #FreeAudiobook #PublicDomainAudiobook #ForgottenClassic #ClassicLiterature</description>
+      <enclosure url="https://archive.org/download/haberdash-books-work-000003/podcast_audio.mp3" length="74471068" type="audio/mpeg"/>
+      <guid isPermaLink="false">haberdash-work-3</guid>
+      <pubDate>Mon, 15 Jun 2026 08:52:20 +0000</pubDate>
+      <itunes:duration>51:42</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>10</itunes:episode>
+    </item>
     <item>
       <title>America's Bestselling Western Author Was Almost Forgotten. Here's Why.</title>
       <description>Book title: Riders of the Purple Sage
