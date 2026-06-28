@@ -9,7 +9,7 @@
     <description>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</description>
     <language>en-us</language>
     <copyright>Public Domain</copyright>
-    <lastBuildDate>Sat, 27 Jun 2026 22:31:29 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2026 22:30:54 +0000</lastBuildDate>
     <atom:link href="https://Samus117.github.io/haberdash-podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Haberdash Books</itunes:author>
     <itunes:summary>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</itunes:summary>
@@ -19,6 +19,44 @@
     <itunes:image href="https://archive.org/download/haberdash-books-podcast-artwork/cover.jpg"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Germany's Greatest Writer Was Erased From English. Here's Why.</title>
+      <description>Book title: Der Schimmelreiter (The Rider on the White Horse)
+
+Theodor Storm died the same year he published his masterpiece — a novella that became legendary in Germany while vanishing from English literary consciousness for over a century.
+
+*The Rider on the White Horse* is a tale of ambition, innovation, and tragic heroism set against the North Frisian landscape. Hauke Haien is a man who builds dikes to protect his community from the sea, only to be destroyed by the very people he tried to save. Storm's prose is hypnotic and precise, blending local folklore with psychological depth to create something that feels both timeless and devastatingly immediate.
+
+This video contains chapter one. Find the complete audiobook at haberdashbooks.com
+
+Narrated by AI voice in a calm British accent for relaxed listening.
+
+CHAPTERS
+0:00 — Introduction
+0:57 — About Theodor Storm
+2:29 — Find the Full Audiobook
+3:11 — Translator's Note
+6:03 — Der Schimmelreiter, Chapter 1
+17:35 — More from Haberdash Books
+
+📥 CLAIM YOUR FREE AUDIOBOOK — THE LOST LIBRARY PASS
+Subscribe to Haberdash Books, then choose any full audiobook from our public domain catalogue.
+MP3 download yours to keep. EPUB included when available.
+Bring a friend who subscribes and you both get another free audiobook. No limit.
+Claim here → https://haberdashbooks.com/free
+
+🎧 Complete audiobook: https://haberdashbooks.com
+📚 Full catalogue: https://haberdashbooks.com/catalogue
+❤️  Support us on Patreon: https://patreon.com/haberdashbooks
+
+#Audiobook #FreeAudiobook #PublicDomainAudiobook #ForgottenClassic #ClassicLiterature</description>
+      <enclosure url="https://archive.org/download/haberdash-books-work-000508/podcast_audio.mp3" length="25863251" type="audio/mpeg"/>
+      <guid isPermaLink="false">haberdash-work-508</guid>
+      <pubDate>Sun, 28 Jun 2026 22:30:54 +0000</pubDate>
+      <itunes:duration>17:57</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>13</itunes:episode>
+    </item>
     <item>
       <title>Spain's Greatest Novelist Was Erased From History. Here's His Darkest Masterpiece.</title>
       <description>Book title: La de Bringas (The Bringas Woman)
