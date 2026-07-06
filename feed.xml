@@ -9,7 +9,7 @@
     <description>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</description>
     <language>en-us</language>
     <copyright>Public Domain</copyright>
-    <lastBuildDate>Sun, 28 Jun 2026 22:30:54 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 21:20:12 +0000</lastBuildDate>
     <atom:link href="https://Samus117.github.io/haberdash-podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Haberdash Books</itunes:author>
     <itunes:summary>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</itunes:summary>
@@ -19,6 +19,44 @@
     <itunes:image href="https://archive.org/download/haberdash-books-podcast-artwork/cover.jpg"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>The Austrian Officer Who Nearly Destroyed History. Almost Completely Erased.</title>
+      <description>Book title: Leutnant Gustl (Lieutenant Gustl)
+
+The Austrian military demanded Arthur Schnitzler be cashiered from his commission when this novella appeared in 1900—yet today, this revolutionary masterpiece of psychological realism remains nearly invisible to English readers.
+
+Leutnant Gustl is a single fevered night inside the mind of a proud Austro-Hungarian officer. When a civilian baker insults his honour, Schnitzler plunges us into an unfiltered stream of consciousness—spiralling anxiety, social terror, rigid codes of conduct, and a man trapped by his own rigidity. Written as a contemporary of Freud, this novella invented the techniques of modernist interiority that would later define Joyce and Woolf. It's a suffocating mirror held up to fin-de-siècle Vienna and the fragile male ego.
+
+This video contains chapter one. Find the complete audiobook at haberdashbooks.com
+
+Narrated by AI voice in a calm British accent for relaxed listening.
+
+CHAPTERS
+0:00 — Introduction
+1:03 — About Arthur Schnitzler
+2:35 — Find the Full Audiobook
+3:11 — Translator's Note
+6:01 — Leutnant Gustl, Chapter 1
+17:29 — More from Haberdash Books
+
+📥 CLAIM YOUR FREE AUDIOBOOK — THE LOST LIBRARY PASS
+Subscribe to Haberdash Books, then choose any full audiobook from our public domain catalogue.
+MP3 download yours to keep. EPUB included when available.
+Bring a friend who subscribes and you both get another free audiobook. No limit.
+Claim here → https://haberdashbooks.com/free
+
+🎧 Complete audiobook: https://haberdashbooks.com
+📚 Full catalogue: https://haberdashbooks.com/catalogue
+❤️  Support us on Patreon: https://patreon.com/haberdashbooks
+
+#Audiobook #FreeAudiobook #PublicDomainAudiobook #ForgottenClassic #ClassicLiterature</description>
+      <enclosure url="https://archive.org/download/haberdash-books-work-000513/podcast_audio.mp3" length="25839427" type="audio/mpeg"/>
+      <guid isPermaLink="false">haberdash-work-513</guid>
+      <pubDate>Mon, 06 Jul 2026 21:20:12 +0000</pubDate>
+      <itunes:duration>17:56</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>14</itunes:episode>
+    </item>
     <item>
       <title>Germany's Greatest Writer Was Erased From English. Here's Why.</title>
       <description>Book title: Der Schimmelreiter (The Rider on the White Horse)
