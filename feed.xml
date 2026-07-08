@@ -9,7 +9,7 @@
     <description>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</description>
     <language>en-us</language>
     <copyright>Public Domain</copyright>
-    <lastBuildDate>Mon, 06 Jul 2026 21:20:12 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 21:21:49 +0000</lastBuildDate>
     <atom:link href="https://Samus117.github.io/haberdash-podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Haberdash Books</itunes:author>
     <itunes:summary>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</itunes:summary>
@@ -19,6 +19,82 @@
     <itunes:image href="https://archive.org/download/haberdash-books-podcast-artwork/cover.jpg"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>He Died at 23. His Novel Redefined What Literature Could Be.</title>
+      <description>Book title: Lenz
+
+He was 23 when he wrote this — and it was never published in his lifetime.
+
+*Lenz* follows a brilliant, fractured poet wandering the Vosges mountains in 1778, seeking solace with a rural pastor. Instead, he encounters a mind in free fall: each moment of clarity followed by deeper dissolution, each attempt at connection met with the unbearable weight of isolation. Büchner's prose is raw, immediate, hallucinatory — he plunges you directly into Lenz's sensations, his terror, his moments of terrible lucidity. Based on the true story of Sturm und Drang poet Jakob Michael Reinhold Lenz, this is a masterpiece of psychological realism written a century before psychology had language for what it describes.
+
+This video contains chapter one. Find the complete audiobook at haberdashbooks.com
+
+Narrated by AI voice in a calm British accent for relaxed listening.
+
+CHAPTERS
+0:00 — Introduction
+1:04 — About Georg Büchner
+2:57 — Find the Full Audiobook
+3:35 — Translator's Note
+6:46 — Lenz, Chapter 1
+17:51 — More from Haberdash Books
+
+📥 CLAIM YOUR FREE AUDIOBOOK — THE LOST LIBRARY PASS
+Subscribe to Haberdash Books, then choose any full audiobook from our public domain catalogue.
+MP3 download yours to keep. EPUB included when available.
+Bring a friend who subscribes and you both get another free audiobook. No limit.
+Claim here → https://haberdashbooks.com/free
+
+🎧 Complete audiobook: https://haberdashbooks.com
+📚 Full catalogue: https://haberdashbooks.com/catalogue
+❤️  Support us on Patreon: https://patreon.com/haberdashbooks
+
+#Audiobook #FreeAudiobook #PublicDomainAudiobook #ForgottenClassic #ClassicLiterature</description>
+      <enclosure url="https://archive.org/download/haberdash-books-work-000516/podcast_audio.mp3" length="26330947" type="audio/mpeg"/>
+      <guid isPermaLink="false">haberdash-work-516</guid>
+      <pubDate>Wed, 08 Jul 2026 21:21:49 +0000</pubDate>
+      <itunes:duration>18:17</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>16</itunes:episode>
+    </item>
+    <item>
+      <title>Goethe Premiered This Masterpiece. It Disappeared for 200 Years.</title>
+      <description>Book title: Der zerbrochne Krug (The Broken Jug)
+
+When a village judge's past misdeeds collide with an unexpected inspection, he faces the courtroom's cruel logic turned against himself. What begins as a simple inquiry into a shattered jug becomes a masterclass in farce, guilt, and the absurdity of justice.
+
+Kleist's comedy is brutal, witty, and psychologically astute — a play that moves from laughter to dread in a single scene. Set in a Dutch village near Utrecht, *The Broken Jug* combines the rapid-fire dialogue of Molière with the moral unease of Kafka. The prose cuts, the revelations sting, and the shame is real.
+
+This video contains chapter one. Find the complete audiobook at haberdashbooks.com
+
+Narrated by AI voice in a calm British accent for relaxed listening.
+
+CHAPTERS
+0:00 — Introduction
+0:52 — About Heinrich von Kleist
+2:24 — Find the Full Audiobook
+3:01 — Translator's Note
+5:38 — Der zerbrochne Krug, Chapter 1
+17:23 — More from Haberdash Books
+
+📥 CLAIM YOUR FREE AUDIOBOOK — THE LOST LIBRARY PASS
+Subscribe to Haberdash Books, then choose any full audiobook from our public domain catalogue.
+MP3 download yours to keep. EPUB included when available.
+Bring a friend who subscribes and you both get another free audiobook. No limit.
+Claim here → https://haberdashbooks.com/free
+
+🎧 Complete audiobook: https://haberdashbooks.com
+📚 Full catalogue: https://haberdashbooks.com/catalogue
+❤️  Support us on Patreon: https://patreon.com/haberdashbooks
+
+#Audiobook #FreeAudiobook #PublicDomainAudiobook #ForgottenClassic #ClassicLiterature</description>
+      <enclosure url="https://archive.org/download/haberdash-books-work-000514/podcast_audio.mp3" length="25519688" type="audio/mpeg"/>
+      <guid isPermaLink="false">haberdash-work-514</guid>
+      <pubDate>Tue, 07 Jul 2026 21:23:34 +0000</pubDate>
+      <itunes:duration>17:43</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>15</itunes:episode>
+    </item>
     <item>
       <title>The Austrian Officer Who Nearly Destroyed History. Almost Completely Erased.</title>
       <description>Book title: Leutnant Gustl (Lieutenant Gustl)
