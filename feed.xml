@@ -9,7 +9,7 @@
     <description>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</description>
     <language>en-us</language>
     <copyright>Public Domain</copyright>
-    <lastBuildDate>Wed, 08 Jul 2026 21:21:49 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 21:21:56 +0000</lastBuildDate>
     <atom:link href="https://Samus117.github.io/haberdash-podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Haberdash Books</itunes:author>
     <itunes:summary>The World's Forgotten Classics. Free audiobook readings of public domain masterpieces that history forgot. One chapter at a time.</itunes:summary>
@@ -19,6 +19,44 @@
     <itunes:image href="https://archive.org/download/haberdash-books-podcast-artwork/cover.jpg"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Dead at 23. His Play Changed Everything. We Nearly Lost It Forever.</title>
+      <description>Book title: Woyzeck
+
+Dead at 23. His one fragmented play changed everything about modern theatre — but the world almost forgot he ever lived.
+
+Woyzeck follows a lowly soldier trapped in a provincial garrison town, eking out an existence through odd jobs and brutal medical experiments. When jealousy and poverty crush what's left of his mind, he spirals toward an act of chilling violence. Büchner's prose moves through dehumanisation, grotesque social commentary, and existential dread — anticipating Kafka, Beckett, and the entire architecture of modernist despair by decades.
+
+This video contains chapter one. Find the complete audiobook at haberdashbooks.com
+
+Narrated by AI voice in a calm British accent for relaxed listening.
+
+CHAPTERS
+0:00 — Introduction
+0:50 — About Georg Büchner
+2:09 — Find the Full Audiobook
+2:43 — Translator's Note
+5:10 — Woyzeck, Chapter 1
+17:09 — More from Haberdash Books
+
+📥 CLAIM YOUR FREE AUDIOBOOK — THE LOST LIBRARY PASS
+Subscribe to Haberdash Books, then choose any full audiobook from our public domain catalogue.
+MP3 download yours to keep. EPUB included when available.
+Bring a friend who subscribes and you both get another free audiobook. No limit.
+Claim here → https://haberdashbooks.com/free
+
+🎧 Complete audiobook: https://haberdashbooks.com
+📚 Full catalogue: https://haberdashbooks.com/catalogue
+❤️  Support us on Patreon: https://patreon.com/haberdashbooks
+
+#Audiobook #FreeAudiobook #PublicDomainAudiobook #ForgottenClassic #ClassicLiterature</description>
+      <enclosure url="https://archive.org/download/haberdash-books-work-000517/podcast_audio.mp3" length="25284586" type="audio/mpeg"/>
+      <guid isPermaLink="false">haberdash-work-517</guid>
+      <pubDate>Thu, 09 Jul 2026 21:21:56 +0000</pubDate>
+      <itunes:duration>17:33</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>17</itunes:episode>
+    </item>
     <item>
       <title>He Died at 23. His Novel Redefined What Literature Could Be.</title>
       <description>Book title: Lenz
