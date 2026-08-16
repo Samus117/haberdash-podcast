@@ -192,9 +192,10 @@ Output only the bullets, no introductory or closing sentence."""
     return response.content[0].text.strip()
 
 
-def process_url(
-    client: Anthropic, url: str, whisper_model: str, out_dir: Path | None
-) -> tuple[str, str] | None:
+def summarize_url(client: Anthropic, url: str, whisper_model: str) -> tuple[str, str] | None:
+    """Fetch, transcribe if needed, and summarize a single video. No side effects -
+    used by both the CLI and other front-ends (e.g. bot.py). Returns (title, points)
+    or None if no transcript could be produced."""
     with tempfile.TemporaryDirectory() as tmp:
         info, transcript = get_transcript(url, Path(tmp), whisper_model)
 
@@ -204,6 +205,16 @@ def process_url(
 
     points = summarize(client, info, transcript)
     title = info.get("title", url)
+    return title, points
+
+
+def process_url(
+    client: Anthropic, url: str, whisper_model: str, out_dir: Path | None
+) -> tuple[str, str] | None:
+    result = summarize_url(client, url, whisper_model)
+    if result is None:
+        return None
+    title, points = result
 
     output = f"# {title}\n\nSource: {url}\n\n{points}\n"
 

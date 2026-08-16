@@ -57,8 +57,51 @@ python summarize.py URL --whisper-model small
 
 ## Running it from your phone
 
-There's no native mobile app, but you can trigger this without hosting anything by running it
-as a GitHub Action from the GitHub mobile app:
+### Option A: Telegram bot on your own computer (recommended)
+
+`bot.py` runs on your computer and you talk to it from Telegram on your phone. It works by
+having your computer poll Telegram's servers for new messages (an outbound-only connection) -
+nothing on your home network is exposed, no port forwarding, no VPN needed, and it works from
+anywhere your phone has signal.
+
+**Setup:**
+
+1. In Telegram, message **[@BotFather](https://t.me/BotFather)** → `/newbot` → follow the
+   prompts. It gives you a token that looks like `123456789:AAExxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`.
+2. On your computer:
+   ```bash
+   cd video-summarizer
+   pip install -r requirements.txt
+   export ANTHROPIC_API_KEY=sk-...
+   export TELEGRAM_BOT_TOKEN=123456789:AAExxxx...
+   python bot.py
+   ```
+3. In Telegram, open a chat with your new bot and send `/whoami` - it replies with your chat
+   ID. Stop the bot (Ctrl-C), then restrict it to just you:
+   ```bash
+   export TELEGRAM_ALLOWED_CHAT_IDS=123456789
+   python bot.py
+   ```
+   (Without this, anyone who finds your bot's username could message it and use your API key.)
+
+**Usage from your phone:** send the bot any video link and it replies with the main points.
+Send `/channel <url> [limit]` to summarize a whole channel/profile (default 5 videos) plus a
+digest across all of them.
+
+**Keeping it running:** `python bot.py` only runs while your terminal session is open. To keep
+it running in the background:
+
+- **macOS:** `nohup python bot.py > bot.log 2>&1 &`, or set it up as a
+  [LaunchAgent](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html)
+  so it survives reboots.
+- **Linux:** run it as a `systemd --user` service, or `nohup python bot.py > bot.log 2>&1 &`
+  inside a `screen`/`tmux` session.
+
+Your computer needs to be on and awake (not asleep) for the bot to receive messages.
+
+### Option B: GitHub Actions (no computer needs to stay on)
+
+Trigger a one-off run from the GitHub mobile app instead - nothing runs on your machine:
 
 1. Add your Anthropic API key as a repo secret: **Settings → Secrets and variables → Actions →
    New repository secret**, named `ANTHROPIC_API_KEY`.
@@ -69,7 +112,7 @@ as a GitHub Action from the GitHub mobile app:
 
 The workflow lives at `.github/workflows/summarize.yml`. It installs `ffmpeg` and the Python
 dependencies fresh on each run, so no server to maintain - just GitHub Actions minutes (free
-for public repos).
+for public repos). Slower to kick off than texting the bot, but nothing needs to stay running.
 
 ## Notes
 
