@@ -1,0 +1,87 @@
+name: Summarize Video
+
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "One video / channel / profile URL per line (YouTube, TikTok, Instagram)"
+        required: true
+        type: string
+      limit:
+        description: "Max videos to pull from a channel/profile URL"
+        required: false
+        default: "10"
+        type: string
+      digest:
+        description: "Also produce one combined summary across all videos"
+        required: false
+        default: true
+        type: boolean
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Install Python dependencies
+        run: pip install -r video-summarizer/requirements.txt
+
+      - name: Run summarizer
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          URLS_INPUT: ${{ inputs.urls }}
+          LIMIT_INPUT: ${{ inputs.limit }}
+          DIGEST_INPUT: ${{ inputs.digest }}
+        run: |
+          mkdir -p summary-output
+          readarray -t URLS <<< "$URLS_INPUT"
+          ARGS=()
+          for u in "${URLS[@]}"; do
+            [ -n "$u" ] && ARGS+=("$u")
+          done
+          EXTRA=(--limit "$LIMIT_INPUT" --out summary-output)
+          if [ "$DIGEST_INPUT" = "true" ]; then
+            EXTRA+=(--digest)
+          fi
+          python video-summarizer/summarize.py "${ARGS[@]}" "${EXTRA[@]}"
+
+      - name: Combine summaries
+        run: |
+          : > combined.md
+          shopt -s nullglob
+          for f in summary-output/*.md; do
+            cat "$f" >> combined.md
+            printf '\n---\n\n' >> combined.md
+          done
+
+      - name: Create issue with results
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let body = 'No transcript could be produced.';
+            try {
+              const content = fs.readFileSync('combined.md', 'utf8').trim();
+              if (content) body = content;
+            } catch (e) {}
+            if (body.length > 60000) {
+              body = body.slice(0, 60000) + '\n\n...(truncated)';
+            }
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Video summary - ${new Date().toISOString().slice(0, 10)}`,
+              body,
+            });

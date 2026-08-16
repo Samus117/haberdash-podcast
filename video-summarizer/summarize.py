@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-"""Ingest a YouTube / TikTok / Instagram Reel and print its main points via Claude Haiku.
+"""Ingest YouTube / TikTok / Instagram videos (or whole channels) and print the main points
+via Claude Haiku.
 
 For each URL:
-  1. Pull the video's captions if the platform provides them (fast path).
-  2. Otherwise download the audio and transcribe it locally with faster-whisper.
+  1. If it's a channel/profile URL, expand it into up to --limit individual video URLs.
+  2. For each video: pull captions if the platform provides them (fast path), otherwise
+     download the audio and transcribe it locally with faster-whisper.
   3. Send the transcript to Claude Haiku and print a bulleted list of main points.
+  4. With --digest, also produce one combined synthesis across everything processed.
 """
 
 import argparse
@@ -16,8 +19,10 @@ from pathlib import Path
 import yt_dlp
 from anthropic import Anthropic
 
-HAIKU_MODEL = "claude-haiku-4-5-20251001"
-MAX_TRANSCRIPT_CHARS = 20000
+HAIKU_MODEL = "claude-haiku-4-5"
+# Haiku 4.5 has a 200K-token context window (~4 chars/token). Cap well below that
+# so even multi-hour transcripts fit in one request with room for the prompt and reply.
+MAX_TRANSCRIPT_CHARS = 500000
 CAPTION_LANGS = ["en", "en-US", "en-GB", "en-orig"]
 
 
@@ -45,6 +50,33 @@ def vtt_to_text(vtt_path: Path) -> str:
             seen.add(line)
             lines.append(line)
     return " ".join(lines)
+
+
+def expand_urls(url: str, limit: int) -> list[str]:
+    """If url is a channel/profile/playlist, return up to `limit` individual video URLs."""
+    opts = {
+        "extract_flat": True,
+        "playlistend": limit,
+        "quiet": True,
+        "no_warnings": True,
+    }
+    with yt_dlp.YoutubeDL(opts) as ydl:
+        info = ydl.extract_info(url, download=False)
+
+    entries = info.get("entries")
+    if not entries:
+        return [url]
+
+    urls = []
+    for entry in entries:
+        if not entry:
+            continue
+        video_url = entry.get("url") or entry.get("webpage_url")
+        if video_url:
+            urls.append(video_url)
+        if len(urls) >= limit:
+            break
+    return urls or [url]
 
 
 def fetch_captions(url: str, workdir: Path) -> tuple[dict, str | None]:
@@ -116,10 +148,10 @@ def get_transcript(url: str, workdir: Path, whisper_model: str) -> tuple[dict, s
 def summarize(client: Anthropic, info: dict, transcript: str) -> str:
     transcript = transcript.strip()
     if len(transcript) > MAX_TRANSCRIPT_CHARS:
-        log(f"Transcript is long ({len(transcript)} chars); truncating for the summary.")
+        log(f"Transcript is very long ({len(transcript)} chars); truncating for the summary.")
         transcript = transcript[:MAX_TRANSCRIPT_CHARS]
 
-    prompt = f"""You are given the transcript of a short video.
+    prompt = f"""You are given the transcript of a video.
 
 Title: {info.get('title', 'Unknown')}
 Creator: {info.get('uploader', 'Unknown')}
@@ -128,31 +160,52 @@ Description: {info.get('description') or '(none)'}
 Transcript:
 {transcript}
 
-List the main points made in this video as a concise bulleted list (aim for 3-7 bullets).
+List the main points made in this video as a concise bulleted list (aim for 3-7 bullets,
+more for a long-form video with many distinct points).
 Focus on substance, not filler. Do not include an introductory or closing sentence -
 output only the bullets."""
 
     response = client.messages.create(
         model=HAIKU_MODEL,
-        max_tokens=1024,
+        max_tokens=1536,
         messages=[{"role": "user", "content": prompt}],
     )
     return response.content[0].text.strip()
 
 
-def process_url(client: Anthropic, url: str, whisper_model: str, out_dir: Path | None) -> None:
+def build_digest(client: Anthropic, entries: list[tuple[str, str]]) -> str:
+    joined = "\n\n".join(f"## {title}\n{points}" for title, points in entries)
+    prompt = f"""Below are the main points extracted from {len(entries)} videos, likely from
+the same creator or channel.
+
+{joined}
+
+Write a short synthesis (5-10 bullets) of the recurring themes, positions, and topics across
+all of these videos. Call out any notable disagreements, shifts, or one-off outliers if present.
+Output only the bullets, no introductory or closing sentence."""
+
+    response = client.messages.create(
+        model=HAIKU_MODEL,
+        max_tokens=1536,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    return response.content[0].text.strip()
+
+
+def process_url(
+    client: Anthropic, url: str, whisper_model: str, out_dir: Path | None
+) -> tuple[str, str] | None:
     with tempfile.TemporaryDirectory() as tmp:
         info, transcript = get_transcript(url, Path(tmp), whisper_model)
 
     if not transcript.strip():
         log(f"No transcript could be produced for {url}, skipping.")
-        return
+        return None
 
     points = summarize(client, info, transcript)
     title = info.get("title", url)
 
-    header = f"# {title}\n\nSource: {url}\n"
-    output = f"{header}\n{points}\n"
+    output = f"# {title}\n\nSource: {url}\n\n{points}\n"
 
     if out_dir:
         out_dir.mkdir(parents=True, exist_ok=True)
@@ -162,10 +215,20 @@ def process_url(client: Anthropic, url: str, whisper_model: str, out_dir: Path |
     else:
         print(output)
 
+    return title, points
+
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("urls", nargs="+", help="YouTube / TikTok / Instagram Reel URLs")
+    parser.add_argument(
+        "urls", nargs="+", help="Video, channel, or profile URLs (YouTube / TikTok / Instagram)"
+    )
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=10,
+        help="Max videos to pull when a URL is a channel/profile (default: 10)",
+    )
     parser.add_argument(
         "--whisper-model",
         default="base",
@@ -178,15 +241,44 @@ def main() -> None:
         default=None,
         help="Directory to write one Markdown summary per video instead of printing to stdout",
     )
+    parser.add_argument(
+        "--digest",
+        action="store_true",
+        help="Also produce one combined summary synthesizing themes across all videos processed",
+    )
     args = parser.parse_args()
 
     client = Anthropic()  # reads ANTHROPIC_API_KEY from the environment
 
-    for url in args.urls:
+    processed: list[tuple[str, str]] = []
+    for raw_url in args.urls:
         try:
-            process_url(client, url, args.whisper_model, args.out)
+            video_urls = expand_urls(raw_url, args.limit)
         except Exception as exc:
-            log(f"Failed on {url}: {exc}")
+            log(f"Failed to expand {raw_url}: {exc}")
+            continue
+
+        if len(video_urls) > 1:
+            log(f"{raw_url} expanded to {len(video_urls)} videos.")
+
+        for url in video_urls:
+            try:
+                result = process_url(client, url, args.whisper_model, args.out)
+                if result:
+                    processed.append(result)
+            except Exception as exc:
+                log(f"Failed on {url}: {exc}")
+
+    if args.digest and len(processed) > 1:
+        digest = build_digest(client, processed)
+        output = f"# Digest across {len(processed)} videos\n\n{digest}\n"
+        if args.out:
+            args.out.mkdir(parents=True, exist_ok=True)
+            digest_path = args.out / "channel-digest.md"
+            digest_path.write_text(output, encoding="utf-8")
+            log(f"Wrote {digest_path}")
+        else:
+            print(output)
 
 
 if __name__ == "__main__":
