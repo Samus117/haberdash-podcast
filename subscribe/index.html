@@ -4,74 +4,21 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Join the Lost Library — Haberdash Books</title>
-  <meta name="description" content="Get a free forgotten classic every week. Join the Lost Library."/>
-  <style>
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    body{background:#0f0e0c;color:#e2d9c8;font-family:Georgia,'Times New Roman',serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem 1.5rem}
-    .wrap{max-width:520px;width:100%;text-align:center}
-    .mark{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:#c8a96e;margin-bottom:2.5rem}
-    h1{font-size:clamp(1.75rem,5vw,2.5rem);font-weight:normal;line-height:1.3;color:#f0ece4;margin-bottom:1rem}
-    .rule{width:40px;height:1px;background:#c8a96e;margin:0 auto 1.5rem}
-    .sub{font-size:1rem;line-height:1.75;color:#9a9080;margin-bottom:2.5rem}
-    .sub strong{color:#e2d9c8}
-    form{display:flex;flex-direction:column;gap:.7rem;margin-bottom:1rem}
-    input[type=email]{padding:.9rem 1.1rem;background:#1a1816;border:1px solid #2e2820;border-radius:3px;color:#f0ece4;font-family:Georgia,serif;font-size:1rem;outline:none;transition:border-color .2s}
-    input[type=email]:focus{border-color:#c8a96e}
-    input[type=email]::placeholder{color:#4a4540}
-    button{padding:.9rem;background:#c8a96e;border:none;border-radius:3px;color:#0f0e0c;font-family:Georgia,serif;font-size:.95rem;font-weight:bold;letter-spacing:.05em;cursor:pointer;transition:opacity .15s}
-    button:hover{opacity:.85}
-    button:disabled{opacity:.5;cursor:not-allowed}
-    .note{font-size:.75rem;color:#4a4540;line-height:1.5}
-    .ok{display:none;padding:1.5rem;border:1px solid #c8a96e;border-radius:3px;color:#c8a96e;font-size:1rem;line-height:1.6;margin-bottom:1rem}
-    .err{color:#b06060;font-size:.82rem;display:none;margin-top:.3rem}
-    .links{margin-top:3rem;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#2e2820}
-    .links a{color:#3e3830;text-decoration:none}
-    .links a:hover{color:#6e6860}
-  </style>
+  <link rel="canonical" href="https://subscribe.haberdashbooks.com/"/>
+  <meta http-equiv="refresh" content="0; url=https://subscribe.haberdashbooks.com/"/>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+  <!-- Google Analytics 4: replace G-XXXXXXXXXX with your real Measurement ID to activate -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <script>location.replace('https://subscribe.haberdashbooks.com/');</script>
+  <style>body{background:#0f0e0c;color:#9a9080;font-family:Georgia,'Times New Roman',serif;display:flex;align-items:center;justify-content:center;min-height:100vh}</style>
 </head>
 <body>
-<div class="wrap">
-  <p class="mark">Haberdash Books</p>
-  <h1>Join the Lost Library</h1>
-  <div class="rule"></div>
-  <p class="sub">
-    Every week we unearth a masterpiece the world forgot.<br>
-    <strong>Subscribe and get a free forgotten classic in your inbox.</strong><br><br>
-    No spam. Unsubscribe any time.
-  </p>
-  <form id="f">
-    <input type="email" name="email_address" placeholder="your@email.com" required autocomplete="email"/>
-    <button type="submit" id="btn">Get my free classic &rarr;</button>
-    <p class="err" id="err">Something went wrong — please try again.</p>
-  </form>
-  <div class="ok" id="ok">
-    &#10022;&nbsp; You're in. Check your inbox for your first forgotten classic.
-  </div>
-  <p class="note">Free every week. Unsubscribe with one click.</p>
-  <div class="links">
-    <a href="https://www.youtube.com/@HaberdashBooks" target="_blank">YouTube</a>
-    &nbsp;&nbsp;&middot;&nbsp;&nbsp;
-    <a href="https://haberdashbooks.com" target="_blank">haberdashbooks.com</a>
-  </div>
-</div>
-<script>
-  const form=document.getElementById('f'),btn=document.getElementById('btn'),
-        err=document.getElementById('err'),ok=document.getElementById('ok');
-  form.addEventListener('submit',async e=>{
-    e.preventDefault();err.style.display='none';
-    btn.disabled=true;btn.textContent='Subscribing…';
-    const email=form.querySelector('[name=email_address]').value.trim();
-    try{
-      const r=await fetch('https://app.convertkit.com/forms/9497168/subscriptions',{
-        method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},
-        body:'email_address='+encodeURIComponent(email)
-      });
-      if(r.ok||r.status===200){form.style.display='none';ok.style.display='block'}
-      else throw new Error(r.status);
-    }catch(_){
-      err.style.display='block';btn.disabled=false;btn.textContent='Get my free classic →';
-    }
-  });
-</script>
+  <p>Redirecting to <a href="https://subscribe.haberdashbooks.com/" style="color:#c8a96e">subscribe.haberdashbooks.com</a>&hellip;</p>
 </body>
 </html>

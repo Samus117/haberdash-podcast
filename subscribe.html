@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Haberdash Books — Claim Your Free Audiobook</title>
   <meta name="description" content="Claim your free audiobook of The Railway — Finland's most-read novel, never translated into English until now. Plus a new forgotten classic every week." />
+  <link rel="canonical" href="https://subscribe.haberdashbooks.com/subscribe.html"/>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Haberdash Books — Claim Your Free Audiobook"/>
+  <meta property="og:description" content="Claim your free audiobook of The Railway — Finland's most-read novel, never translated into English until now." />
+  <meta property="og:url" content="https://subscribe.haberdashbooks.com/subscribe.html"/>
+  <meta property="og:image" content="https://subscribe.haberdashbooks.com/og-image-audiobook.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Haberdash Books — Claim Your Free Audiobook"/>
+  <meta name="twitter:description" content="Claim your free audiobook of The Railway — Finland's most-read novel, never translated into English until now." />
+  <meta name="twitter:image" content="https://subscribe.haberdashbooks.com/og-image-audiobook.png"/>
+  <!-- Google Analytics 4: replace G-XXXXXXXXXX with your real Measurement ID to activate -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -231,6 +253,7 @@
         if (resp.ok || resp.status === 200) {
           form.style.display = 'none';
           ok.style.display = 'block';
+          if (window.gtag) gtag('event', 'signup_success', { form_id: 'free_audiobook' });
         } else {
           throw new Error('status ' + resp.status);
         }
@@ -238,6 +261,7 @@
         err.style.display = 'block';
         btn.disabled = false;
         btn.textContent = 'Send me the free classic →';
+        if (window.gtag) gtag('event', 'signup_error', { form_id: 'free_audiobook' });
       }
     });
   </script>

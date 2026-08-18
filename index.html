@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Join the Lost Library — Haberdash Books</title>
   <meta name="description" content="Get a free forgotten classic every week. Join the Lost Library."/>
+  <link rel="canonical" href="https://subscribe.haberdashbooks.com/"/>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Join the Lost Library — Haberdash Books"/>
+  <meta property="og:description" content="Get a free forgotten classic every week. Join the Lost Library."/>
+  <meta property="og:url" content="https://subscribe.haberdashbooks.com/"/>
+  <meta property="og:image" content="https://subscribe.haberdashbooks.com/og-image.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Join the Lost Library — Haberdash Books"/>
+  <meta name="twitter:description" content="Get a free forgotten classic every week. Join the Lost Library."/>
+  <meta name="twitter:image" content="https://subscribe.haberdashbooks.com/og-image.png"/>
+  <!-- Google Analytics 4: replace G-XXXXXXXXXX with your real Measurement ID to activate -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     body{background:#0f0e0c;color:#e2d9c8;font-family:Georgia,'Times New Roman',serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem 1.5rem}
@@ -66,10 +88,14 @@
         method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},
         body:'email_address='+encodeURIComponent(email)
       });
-      if(r.ok||r.status===200){form.style.display='none';ok.style.display='block'}
+      if(r.ok||r.status===200){
+        form.style.display='none';ok.style.display='block';
+        if(window.gtag)gtag('event','signup_success',{form_id:'lost_library'});
+      }
       else throw new Error(r.status);
     }catch(_){
       err.style.display='block';btn.disabled=false;btn.textContent='Get my free classic →';
+      if(window.gtag)gtag('event','signup_error',{form_id:'lost_library'});
     }
   });
 </script>
