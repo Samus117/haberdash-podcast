@@ -11,12 +11,17 @@ opportunities, weighted by how many people could actually read the result.
 
 Three steps, three scripts:
 
-1. **`src/fetch_top_books.py`** — pulls the N most-downloaded
-   English-language public-domain books from [Project Gutenberg's
-   API (Gutendex)](https://gutendex.com), ranked by real download counts.
-   "Public domain" here means "hosted by Gutenberg," which requires US
-   public-domain status — copyright can still differ by country, so
-   re-check before acting on any specific title.
+1. **`src/fetch_top_books.py`** — queries [Wikidata's public SPARQL
+   endpoint](https://query.wikidata.org) for every work that has a
+   confirmed Project Gutenberg edition (Wikidata property `P2034`) and an
+   original language of English, ranked by **Wikipedia sitelink count**
+   (how many different-language Wikipedias have an article on it) as a
+   fame/notability proxy. "Public domain" here means "hosted by Gutenberg,"
+   which requires US public-domain status — copyright can still differ by
+   country, so re-check before acting on any specific title.
+
+   This wasn't the first design — see **Why Wikidata, not Gutendex**
+   below for what didn't work and why.
 
 2. **`src/fetch_translations.py`** — for each book, queries the [Open
    Library Search API](https://openlibrary.org/dev/docs/api/search) by
@@ -37,18 +42,38 @@ Output lands in `data/`:
 - `gaps.csv` — every gap found, one row each, ranked
 - `gaps_summary.md` — the top 50, human-readable
 
+## Why Wikidata, not Gutendex
+
+The original design used [Gutendex](https://gutendex.com), a third-party
+JSON API mirroring Project Gutenberg's catalog with a clean `download_count`
+field — the obvious choice for "most popular." Live testing (from GitHub
+Actions, with real internet access) showed it returns a flat `403` on every
+request, with both a custom and a standard browser `User-Agent` — almost
+certainly bot protection blocking cloud/CI IP ranges outright, not
+something a header change fixes.
+
+Project Gutenberg's own site works fine, but its search-results page
+(the one sorted by download count) carries its own explicit banner:
+*"DON'T USE THIS PAGE FOR SCRAPING... you'll only get your IP blocked,"*
+pointing instead to their sanctioned bulk feed, `catalog.rdf.bz2` — which
+doesn't include popularity data at all.
+
+So popularity here comes from Wikidata instead: it's a public API
+explicitly built for bulk querying (no scraping concerns), and Wikipedia
+sitelink count is a standard, widely-used notability proxy. Every result
+already carries a confirmed Gutenberg ebook ID, so the practical outcome —
+"the N most notable public-domain English books, each with a working
+Gutenberg link" — is the same as the original design intended.
+
 ## Running it
 
 **This has to run somewhere with real internet access.** The session that
 built this tool runs in a sandboxed environment whose network policy blocks
 Gutenberg, Gutendex, Open Library, and Wikidata outright (confirmed via
-repeated 403s, not a guess) — so none of this could be tested against the
-live APIs from there. The logic that doesn't need the network
-(`compute_gaps.py`, and the language-code alias handling in
-`lang_utils.py`) was verified offline against realistic fixture data; the
-two fetch scripts are written carefully against the documented API
-contracts but have **not yet made a real request**. Treat the first run as
-a shakedown, not a known-good pipeline.
+repeated 403s, not a guess) — so this was developed and debugged entirely
+through live GitHub Actions runs (diagnostic steps whose logs were read
+back), not locally. `compute_gaps.py` and `lang_utils.py` need no network
+and were also verified offline against realistic fixture data.
 
 ### Via GitHub Actions (recommended)
 
@@ -70,10 +95,10 @@ python src/compute_gaps.py --translations data/translations.json \
   --languages data/languages.csv --out data/gaps.csv --summary data/gaps_summary.md
 ```
 
-Start with a small `--count` (Gutendex) or `--limit` (Open Library step) to
-confirm everything works before committing to a full 1000-book run —
-`fetch_translations.py` does one request per book at ~1/second, so 1000
-books takes on the order of 20-30 minutes.
+Start with a small `--count`/`--limit` to confirm everything works before
+committing to a full 1000-book run — `fetch_translations.py` does one
+request per book at ~1/second, so 1000 books takes on the order of
+20-30 minutes.
 
 ## Known limitations (read before acting on the output)
 
@@ -107,10 +132,11 @@ books takes on the order of 20-30 minutes.
 
 ## Extending it
 
-- Add Wikidata as a second, corroborating source (`P629`/`P407` — editions
-  and their languages) to reduce false gaps from Open Library mismatches.
-- Add a `subjects` filter to `fetch_top_books.py` if the business wants to
-  focus on fiction specifically rather than all of Gutenberg's top
-  downloads (which includes reference works, plays, etc.).
+- Also query Wikidata's `P629`/`P407` (editions and their languages) as a
+  second, corroborating source for translation coverage, to reduce false
+  gaps from Open Library title/author mismatches.
+- Filter `fetch_top_books.py` to fiction specifically (Wikidata has
+  `P31`/genre properties) if the business doesn't want reference works,
+  religious texts, or plays mixed into the ranking.
 - Widen `data/languages.csv` — it's a plain CSV, easy to extend with more
   languages or better speaker-count data from a proper source.

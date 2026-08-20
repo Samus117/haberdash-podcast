@@ -1,12 +1,28 @@
 #!/usr/bin/env python3
 """
-Fetch the N most-downloaded English-language public-domain books from
-Project Gutenberg via the Gutendex API (https://gutendex.com).
+Fetch the N most-notable English-language public-domain books via Wikidata.
 
-"Public domain" here means "hosted by Project Gutenberg", which requires
-the work to be in the public domain in the United States -- copyright
-status can differ in other countries, so re-check that for any title
-before commissioning a translation there.
+Originally this used the Gutendex API (a third-party JSON mirror of
+Project Gutenberg), but Gutendex returns a flat 403 for every request from
+this pipeline's environment (confirmed: happens with both a custom and a
+standard browser User-Agent, from both this sandbox and live GitHub Actions
+runners -- almost certainly IP-range bot protection, not fixable by
+changing headers). Project Gutenberg's own site works fine, but its
+search-results page explicitly asks not to be scraped for exactly this
+purpose ("DON'T USE THIS PAGE FOR SCRAPING... you'll only get your IP
+blocked"), and its sanctioned bulk feed (catalog.rdf.bz2) has no
+popularity data.
+
+So popularity here is approximated by a book's Wikidata sitelink count
+(how many different-language Wikipedias have an article on it) -- a
+standard, widely-used fame/notability proxy in bibliometrics, queried in
+bulk against Wikidata's own public SPARQL endpoint, which is explicitly
+designed for exactly this kind of bulk querying (no scraping concerns).
+
+Every result already has a confirmed Project Gutenberg ebook ID (Wikidata
+property P2034), so "public domain" here still means "hosted by Project
+Gutenberg" -- see the note in this repo's README about what that does and
+doesn't guarantee.
 
 Usage:
     python fetch_top_books.py --count 1000 --out data/top_books.json
@@ -19,10 +35,7 @@ from pathlib import Path
 
 import requests
 
-GUTENDEX_BASE = "https://gutendex.com/books"
-# A custom/app-style User-Agent got a flat 403 from Gutendex (likely bot
-# protection reacting to non-browser UAs or to the GitHub Actions IP range).
-# A standard browser UA is the common workaround for that class of block.
+SPARQL_URL = "https://query.wikidata.org/sparql"
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -31,56 +44,86 @@ HEADERS = {
     "Accept": "application/json",
 }
 
+QUERY_TEMPLATE = """
+SELECT ?work ?workLabel ?gutenbergId ?sitelinks
+       (GROUP_CONCAT(DISTINCT ?authorLabel; separator="; ") AS ?authors)
+WHERE {{
+  ?work wdt:P2034 ?gutenbergId .
+  ?work wdt:P407 wd:Q1860 .
+  ?work wikibase:sitelinks ?sitelinks .
+  OPTIONAL {{
+    ?work wdt:P50 ?author .
+    ?author rdfs:label ?authorLabel .
+    FILTER(LANG(?authorLabel) = "en")
+  }}
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+}}
+GROUP BY ?work ?workLabel ?gutenbergId ?sitelinks
+ORDER BY DESC(?sitelinks)
+LIMIT {limit}
+"""
 
-def fetch_page(url, retries=5, backoff=2.0):
+
+def fetch_top_books(count, retries=4, backoff=3.0):
+    # Over-fetch: some Wikidata works have more than one linked Gutenberg
+    # edition, which produces duplicate rows for the same book that get
+    # collapsed below -- asking for a bit more than `count` keeps us from
+    # falling short after deduplication.
+    query = QUERY_TEMPLATE.format(limit=int(count * 1.3) + 20)
+
     for attempt in range(retries):
         try:
-            resp = requests.get(url, headers=HEADERS, timeout=30)
+            resp = requests.get(
+                SPARQL_URL, params={"query": query}, headers=HEADERS, timeout=90
+            )
         except requests.RequestException as exc:
             wait = backoff * (2 ** attempt)
             print(f"  request failed ({exc}), retrying in {wait:.0f}s...", file=sys.stderr)
             time.sleep(wait)
             continue
         if resp.status_code == 200:
-            return resp.json()
+            break
         if resp.status_code == 429:
             wait = backoff * (2 ** attempt)
             print(f"  rate limited, waiting {wait:.0f}s...", file=sys.stderr)
             time.sleep(wait)
             continue
         resp.raise_for_status()
-    raise RuntimeError(f"Failed to fetch {url} after {retries} attempts")
+    else:
+        raise RuntimeError(f"Wikidata query failed after {retries} attempts")
 
+    bindings = resp.json()["results"]["bindings"]
 
-def parse_results(data):
-    """Pull the fields we care about out of one Gutendex page response."""
     books = []
-    for item in data.get("results", []):
-        if item.get("media_type") != "Text":
-            continue
-        if item.get("copyright") is True:
-            continue  # skip anything Gutendex flags as still under copyright
-        authors = [a["name"] for a in item.get("authors", [])]
+    seen_works = set()
+    for row in bindings:
+        work_uri = row["work"]["value"]
+        if work_uri in seen_works:
+            continue  # same book linked to more than one Gutenberg edition
+        seen_works.add(work_uri)
+
+        gutenberg_id_raw = row["gutenbergId"]["value"].strip()
+        try:
+            gutenberg_id = int(gutenberg_id_raw)
+        except ValueError:
+            # A handful of P2034 values are ranges ("1234-1235") for
+            # multi-volume works -- keep the first volume's ID.
+            gutenberg_id = int(gutenberg_id_raw.split("-")[0])
+
+        authors_raw = row.get("authors", {}).get("value", "")
+        authors = [a.strip() for a in authors_raw.split(";") if a.strip()]
+
         books.append({
-            "gutenberg_id": item["id"],
-            "title": item["title"],
+            "gutenberg_id": gutenberg_id,
+            "wikidata_id": work_uri.rsplit("/", 1)[-1],
+            "title": row["workLabel"]["value"],
             "authors": authors,
-            "subjects": item.get("subjects", []),
-            "download_count": item.get("download_count", 0),
+            "sitelinks": int(row["sitelinks"]["value"]),
         })
+        if len(books) >= count:
+            break
+
     return books
-
-
-def fetch_top_books(count, languages="en"):
-    books = []
-    url = f"{GUTENDEX_BASE}?languages={languages}&sort=popular"
-    while url and len(books) < count:
-        data = fetch_page(url)
-        books.extend(parse_results(data))
-        url = data.get("next")
-        print(f"  collected {len(books)} / {count}", file=sys.stderr)
-        time.sleep(0.5)  # be polite to a free public API
-    return books[:count]
 
 
 def main():
@@ -89,7 +132,11 @@ def main():
     parser.add_argument("--out", type=Path, default=Path("data/top_books.json"))
     args = parser.parse_args()
 
-    print(f"Fetching top {args.count} English public-domain books from Gutendex...", file=sys.stderr)
+    print(
+        f"Fetching top {args.count} English public-domain books from Wikidata "
+        "(ranked by Wikipedia sitelink count)...",
+        file=sys.stderr,
+    )
     books = fetch_top_books(args.count)
 
     args.out.parent.mkdir(parents=True, exist_ok=True)

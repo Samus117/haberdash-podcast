@@ -47,14 +47,14 @@ def compute_gaps(books, languages, min_speakers=1.0):
         l for l in languages
         if l["marc"] != "eng" and l["speakers_millions"] >= min_speakers
     ]
-    max_downloads = max((b.get("download_count", 0) for b in books), default=1) or 1
+    max_sitelinks = max((b.get("sitelinks", 0) for b in books), default=1) or 1
 
     gaps = []
     for book in books:
         if not book.get("matched"):
             continue  # no reliable language data for this title -- skip rather than guess
         have = set(book.get("languages", []))
-        popularity = book.get("download_count", 0) / max_downloads  # 0..1
+        popularity = book.get("sitelinks", 0) / max_sitelinks  # 0..1
         for lang in languages:
             if language_present(lang["marc"], have):
                 continue
@@ -63,7 +63,7 @@ def compute_gaps(books, languages, min_speakers=1.0):
                 "title": book["title"],
                 "authors": "; ".join(book.get("authors", [])),
                 "gutenberg_id": book["gutenberg_id"],
-                "download_count": book.get("download_count", 0),
+                "sitelinks": book.get("sitelinks", 0),
                 "missing_language": lang["name"],
                 "language_marc": lang["marc"],
                 "speakers_millions": lang["speakers_millions"],
@@ -77,7 +77,7 @@ def compute_gaps(books, languages, min_speakers=1.0):
 def write_csv(gaps, path):
     path.parent.mkdir(parents=True, exist_ok=True)
     fieldnames = list(gaps[0].keys()) if gaps else [
-        "title", "authors", "gutenberg_id", "download_count",
+        "title", "authors", "gutenberg_id", "sitelinks",
         "missing_language", "language_marc", "speakers_millions", "opportunity_score",
     ]
     with path.open("w", newline="", encoding="utf-8") as f:
