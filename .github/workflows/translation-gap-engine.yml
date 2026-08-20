@@ -51,15 +51,13 @@ jobs:
             echo "$code  $url"
           done
 
-      - name: Dump Gutenberg search page HTML for inspection
+      - name: Discover Wikidata's Project Gutenberg property ID
         run: |
-          curl -s -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" \
-            "https://www.gutenberg.org/ebooks/search/?sort_order=downloads" \
-            -o /tmp/gutenberg_search.html
-          echo "--- first 400 lines ---"
-          head -n 400 /tmp/gutenberg_search.html
-          echo "--- grep for a likely result row marker ---"
-          grep -o '<li[^>]*booklink[^>]*>' /tmp/gutenberg_search.html | head -5 || true
+          QUERY='SELECT ?prop ?propLabel WHERE { ?prop a wikibase:Property . ?prop rdfs:label ?label . FILTER(CONTAINS(LCASE(?label), "gutenberg")) FILTER(LANG(?label) = "en") SERVICE wikibase:label { bd:serviceParam wikibase:language "en". } }'
+          curl -s -G "https://query.wikidata.org/sparql" \
+            -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" \
+            --data-urlencode "query=$QUERY" \
+            -H "Accept: application/json" | python3 -m json.tool
 
       - name: Fetch top books
         run: |
