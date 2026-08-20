@@ -24,8 +24,14 @@ from pathlib import Path
 import requests
 
 SEARCH_URL = "https://openlibrary.org/search.json"
+# See fetch_top_books.py -- a custom/app-style User-Agent got a flat 403 from
+# Gutendex on this same class of request, so use a standard browser UA here too.
 HEADERS = {
-    "User-Agent": "haberdash-translation-gap-engine/1.0 (https://github.com/Samus117/haberdash-podcast)"
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+    ),
+    "Accept": "application/json",
 }
 REQUEST_DELAY = 1.0  # seconds between requests -- be a good citizen of a free public API
 

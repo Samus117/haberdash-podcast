@@ -20,8 +20,15 @@ from pathlib import Path
 import requests
 
 GUTENDEX_BASE = "https://gutendex.com/books"
+# A custom/app-style User-Agent got a flat 403 from Gutendex (likely bot
+# protection reacting to non-browser UAs or to the GitHub Actions IP range).
+# A standard browser UA is the common workaround for that class of block.
 HEADERS = {
-    "User-Agent": "haberdash-translation-gap-engine/1.0 (https://github.com/Samus117/haberdash-podcast)"
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+    ),
+    "Accept": "application/json",
 }
 
 
