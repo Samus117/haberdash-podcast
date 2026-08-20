@@ -46,17 +46,8 @@ jobs:
           curl -s -G "https://query.wikidata.org/sparql" \
             -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" \
             --data-urlencode "query=$QUERY" -H "Accept: application/json" -o /tmp/wd_langs2.json
-          python3 -c "
-import json
-data = json.load(open('/tmp/wd_langs2.json'))
-rows = data['results']['bindings']
-print(f'{len(rows)} rows')
-for r in rows:
-    name = r['langLabel']['value']
-    speakers = int(float(r['speakers']['value']))
-    iso1 = r.get('iso1', {}).get('value', '')
-    print(f'{speakers:>15,}  {iso1:4}  {name}')
-"
+          jq -r '.results.bindings | length as $n | "\($n) rows"' /tmp/wd_langs2.json
+          jq -r '.results.bindings[] | [(.speakers.value|tonumber|floor), (.iso1.value // ""), .langLabel.value] | @tsv' /tmp/wd_langs2.json
           echo "--- count with this filter ---"
           QUERY2='SELECT (COUNT(DISTINCT ?lang) AS ?count) WHERE { ?lang wdt:P31 wd:Q1288568 . ?lang wdt:P1098 ?speakers . }'
           curl -s -G "https://query.wikidata.org/sparql" \
