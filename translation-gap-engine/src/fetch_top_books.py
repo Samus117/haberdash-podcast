@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Fetch the N most-notable English-language public-domain books via Wikidata.
+Fetch the N most-notable public-domain books in a given language via
+Wikidata (default: English).
 
 Originally this used the Gutendex API (a third-party JSON mirror of
 Project Gutenberg), but Gutendex returns a flat 403 for every request from
@@ -24,8 +25,12 @@ property P2034), so "public domain" here still means "hosted by Project
 Gutenberg" -- see the note in this repo's README about what that does and
 doesn't guarantee.
 
+Language is selected by ISO 639-1 code (e.g. "fr", "de", "fi") and resolved
+to a Wikidata language item dynamically via P218, so no hardcoded table of
+language -> Wikidata-item IDs is needed here.
+
 Usage:
-    python fetch_top_books.py --count 1000 --out data/top_books.json
+    python fetch_top_books.py --count 1000 --language en --out data/top_books.json
 """
 import argparse
 import json
@@ -48,8 +53,9 @@ QUERY_TEMPLATE = """
 SELECT ?work ?workLabel ?gutenbergId ?sitelinks
        (GROUP_CONCAT(DISTINCT ?authorLabel; separator="; ") AS ?authors)
 WHERE {{
+  ?langItem wdt:P218 "{language}" .
   ?work wdt:P2034 ?gutenbergId .
-  ?work wdt:P407 wd:Q1860 .
+  ?work wdt:P407 ?langItem .
   ?work wikibase:sitelinks ?sitelinks .
   OPTIONAL {{
     ?work wdt:P50 ?author .
@@ -64,12 +70,12 @@ LIMIT {limit}
 """
 
 
-def fetch_top_books(count, retries=4, backoff=3.0):
+def fetch_top_books(count, language="en", retries=4, backoff=3.0):
     # Over-fetch: some Wikidata works have more than one linked Gutenberg
     # edition, which produces duplicate rows for the same book that get
     # collapsed below -- asking for a bit more than `count` keeps us from
     # falling short after deduplication.
-    query = QUERY_TEMPLATE.format(limit=int(count * 1.3) + 20)
+    query = QUERY_TEMPLATE.format(limit=int(count * 1.3) + 20, language=language)
 
     for attempt in range(retries):
         try:
@@ -119,6 +125,7 @@ def fetch_top_books(count, retries=4, backoff=3.0):
             "title": row["workLabel"]["value"],
             "authors": authors,
             "sitelinks": int(row["sitelinks"]["value"]),
+            "source_language": language,
         })
         if len(books) >= count:
             break
@@ -129,15 +136,16 @@ def fetch_top_books(count, retries=4, backoff=3.0):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--count", type=int, default=1000)
+    parser.add_argument("--language", default="en", help="ISO 639-1 code of the source language")
     parser.add_argument("--out", type=Path, default=Path("data/top_books.json"))
     args = parser.parse_args()
 
     print(
-        f"Fetching top {args.count} English public-domain books from Wikidata "
-        "(ranked by Wikipedia sitelink count)...",
+        f"Fetching top {args.count} public-domain books in language "
+        f"'{args.language}' from Wikidata (ranked by Wikipedia sitelink count)...",
         file=sys.stderr,
     )
-    books = fetch_top_books(args.count)
+    books = fetch_top_books(args.count, language=args.language)
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(books, indent=2, ensure_ascii=False), encoding="utf-8")
