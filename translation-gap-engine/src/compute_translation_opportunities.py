@@ -33,14 +33,23 @@ def compute_opportunities(books):
         have = set(book.get("languages", []))
         if language_present("eng", have):
             continue  # already has an English edition
+        authors = book.get("authors", [])
         opportunities.append({
             "title": book["title"],
-            "authors": "; ".join(book.get("authors", [])),
+            "authors": "; ".join(authors),
             "source_language": book.get("source_language", ""),
             "gutenberg_id": book["gutenberg_id"],
             "sitelinks": book.get("sitelinks", 0),
             "known_languages": "; ".join(sorted(have)) or "(none catalogued)",
             "edition_count": book.get("edition_count", 0),
+            # Wikidata's "language of work" (P407) is sometimes just wrong on
+            # an item -- confirmed live: "The Man of Feeling" (Gutenberg #5083,
+            # actually the 1771 English original by Henry Mackenzie) came back
+            # tagged as Spanish, with a Spanish translator credited alongside
+            # the real author. More than one credited author is the cheap,
+            # free tell for that failure mode -- flag it rather than trust it.
+            "flag": "verify original language: multiple authors credited"
+                    if len(authors) > 1 else "",
         })
 
     opportunities.sort(key=lambda o: o["sitelinks"], reverse=True)
@@ -51,7 +60,7 @@ def write_csv(rows, path):
     path.parent.mkdir(parents=True, exist_ok=True)
     fieldnames = list(rows[0].keys()) if rows else [
         "title", "authors", "source_language", "gutenberg_id",
-        "sitelinks", "known_languages", "edition_count",
+        "sitelinks", "known_languages", "edition_count", "flag",
     ]
     with path.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -81,6 +90,13 @@ def write_summary(rows, books, path, top_n=100):
         "(or in the US) while a specific edition/translation is not, and older or obscure "
         "translations may exist without being catalogued on Open Library.",
         "",
+        "**A confirmed second failure mode: Wikidata's \"language of work\" is sometimes "
+        "just wrong.** Live-verified example: \"The Man of Feeling\" (Gutenberg #5083) is "
+        "actually the 1771 English original by Henry Mackenzie, mistagged as Spanish, with "
+        "its Spanish translator credited as a co-author. Rows flagged below have more than "
+        "one credited author -- the free, structural tell for this pattern -- and should be "
+        "verified first, not trusted at face value.",
+        "",
         "## By source language",
         "",
         "| Language | Untranslated books found |",
@@ -93,13 +109,13 @@ def write_summary(rows, books, path, top_n=100):
         "",
         f"## Top {len(top)} opportunities",
         "",
-        "| Rank | Book | Author | Source language | Sitelinks | Known languages |",
-        "|---|---|---|---|---|---|",
+        "| Rank | Book | Author | Source language | Sitelinks | Known languages | Flag |",
+        "|---|---|---|---|---|---|---|",
     ]
     for i, o in enumerate(top, 1):
         lines.append(
             f"| {i} | {o['title']} | {o['authors']} | {o['source_language']} | "
-            f"{o['sitelinks']} | {o['known_languages']} |"
+            f"{o['sitelinks']} | {o['known_languages']} | {o['flag']} |"
         )
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
