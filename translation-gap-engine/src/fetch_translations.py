@@ -37,13 +37,19 @@ REQUEST_DELAY = 1.0  # seconds between requests -- be a good citizen of a free p
 
 
 def query_languages(title, authors, retries=4):
-    author = authors[0] if authors else ""
+    # Omit the `author` param entirely when there isn't one -- sending
+    # `author=` (empty string) reliably 500s on Open Library's search API,
+    # confirmed live (e.g. "The Jungle Book", which Wikidata lists with no
+    # author). Absent-vs-empty matters to their backend even though both
+    # mean "no author filter" from our side.
     params = {
         "title": title,
-        "author": author,
         "fields": "title,author_name,language,edition_count,first_publish_year",
         "limit": 1,
     }
+    if authors:
+        params["author"] = authors[0]
+
     for attempt in range(retries):
         try:
             resp = requests.get(SEARCH_URL, params=params, headers=HEADERS, timeout=30)
@@ -66,6 +72,10 @@ def query_languages(title, authors, retries=4):
             }
         if resp.status_code == 429:
             time.sleep(5 * (attempt + 1))
+            continue
+        if resp.status_code >= 500:
+            print(f"    server error {resp.status_code}, retrying...", file=sys.stderr)
+            time.sleep(3 * (attempt + 1))
             continue
         resp.raise_for_status()
     return {"matched": False, "languages": [], "edition_count": 0, "error": "failed after retries"}
