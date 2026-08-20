@@ -51,13 +51,16 @@ jobs:
             echo "$code  $url"
           done
 
-      - name: Discover Wikidata's Project Gutenberg property ID
+      - name: Test the real top-1000 Wikidata query (small limit first)
         run: |
-          QUERY='SELECT ?prop ?propLabel WHERE { ?prop a wikibase:Property . ?prop rdfs:label ?label . FILTER(CONTAINS(LCASE(?label), "gutenberg")) FILTER(LANG(?label) = "en") SERVICE wikibase:label { bd:serviceParam wikibase:language "en". } }'
+          QUERY='SELECT ?work ?workLabel ?gutenbergId ?sitelinks (GROUP_CONCAT(DISTINCT ?authorLabel; separator="; ") AS ?authors) WHERE { ?work wdt:P2034 ?gutenbergId . ?work wdt:P407 wd:Q1860 . ?work wikibase:sitelinks ?sitelinks . OPTIONAL { ?work wdt:P50 ?author . ?author rdfs:label ?authorLabel . FILTER(LANG(?authorLabel)="en") } SERVICE wikibase:label { bd:serviceParam wikibase:language "en". } } GROUP BY ?work ?workLabel ?gutenbergId ?sitelinks ORDER BY DESC(?sitelinks) LIMIT 15'
           curl -s -G "https://query.wikidata.org/sparql" \
             -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" \
             --data-urlencode "query=$QUERY" \
-            -H "Accept: application/json" | python3 -m json.tool
+            -H "Accept: application/json" -o /tmp/wd_test.json
+          python3 -m json.tool /tmp/wd_test.json | head -100
+          echo "--- row count ---"
+          python3 -c "import json; print(len(json.load(open('/tmp/wd_test.json'))['results']['bindings']))"
 
       - name: Fetch top books
         run: |
