@@ -1,0 +1,59 @@
+name: Translation Gap Engine
+
+on:
+  workflow_dispatch:
+    inputs:
+      book_count:
+        description: "How many top English public-domain books to analyze"
+        required: false
+        default: "1000"
+  schedule:
+    - cron: "0 6 * * 1" # weekly, Monday 06:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  run-engine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    defaults:
+      run:
+        working-directory: translation-gap-engine
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch top books
+        run: |
+          python src/fetch_top_books.py \
+            --count "${{ github.event.inputs.book_count || '1000' }}" \
+            --out data/top_books.json
+
+      - name: Fetch translation coverage
+        run: |
+          python src/fetch_translations.py \
+            --in data/top_books.json \
+            --out data/translations.json
+
+      - name: Compute gaps
+        run: |
+          python src/compute_gaps.py \
+            --translations data/translations.json \
+            --languages data/languages.csv \
+            --out data/gaps.csv \
+            --summary data/gaps_summary.md
+
+      - name: Commit results
+        run: |
+          git config user.name "translation-gap-engine[bot]"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Update translation gap report"
+          git push
