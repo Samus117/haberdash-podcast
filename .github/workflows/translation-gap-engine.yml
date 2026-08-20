@@ -39,6 +39,18 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Network diagnostics
+        run: |
+          for url in \
+            "https://gutendex.com/books?languages=en&sort=popular" \
+            "https://www.gutenberg.org/" \
+            "https://www.gutenberg.org/ebooks/search/?sort_order=downloads" \
+            "https://openlibrary.org/search.json?q=test" \
+            "https://query.wikidata.org/sparql?query=SELECT%20%3Fx%20WHERE%20%7B%7D%20LIMIT%201&format=json"; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "$url")
+            echo "$code  $url"
+          done
+
       - name: Fetch top books
         run: |
           python src/fetch_top_books.py \
