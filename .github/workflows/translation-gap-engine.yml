@@ -7,6 +7,15 @@ on:
         description: "How many top English public-domain books to analyze"
         required: false
         default: "1000"
+      stage:
+        description: "How far to run the pipeline"
+        required: false
+        default: "full"
+        type: choice
+        options:
+          - books_only
+          - books_and_translations
+          - full
   schedule:
     - cron: "0 6 * * 1" # weekly, Monday 06:00 UTC
 
@@ -37,12 +46,14 @@ jobs:
             --out data/top_books.json
 
       - name: Fetch translation coverage
+        if: ${{ github.event.inputs.stage != 'books_only' }}
         run: |
           python src/fetch_translations.py \
             --in data/top_books.json \
             --out data/translations.json
 
       - name: Compute gaps
+        if: ${{ github.event.inputs.stage != 'books_only' && github.event.inputs.stage != 'books_and_translations' }}
         run: |
           python src/compute_gaps.py \
             --translations data/translations.json \
