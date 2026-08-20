@@ -1,0 +1,267 @@
+[
+  {
+    "gutenberg_id": 25332,
+    "wikidata_id": "Q613121",
+    "title": "The True Story of Ah Q",
+    "authors": [
+      "Lu Xun"
+    ],
+    "sitelinks": 23,
+    "source_language": "zh",
+    "matched": true,
+    "matched_title": "阿Q正傳 = The true story of \"Ah Q\"",
+    "matched_author": "Lu Xun",
+    "languages": [
+      "chi"
+    ],
+    "edition_count": 1,
+    "first_publish_year": null
+  },
+  {
+    "gutenberg_id": 23906,
+    "wikidata_id": "Q58765",
+    "title": "The Story of the Western Wing",
+    "authors": [
+      "Wang Shifu"
+    ],
+    "sitelinks": 20,
+    "source_language": "zh",
+    "matched": false,
+    "languages": [],
+    "edition_count": 0
+  },
+  {
+    "gutenberg_id": 25271,
+    "wikidata_id": "Q7228197",
+    "title": "Picking the morning flower in the evening",
+    "authors": [
+      "Lu Xun"
+    ],
+    "sitelinks": 3,
+    "source_language": "zh",
+    "matched": false,
+    "languages": [],
+    "edition_count": 0
+  },
+  {
+    "gutenberg_id": 25173,
+    "wikidata_id": "Q140809960",
+    "title": "Q140809960",
+    "authors": [
+      "Sun Guangxian"
+    ],
+    "sitelinks": 0,
+    "source_language": "zh",
+    "matched": false,
+    "languages": [],
+    "edition_count": 0
+  },
+  {
+    "gutenberg_id": 25162,
+    "wikidata_id": "Q140826729",
+    "title": "Q140826729",
+    "authors": [
+      "Wang Shizhen"
+    ],
+    "sitelinks": 0,
+    "source_language": "zh",
+    "matched": false,
+    "languages": [],
+    "edition_count": 0
+  },
+  {
+    "gutenberg_id": 1619,
+    "wikidata_id": "Q583705",
+    "title": "La Celestina",
+    "authors": [
+      "Fernando de Rojas"
+    ],
+    "sitelinks": 41,
+    "source_language": "es",
+    "matched": true,
+    "matched_title": "La Celestina",
+    "matched_author": "Fernando de Rojas",
+    "languages": [
+      "fre",
+      "eng",
+      "spa",
+      "ara"
+    ],
+    "edition_count": 94,
+    "first_publish_year": 1899
+  },
+  {
+    "gutenberg_id": 17440,
+    "wikidata_id": "Q452075",
+    "title": "Amadis de Gaula",
+    "authors": [
+      "Garci Rodríguez de Montalvo"
+    ],
+    "sitelinks": 29,
+    "source_language": "es",
+    "matched": true,
+    "matched_title": "Amadís de Gaula",
+    "matched_author": "Juan Manuel Cacho Blecua",
+    "languages": [
+      "spa"
+    ],
+    "edition_count": 8,
+    "first_publish_year": 1987
+  },
+  {
+    "gutenberg_id": 63404,
+    "wikidata_id": "Q2348040",
+    "title": "La Galatea",
+    "authors": [
+      "Miguel de Cervantes"
+    ],
+    "sitelinks": 26,
+    "source_language": "es",
+    "matched": true,
+    "matched_title": "La Galatea",
+    "matched_author": "Miguel de Cervantes Saavedra",
+    "languages": [
+      "spa",
+      "fre",
+      "eng",
+      "rus",
+      "ger"
+    ],
+    "edition_count": 57,
+    "first_publish_year": 1585
+  },
+  {
+    "gutenberg_id": 17013,
+    "wikidata_id": "Q3815979",
+    "title": "Fortunata and Jacinta",
+    "authors": [
+      "Benito Pérez Galdós"
+    ],
+    "sitelinks": 12,
+    "source_language": "es",
+    "matched": true,
+    "matched_title": "Fortunata y Jacinta / Fortunata and Jacinta",
+    "matched_author": "Benito Pérez Galdós",
+    "languages": [
+      "spa"
+    ],
+    "edition_count": 1,
+    "first_publish_year": 2019
+  },
+  {
+    "gutenberg_id": 17340,
+    "wikidata_id": "Q6762098",
+    "title": "Marianela",
+    "authors": [
+      "Benito Pérez Galdós"
+    ],
+    "sitelinks": 7,
+    "source_language": "es",
+    "matched": true,
+    "matched_title": "Marianela",
+    "matched_author": "Benito Pérez Galdós",
+    "languages": [
+      "eng",
+      "spa"
+    ],
+    "edition_count": 37,
+    "first_publish_year": 1883
+  },
+  {
+    "gutenberg_id": 57781,
+    "wikidata_id": "Q8343249",
+    "title": "Q8343249",
+    "authors": [
+      "Vicente Blasco Ibáñez"
+    ],
+    "sitelinks": 5,
+    "source_language": "es",
+    "matched": false,
+    "languages": [],
+    "edition_count": 0
+  },
+  {
+    "gutenberg_id": 5083,
+    "wikidata_id": "Q7750109",
+    "title": "The Man of Feeling",
+    "authors": [
+      "Javier Marías",
+      "Henry Mackenzie"
+    ],
+    "sitelinks": 4,
+    "source_language": "es",
+    "matched": true,
+    "matched_title": "Hombre Sentimental / the Man of Feeling",
+    "matched_author": "Javier Marías",
+    "languages": [
+      "spa"
+    ],
+    "edition_count": 1,
+    "first_publish_year": 2025
+  },
+  {
+    "gutenberg_id": 1215,
+    "wikidata_id": "Q3726614",
+    "title": "The elixir of life",
+    "authors": [
+      "Francisco Ibáñez Talavera"
+    ],
+    "sitelinks": 4,
+    "source_language": "es",
+    "matched": false,
+    "languages": [],
+    "edition_count": 0
+  },
+  {
+    "gutenberg_id": 62201,
+    "wikidata_id": "Q19456757",
+    "title": "Los ladrones de Londres",
+    "authors": [
+      "Charles Dickens"
+    ],
+    "sitelinks": 2,
+    "source_language": "es",
+    "matched": true,
+    "matched_title": "Los Ladrones de Londres...",
+    "matched_author": "Charles Dickens",
+    "languages": [
+      "spa"
+    ],
+    "edition_count": 1,
+    "first_publish_year": 2023
+  },
+  {
+    "gutenberg_id": 57982,
+    "wikidata_id": "Q5840025",
+    "title": "Invertebrate Spain",
+    "authors": [
+      "José Ortega y Gasset"
+    ],
+    "sitelinks": 2,
+    "source_language": "es",
+    "matched": true,
+    "matched_title": "Invertebrate Spain,",
+    "matched_author": "José Ortega y Gasset",
+    "languages": [],
+    "edition_count": 1,
+    "first_publish_year": 1937
+  },
+  {
+    "gutenberg_id": 512,
+    "wikidata_id": "Q595934",
+    "title": "Young Goodman Brown",
+    "authors": [
+      "Nathaniel Hawthorne"
+    ],
+    "sitelinks": 14,
+    "source_language": "ar",
+    "matched": true,
+    "matched_title": "Young Goodman Brown",
+    "matched_author": "Nathaniel Hawthorne",
+    "languages": [
+      "eng"
+    ],
+    "edition_count": 72,
+    "first_publish_year": 1993
+  }
+]
