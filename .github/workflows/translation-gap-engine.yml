@@ -51,6 +51,16 @@ jobs:
             echo "$code  $url"
           done
 
+      - name: Dump Gutenberg search page HTML for inspection
+        run: |
+          curl -s -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" \
+            "https://www.gutenberg.org/ebooks/search/?sort_order=downloads" \
+            -o /tmp/gutenberg_search.html
+          echo "--- first 400 lines ---"
+          head -n 400 /tmp/gutenberg_search.html
+          echo "--- grep for a likely result row marker ---"
+          grep -o '<li[^>]*booklink[^>]*>' /tmp/gutenberg_search.html | head -5 || true
+
       - name: Fetch top books
         run: |
           python src/fetch_top_books.py \
