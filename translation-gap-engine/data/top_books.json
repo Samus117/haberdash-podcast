@@ -7,7 +7,8 @@
       "Joseph Smith",
       "Mormon"
     ],
-    "sitelinks": 126
+    "sitelinks": 126,
+    "source_language": "en"
   },
   {
     "gutenberg_id": 1342,
@@ -16,16 +17,18 @@
     "authors": [
       "Jane Austen"
     ],
-    "sitelinks": 99
+    "sitelinks": 99,
+    "source_language": "en"
   },
   {
-    "gutenberg_id": 12623,
+    "gutenberg_id": 70841,
     "wikidata_id": "Q483034",
     "title": "Robinson Crusoe",
     "authors": [
       "Daniel Defoe"
     ],
-    "sitelinks": 98
+    "sitelinks": 98,
+    "source_language": "en"
   },
   {
     "gutenberg_id": 120,
@@ -34,7 +37,8 @@
     "authors": [
       "Robert Louis Stevenson"
     ],
-    "sitelinks": 85
+    "sitelinks": 85,
+    "source_language": "en"
   },
   {
     "gutenberg_id": 64317,
@@ -43,7 +47,8 @@
     "authors": [
       "F. Scott Fitzgerald"
     ],
-    "sitelinks": 84
+    "sitelinks": 84,
+    "source_language": "en"
   },
   {
     "gutenberg_id": 56586,
@@ -52,7 +57,8 @@
     "authors": [
       "Charles Dickens"
     ],
-    "sitelinks": 83
+    "sitelinks": 83,
+    "source_language": "en"
   },
   {
     "gutenberg_id": 4300,
@@ -61,7 +67,8 @@
     "authors": [
       "James Joyce"
     ],
-    "sitelinks": 83
+    "sitelinks": 83,
+    "source_language": "en"
   },
   {
     "gutenberg_id": 4078,
@@ -70,7 +77,8 @@
     "authors": [
       "Oscar Wilde"
     ],
-    "sitelinks": 82
+    "sitelinks": 82,
+    "source_language": "en"
   },
   {
     "gutenberg_id": 74,
@@ -79,7 +87,8 @@
     "authors": [
       "Mark Twain"
     ],
-    "sitelinks": 76
+    "sitelinks": 76,
+    "source_language": "en"
   },
   {
     "gutenberg_id": 46,
@@ -88,182 +97,7 @@
     "authors": [
       "Charles Dickens"
     ],
-    "sitelinks": 75
-  },
-  {
-    "gutenberg_id": 345,
-    "wikidata_id": "Q41542",
-    "title": "Dracula",
-    "authors": [
-      "Bram Stoker"
-    ],
-    "sitelinks": 75
-  },
-  {
-    "gutenberg_id": 1260,
-    "wikidata_id": "Q182961",
-    "title": "Q182961",
-    "authors": [
-      "Charlotte Brontë"
-    ],
-    "sitelinks": 70
-  },
-  {
-    "gutenberg_id": 1400,
-    "wikidata_id": "Q219552",
-    "title": "Great Expectations",
-    "authors": [
-      "Charles Dickens"
-    ],
-    "sitelinks": 69
-  },
-  {
-    "gutenberg_id": 236,
-    "wikidata_id": "Q189509",
-    "title": "The Jungle Book",
-    "authors": [],
-    "sitelinks": 69
-  },
-  {
-    "gutenberg_id": 2243,
-    "wikidata_id": "Q206400",
-    "title": "The Merchant of Venice",
-    "authors": [
-      "William Shakespeare"
-    ],
-    "sitelinks": 68
-  },
-  {
-    "gutenberg_id": 766,
-    "wikidata_id": "Q189811",
-    "title": "David Copperfield",
-    "authors": [
-      "Charles Dickens"
-    ],
-    "sitelinks": 68
-  },
-  {
-    "gutenberg_id": 98,
-    "wikidata_id": "Q308918",
-    "title": "A Tale of Two Cities",
-    "authors": [
-      "Charles Dickens"
-    ],
-    "sitelinks": 65
-  },
-  {
-    "gutenberg_id": 18857,
-    "wikidata_id": "Q219457",
-    "title": "A Journey to the Centre of the Earth",
-    "authors": [
-      "Jules Verne"
-    ],
-    "sitelinks": 64
-  },
-  {
-    "gutenberg_id": 3070,
-    "wikidata_id": "Q45192",
-    "title": "The Hound of the Baskervilles",
-    "authors": [
-      "Arthur Conan Doyle"
-    ],
-    "sitelinks": 63
-  },
-  {
-    "gutenberg_id": 2,
-    "wikidata_id": "Q862765",
-    "title": "United States Bill of Rights",
-    "authors": [],
-    "sitelinks": 63
-  },
-  {
-    "gutenberg_id": 244,
-    "wikidata_id": "Q223131",
-    "title": "A Study in Scarlet",
-    "authors": [
-      "Arthur Conan Doyle"
-    ],
-    "sitelinks": 61
-  },
-  {
-    "gutenberg_id": 12,
-    "wikidata_id": "Q220331",
-    "title": "Through the Looking-Glass",
-    "authors": [
-      "Lewis Carroll"
-    ],
-    "sitelinks": 61
-  },
-  {
-    "gutenberg_id": 43,
-    "wikidata_id": "Q217352",
-    "title": "Strange Case of Dr Jekyll and Mr Hyde",
-    "authors": [
-      "Robert Louis Stevenson"
-    ],
-    "sitelinks": 60
-  },
-  {
-    "gutenberg_id": 4280,
-    "wikidata_id": "Q220002",
-    "title": "Critique of Pure Reason",
-    "authors": [
-      "Immanuel Kant"
-    ],
-    "sitelinks": 59
-  },
-  {
-    "gutenberg_id": 3207,
-    "wikidata_id": "Q193034",
-    "title": "Leviathan",
-    "authors": [
-      "Thomas Hobbes"
-    ],
-    "sitelinks": 59
-  },
-  {
-    "gutenberg_id": 161,
-    "wikidata_id": "Q274744",
-    "title": "Sense and Sensibility",
-    "authors": [
-      "Jane Austen"
-    ],
-    "sitelinks": 56
-  },
-  {
-    "gutenberg_id": 215,
-    "wikidata_id": "Q476871",
-    "title": "The Call of the Wild",
-    "authors": [
-      "Jack London"
-    ],
-    "sitelinks": 53
-  },
-  {
-    "gutenberg_id": 1661,
-    "wikidata_id": "Q392147",
-    "title": "The Adventures of Sherlock Holmes",
-    "authors": [
-      "Arthur Conan Doyle"
-    ],
-    "sitelinks": 52
-  },
-  {
-    "gutenberg_id": 940,
-    "wikidata_id": "Q493574",
-    "title": "The Last of the Mohicans",
-    "authors": [
-      "James Fenimore Cooper"
-    ],
-    "sitelinks": 52
-  },
-  {
-    "gutenberg_id": 514,
-    "wikidata_id": "Q523076",
-    "title": "Little Women",
-    "authors": [
-      "Louisa May Alcott"
-    ],
-    "sitelinks": 52
+    "sitelinks": 75,
+    "source_language": "en"
   }
 ]
