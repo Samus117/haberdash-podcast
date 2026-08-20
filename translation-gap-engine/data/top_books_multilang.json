@@ -151,6 +151,688 @@
     "source_language": "es"
   },
   {
+    "gutenberg_id": 58865,
+    "wikidata_id": "Q20641759",
+    "title": "Q20641759",
+    "authors": [
+      "Wenceslao Fernández Flórez"
+    ],
+    "sitelinks": 2,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 57648,
+    "wikidata_id": "Q99337150",
+    "title": "Romancero selecto del Cid",
+    "authors": [],
+    "sitelinks": 2,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 47584,
+    "wikidata_id": "Q107566013",
+    "title": "Q107566013",
+    "authors": [
+      "José Rizal"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 14839,
+    "wikidata_id": "Q107576026",
+    "title": "Q107576026",
+    "authors": [
+      "José Rizal"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 61202,
+    "wikidata_id": "Q115476503",
+    "title": "Q115476503",
+    "authors": [
+      "Miguel de Cervantes"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 57654,
+    "wikidata_id": "Q32845498",
+    "title": "La Ilíada",
+    "authors": [
+      "Homer"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 58221,
+    "wikidata_id": "Q32845653",
+    "title": "La Odisea",
+    "authors": [
+      "Homer"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 25807,
+    "wikidata_id": "Q19484370",
+    "title": "Q19484370",
+    "authors": [
+      "Edgar Allan Poe"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 39209,
+    "wikidata_id": "Q99237826",
+    "title": "Q99237826",
+    "authors": [
+      "Juan Ramón Jiménez"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 52894,
+    "wikidata_id": "Q65010074",
+    "title": "Q65010074",
+    "authors": [
+      "Rubén Darío porno"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 55916,
+    "wikidata_id": "Q116418503",
+    "title": "Q116418503",
+    "authors": [
+      "Miguel de Unamuno"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 52262,
+    "wikidata_id": "Q97588411",
+    "title": "Q97588411",
+    "authors": [
+      "Washington Irving"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 21831,
+    "wikidata_id": "Q123528631",
+    "title": "Q123528631",
+    "authors": [
+      "Benito Pérez Galdós"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 67843,
+    "wikidata_id": "Q19434627",
+    "title": "Q19434627",
+    "authors": [
+      "Vicente Blasco Ibáñez"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 10822,
+    "wikidata_id": "Q19438351",
+    "title": "Q19438351",
+    "authors": [
+      "Vicente Blasco Ibáñez"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 57781,
+    "wikidata_id": "Q111132561",
+    "title": "Q111132561",
+    "authors": [
+      "Vicente Blasco Ibáñez"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 54791,
+    "wikidata_id": "Q132201038",
+    "title": "Q132201038",
+    "authors": [
+      "Emilia Pardo Bazán"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 58059,
+    "wikidata_id": "Q136140659",
+    "title": "Q136140659",
+    "authors": [
+      "Emilia Pardo Bazán"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 36546,
+    "wikidata_id": "Q108137154",
+    "title": "Q108137154",
+    "authors": [
+      "Emilio Salgari"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 29731,
+    "wikidata_id": "Q117379357",
+    "title": "Q117379357",
+    "authors": [
+      "Pedro Antonio de Alarcón"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 62361,
+    "wikidata_id": "Q119924722",
+    "title": "Q119924722",
+    "authors": [
+      "Leopoldo Alas"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 38885,
+    "wikidata_id": "Q19491387",
+    "title": "Q19491387",
+    "authors": [
+      "Justo José de Urquiza"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 53294,
+    "wikidata_id": "Q19486404",
+    "title": "Q19486404",
+    "authors": [
+      "José Zorrilla"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 29770,
+    "wikidata_id": "Q114600065",
+    "title": "Q114600065",
+    "authors": [
+      "Eugène Sue"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 60634,
+    "wikidata_id": "Q19433457",
+    "title": "Divertidas aventuras del nieto de Juan Moreira",
+    "authors": [
+      "Roberto Payró"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 66644,
+    "wikidata_id": "Q19450117",
+    "title": "Origin and ideals of the modern school",
+    "authors": [
+      "Francisco Ferrer"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 70058,
+    "wikidata_id": "Q104708229",
+    "title": "Q104708229",
+    "authors": [
+      "Marcelino Menéndez y Pelayo"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 64974,
+    "wikidata_id": "Q118077993",
+    "title": "Q118077993",
+    "authors": [
+      "José Ingenieros"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 23133,
+    "wikidata_id": "Q10313526",
+    "title": "Q10313526",
+    "authors": [
+      "José de Almada Negreiros"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 28542,
+    "wikidata_id": "Q48586688",
+    "title": "Q48586688",
+    "authors": [
+      "Thomas Falkner"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 63767,
+    "wikidata_id": "Q113682407",
+    "title": "Q113682407",
+    "authors": [
+      "Lucio V. Mansilla"
+    ],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 10,
+    "wikidata_id": "Q20155177",
+    "title": "King James Version - 1769",
+    "authors": [],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 47631,
+    "wikidata_id": "Q109564258",
+    "title": "One Thousand and One Nights",
+    "authors": [],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 65486,
+    "wikidata_id": "Q113133299",
+    "title": "Q113133299",
+    "authors": [],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 67819,
+    "wikidata_id": "Q124357022",
+    "title": "Q124357022",
+    "authors": [],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 49298,
+    "wikidata_id": "Q124895402",
+    "title": "Q124895402",
+    "authors": [],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 64775,
+    "wikidata_id": "Q125209029",
+    "title": "Q125209029",
+    "authors": [],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 48903,
+    "wikidata_id": "Q130216765",
+    "title": "Q130216765",
+    "authors": [],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 74041,
+    "wikidata_id": "Q130216798",
+    "title": "One Thousand and One Nights",
+    "authors": [],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 74065,
+    "wikidata_id": "Q130216833",
+    "title": "One Thousand and One Nights",
+    "authors": [],
+    "sitelinks": 1,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 60927,
+    "wikidata_id": "Q136231653",
+    "title": "Q136231653",
+    "authors": [
+      "Molière",
+      "Leandro Fernández de Moratín"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 16110,
+    "wikidata_id": "Q116225579",
+    "title": "Q116225579",
+    "authors": [
+      "Miguel de Cervantes"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 57955,
+    "wikidata_id": "Q136486105",
+    "title": "Q136486105",
+    "authors": [
+      "Miguel de Cervantes"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 61887,
+    "wikidata_id": "Q91617012",
+    "title": "Q91617012",
+    "authors": [
+      "Charles Dickens"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 13507,
+    "wikidata_id": "Q116421994",
+    "title": "Q116421994",
+    "authors": [
+      "Horacio Quiroga"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 36453,
+    "wikidata_id": "Q136298389",
+    "title": "Q136298389",
+    "authors": [
+      "Arthur Conan Doyle"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 62711,
+    "wikidata_id": "Q137969009",
+    "title": "Q137969009",
+    "authors": [
+      "Lucretius"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 67705,
+    "wikidata_id": "Q130606775",
+    "title": "Juan Martín el Empecinado",
+    "authors": [
+      "Benito Pérez Galdós"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 64668,
+    "wikidata_id": "Q26884238",
+    "title": "Q26884238",
+    "authors": [
+      "Leopoldo Lugones"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 56452,
+    "wikidata_id": "Q100600930",
+    "title": "Colección de Documentos Inéditos Relativos al Descubrimiento, Conquista y Organización de las Antiguas Posesiones Españolas de U",
+    "authors": [
+      "Leopoldo Lugones"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 45831,
+    "wikidata_id": "Q111630458",
+    "title": "Q111630458",
+    "authors": [
+      "Vicente Blasco Ibáñez"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 55812,
+    "wikidata_id": "Q81439615",
+    "title": "Q81439615",
+    "authors": [
+      "Emilia Pardo Bazán"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 58275,
+    "wikidata_id": "Q68086264",
+    "title": "Granada, Poema Oriental, Tomo II (Spanish)",
+    "authors": [
+      "José Zorrilla"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 50027,
+    "wikidata_id": "Q136436931",
+    "title": "Q136436931",
+    "authors": [
+      "Leandro Fernández de Moratín"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 71733,
+    "wikidata_id": "Q124816841",
+    "title": "Q124816841",
+    "authors": [
+      "Marcelino Menéndez y Pelayo"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 18157,
+    "wikidata_id": "Q126745630",
+    "title": "Q126745630",
+    "authors": [
+      "Juan de Garay"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 53421,
+    "wikidata_id": "Q124801693",
+    "title": "Q124801693",
+    "authors": [
+      "Joseph Zenzano",
+      "Juan José de Vértiz y Salcedo"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 54064,
+    "wikidata_id": "Q125255291",
+    "title": "Q125255291",
+    "authors": [
+      "Adán Quiroga"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 56301,
+    "wikidata_id": "Q50949337",
+    "title": "Hacia una moral sin dogmas",
+    "authors": [
+      "José Ingenieros"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 56486,
+    "wikidata_id": "Q68824234",
+    "title": "The War of Chupas",
+    "authors": [
+      "Pedro Cieza de León"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 61874,
+    "wikidata_id": "Q91309830",
+    "title": "Alma vasca",
+    "authors": [
+      "José María Salaverría"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 16105,
+    "wikidata_id": "Q97610420",
+    "title": "Q97610420",
+    "authors": [
+      "Pedro de Angelis"
+    ],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 58298,
+    "wikidata_id": "Q68085776",
+    "title": "La dama errante (Spanish)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 58261,
+    "wikidata_id": "Q68086298",
+    "title": "Vida de Cervantes (Spanish)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 56454,
+    "wikidata_id": "Q68824074",
+    "title": "Hamlet (Spanish)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 56519,
+    "wikidata_id": "Q68825173",
+    "title": "Viaje a los Estados Unidos, Tomo II (Spanish)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 58910,
+    "wikidata_id": "Q96245956",
+    "title": "Viaje a los Estados Unidos, Tomo III (Spanish)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 56051,
+    "wikidata_id": "Q97620983",
+    "title": "Q97620983",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 50351,
+    "wikidata_id": "Q124895430",
+    "title": "Q124895430",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 56283,
+    "wikidata_id": "Q124895458",
+    "title": "Q124895458",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 53131,
+    "wikidata_id": "Q124895484",
+    "title": "Q124895484",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
+    "gutenberg_id": 53171,
+    "wikidata_id": "Q124963406",
+    "title": "Q124963406",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "es"
+  },
+  {
     "gutenberg_id": 512,
     "wikidata_id": "Q595934",
     "title": "Young Goodman Brown",
@@ -159,5 +841,4924 @@
     ],
     "sitelinks": 14,
     "source_language": "ar"
+  },
+  {
+    "gutenberg_id": 7166,
+    "wikidata_id": "Q7740074",
+    "title": "Ghare-Bhaire",
+    "authors": [
+      "Rabindranath Tagore"
+    ],
+    "sitelinks": 8,
+    "source_language": "bn"
+  },
+  {
+    "gutenberg_id": 55752,
+    "wikidata_id": "Q1236531",
+    "title": "Dom Casmurro",
+    "authors": [
+      "Machado de Assis"
+    ],
+    "sitelinks": 16,
+    "source_language": "pt"
+  },
+  {
+    "gutenberg_id": 30411,
+    "wikidata_id": "Q716755",
+    "title": "English as She Is Spoke",
+    "authors": [
+      "Pedro Carolino"
+    ],
+    "sitelinks": 14,
+    "source_language": "pt"
+  },
+  {
+    "gutenberg_id": 55797,
+    "wikidata_id": "Q10328558",
+    "title": "Counselor Ayres' Memorial",
+    "authors": [
+      "Machado de Assis"
+    ],
+    "sitelinks": 2,
+    "source_language": "pt"
+  },
+  {
+    "gutenberg_id": 57001,
+    "wikidata_id": "Q10344401",
+    "title": "Q10344401",
+    "authors": [
+      "Machado de Assis"
+    ],
+    "sitelinks": 2,
+    "source_language": "pt"
+  },
+  {
+    "gutenberg_id": 28341,
+    "wikidata_id": "Q137668249",
+    "title": "Q137668249",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 1,
+    "source_language": "pt"
+  },
+  {
+    "gutenberg_id": 19641,
+    "wikidata_id": "Q19557625",
+    "title": "Q19557625",
+    "authors": [],
+    "sitelinks": 1,
+    "source_language": "pt"
+  },
+  {
+    "gutenberg_id": 135,
+    "wikidata_id": "Q180736",
+    "title": "Les Misérables",
+    "authors": [],
+    "sitelinks": 95,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 13951,
+    "wikidata_id": "Q140527",
+    "title": "The Three Musketeers",
+    "authors": [
+      "Alexandre Dumas"
+    ],
+    "sitelinks": 89,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 46541,
+    "wikidata_id": "Q1219561",
+    "title": "Around the World in Eighty Days",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 79,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 54873,
+    "wikidata_id": "Q183565",
+    "title": "Twenty Thousand Leagues Under the Sea",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 77,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 2610,
+    "wikidata_id": "Q191380",
+    "title": "The Hunchback of Notre Dame",
+    "authors": [],
+    "sitelinks": 76,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 14155,
+    "wikidata_id": "Q193417",
+    "title": "Madame Bovary",
+    "authors": [
+      "Gustave Flaubert"
+    ],
+    "sitelinks": 74,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 19200,
+    "wikidata_id": "Q26193",
+    "title": "The Protocols of the Elders of Zion",
+    "authors": [
+      "Matvei Golovinski"
+    ],
+    "sitelinks": 70,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 19942,
+    "wikidata_id": "Q215894",
+    "title": "Candide",
+    "authors": [
+      "Voltaire"
+    ],
+    "sitelinks": 65,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 18857,
+    "wikidata_id": "Q219457",
+    "title": "A Journey to the Centre of the Earth",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 64,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1237,
+    "wikidata_id": "Q240617",
+    "title": "Père Goriot",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 60,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 6099,
+    "wikidata_id": "Q216578",
+    "title": "Les Fleurs du mal",
+    "authors": [
+      "Charles Baudelaire"
+    ],
+    "sitelinks": 52,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 6318,
+    "wikidata_id": "Q389933",
+    "title": "The Miser",
+    "authors": [
+      "Molière"
+    ],
+    "sitelinks": 52,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 798,
+    "wikidata_id": "Q192649",
+    "title": "The Red and the Black",
+    "authors": [
+      "Stendhal"
+    ],
+    "sitelinks": 51,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 175,
+    "wikidata_id": "Q272506",
+    "title": "The Phantom of the Opera",
+    "authors": [
+      "Gaston Leroux"
+    ],
+    "sitelinks": 46,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1200,
+    "wikidata_id": "Q822290",
+    "title": "Gargantua and Pantagruel",
+    "authors": [
+      "François Rabelais"
+    ],
+    "sitelinks": 45,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 12901,
+    "wikidata_id": "Q53592",
+    "title": "From the Earth to the Moon",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 44,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 13846,
+    "wikidata_id": "Q731224",
+    "title": "Discourse on the Method",
+    "authors": [
+      "René Descartes"
+    ],
+    "sitelinks": 43,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 5427,
+    "wikidata_id": "Q913599",
+    "title": "Emile, or On Education",
+    "authors": [
+      "Jean-Jacques Rousseau"
+    ],
+    "sitelinks": 40,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 16820,
+    "wikidata_id": "Q384635",
+    "title": "The Diary of a Chambermaid",
+    "authors": [
+      "Octave Mirbeau"
+    ],
+    "sitelinks": 40,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 16457,
+    "wikidata_id": "Q1327411",
+    "title": "Around the Moon",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 37,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 52006,
+    "wikidata_id": "Q862050",
+    "title": "Les Liaisons dangereuses",
+    "authors": [
+      "Pierre Choderlos de Laclos"
+    ],
+    "sitelinks": 37,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1259,
+    "wikidata_id": "Q1639633",
+    "title": "Twenty Years After",
+    "authors": [
+      "Alexandre Dumas"
+    ],
+    "sitelinks": 35,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1290,
+    "wikidata_id": "Q117182",
+    "title": "Salammbô",
+    "authors": [
+      "Gustave Flaubert"
+    ],
+    "sitelinks": 34,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 796,
+    "wikidata_id": "Q1165714",
+    "title": "The Charterhouse of Parma",
+    "authors": [
+      "Stendhal"
+    ],
+    "sitelinks": 33,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 468,
+    "wikidata_id": "Q1141032",
+    "title": "Manon Lescaut",
+    "authors": [
+      "Antoine François Prévost"
+    ],
+    "sitelinks": 33,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1307,
+    "wikidata_id": "Q1142149",
+    "title": "La Peau de chagrin",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 32,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 2609,
+    "wikidata_id": "Q769001",
+    "title": "The Vicomte of Bragelonne: Ten Years Later",
+    "authors": [
+      "Alexandre Dumas"
+    ],
+    "sitelinks": 32,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 816,
+    "wikidata_id": "Q784882",
+    "title": "Democracy in America",
+    "authors": [
+      "Alexis de Tocqueville"
+    ],
+    "sitelinks": 32,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 4968,
+    "wikidata_id": "Q929899",
+    "title": "The Begum's Fortune",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 31,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 10339,
+    "wikidata_id": "Q1212137",
+    "title": "An Antarctic Mystery",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 31,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 11049,
+    "wikidata_id": "Q1373644",
+    "title": "Eugénie Grandet",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 30,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 13857,
+    "wikidata_id": "Q2020094",
+    "title": "La Reine Margot",
+    "authors": [
+      "Alexandre Dumas"
+    ],
+    "sitelinks": 30,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 7461,
+    "wikidata_id": "Q268545",
+    "title": "Thérèse Raquin",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 29,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 5250,
+    "wikidata_id": "Q1138346",
+    "title": "Nana",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 29,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 8558,
+    "wikidata_id": "Q1197590",
+    "title": "L'Assommoir",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 29,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 57775,
+    "wikidata_id": "Q692567",
+    "title": "The Torture Garden",
+    "authors": [
+      "Octave Mirbeau"
+    ],
+    "sitelinks": 29,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 2465,
+    "wikidata_id": "Q674832",
+    "title": "Carmen",
+    "authors": [
+      "Prosper Mérimée"
+    ],
+    "sitelinks": 29,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56668,
+    "wikidata_id": "Q301342",
+    "title": "A Season in Hell",
+    "authors": [
+      "Arthur Rimbaud"
+    ],
+    "sitelinks": 28,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 18269,
+    "wikidata_id": "Q17360856",
+    "title": "Pensées",
+    "authors": [
+      "Blaise Pascal"
+    ],
+    "sitelinks": 28,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 39441,
+    "wikidata_id": "Q1211539",
+    "title": "Monadology",
+    "authors": [
+      "Gottfried Wilhelm Leibniz"
+    ],
+    "sitelinks": 28,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 5082,
+    "wikidata_id": "Q768605",
+    "title": "The Castle From Carpathians",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 28,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 39976,
+    "wikidata_id": "Q945216",
+    "title": "Jacques the Fatalist",
+    "authors": [
+      "Denis Diderot"
+    ],
+    "sitelinks": 27,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 23428,
+    "wikidata_id": "Q3141640",
+    "title": "The Conquest of Bread",
+    "authors": [
+      "Peter Kropotkin"
+    ],
+    "sitelinks": 27,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 11136,
+    "wikidata_id": "Q135598",
+    "title": "Discourse on Inequality",
+    "authors": [
+      "Jean-Jacques Rousseau"
+    ],
+    "sitelinks": 27,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1355,
+    "wikidata_id": "Q143707",
+    "title": "The Child of the Cavern",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 27,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 13159,
+    "wikidata_id": "Q2092894",
+    "title": "Illusions perdues",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 26,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 17796,
+    "wikidata_id": "Q1169463",
+    "title": "The Fur Country",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 26,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 3091,
+    "wikidata_id": "Q1213684",
+    "title": "Eight Hundred Leagues on the Amazon",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 26,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 57895,
+    "wikidata_id": "Q1211109",
+    "title": "Toilers of the Sea",
+    "authors": [],
+    "sitelinks": 26,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 11556,
+    "wikidata_id": "Q221765",
+    "title": "Facing the Flag",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 25,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 965,
+    "wikidata_id": "Q1141764",
+    "title": "The Black Tulip",
+    "authors": [
+      "Alexandre Dumas"
+    ],
+    "sitelinks": 25,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 5781,
+    "wikidata_id": "Q1198839",
+    "title": "Le Grand Meaulnes",
+    "authors": [
+      "Alain-Fournier"
+    ],
+    "sitelinks": 25,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 6838,
+    "wikidata_id": "Q1199417",
+    "title": "The Last Day of a Condemned Man",
+    "authors": [],
+    "sitelinks": 25,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 8989,
+    "wikidata_id": "Q1192756",
+    "title": "The Survivors of the Chancellor",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 24,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 18972,
+    "wikidata_id": "Q140057",
+    "title": "Zadig or Destiny",
+    "authors": [
+      "Voltaire"
+    ],
+    "sitelinks": 23,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 467,
+    "wikidata_id": "Q1157010",
+    "title": "La Princesse de Clèves",
+    "authors": [
+      "Madame de Lafayette"
+    ],
+    "sitelinks": 23,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 8175,
+    "wikidata_id": "Q644271",
+    "title": "Kéraban the Inflexible",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 22,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 17660,
+    "wikidata_id": "Q1192245",
+    "title": "The Archipelago on Fire",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 22,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56149,
+    "wikidata_id": "Q763184",
+    "title": "À rebours",
+    "authors": [
+      "Joris-Karl Huysmans"
+    ],
+    "sitelinks": 22,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 5154,
+    "wikidata_id": "Q942810",
+    "title": "La Bête humaine",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 21,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 15203,
+    "wikidata_id": "Q1304875",
+    "title": "The Lottery Ticket",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 21,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 50316,
+    "wikidata_id": "Q2748292",
+    "title": "La Fontaine's Fables",
+    "authors": [
+      "Jean de La Fontaine"
+    ],
+    "sitelinks": 21,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 28827,
+    "wikidata_id": "Q1209658",
+    "title": "La Religieuse",
+    "authors": [
+      "Denis Diderot"
+    ],
+    "sitelinks": 20,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1954,
+    "wikidata_id": "Q1932742",
+    "title": "Colonel Chabert",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 20,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 12005,
+    "wikidata_id": "Q1213025",
+    "title": "Les Chants de Maldoror",
+    "authors": [
+      "Comte de Lautréamont"
+    ],
+    "sitelinks": 20,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 6470,
+    "wikidata_id": "Q338034",
+    "title": "Le Ventre de Paris",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 19,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 16852,
+    "wikidata_id": "Q1170032",
+    "title": "The Ladies' Paradise",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 19,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 67819,
+    "wikidata_id": "Q1219303",
+    "title": "Bug-Jargal",
+    "authors": [],
+    "sitelinks": 19,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 5135,
+    "wikidata_id": "Q2714636",
+    "title": "The Fortune of the Rougons",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 18,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1749,
+    "wikidata_id": "Q2712800",
+    "title": "Cousin Bette",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 18,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 8910,
+    "wikidata_id": "Q1111930",
+    "title": "The System of Nature",
+    "authors": [
+      "Baron d'Holbach"
+    ],
+    "sitelinks": 18,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 30442,
+    "wikidata_id": "Q180471",
+    "title": "Letters From My Windmill",
+    "authors": [
+      "Alphonse Daudet"
+    ],
+    "sitelinks": 18,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 30779,
+    "wikidata_id": "Q421615",
+    "title": "Les Aventures de Télémaque",
+    "authors": [
+      "François Fénelon"
+    ],
+    "sitelinks": 18,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 55135,
+    "wikidata_id": "Q1193400",
+    "title": "Foundling Mick",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 17,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 9639,
+    "wikidata_id": "Q2664833",
+    "title": "La Dame de Monsoreau",
+    "authors": [
+      "Alexandre Dumas"
+    ],
+    "sitelinks": 17,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 10859,
+    "wikidata_id": "Q2293012",
+    "title": "Paul et Virginie",
+    "authors": [
+      "Jacques-Henri Bernardin de Saint-Pierre"
+    ],
+    "sitelinks": 17,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1930,
+    "wikidata_id": "Q1213641",
+    "title": "Penguin Island",
+    "authors": [
+      "Anatole France"
+    ],
+    "sitelinks": 16,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 69751,
+    "wikidata_id": "Q3058688",
+    "title": "An Essay on the Inequality of the Human Races",
+    "authors": [
+      "Arthur de Gobineau"
+    ],
+    "sitelinks": 16,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 19362,
+    "wikidata_id": "Q684022",
+    "title": "In the Year 2889",
+    "authors": [
+      "Michel Verne"
+    ],
+    "sitelinks": 16,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1942,
+    "wikidata_id": "Q2700021",
+    "title": "César Birotteau",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 15,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1943,
+    "wikidata_id": "Q3048987",
+    "title": "Louis Lambert",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 15,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 57832,
+    "wikidata_id": "Q54548",
+    "title": "Vathek",
+    "authors": [
+      "William Beckford"
+    ],
+    "sitelinks": 15,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1680,
+    "wikidata_id": "Q377466",
+    "title": "La Maison du Chat-qui-pelote",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 15,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1862,
+    "wikidata_id": "Q1691889",
+    "title": "Tartarin of Tarascon",
+    "authors": [
+      "Alphonse Daudet"
+    ],
+    "sitelinks": 15,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 54672,
+    "wikidata_id": "Q1218663",
+    "title": "The Indiscreet Jewels",
+    "authors": [
+      "Denis Diderot"
+    ],
+    "sitelinks": 14,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 2123,
+    "wikidata_id": "Q3221974",
+    "title": "The Crime of Sylvestre Bonnard",
+    "authors": [
+      "Anatole France"
+    ],
+    "sitelinks": 14,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 40203,
+    "wikidata_id": "Q2864487",
+    "title": "Arsene Lupin vs. Herlock Sholmes",
+    "authors": [
+      "Maurice Leblanc"
+    ],
+    "sitelinks": 14,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 17831,
+    "wikidata_id": "Q2409203",
+    "title": "La Débâcle",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 13,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 13695,
+    "wikidata_id": "Q2409540",
+    "title": "Une Page d'amour",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 13,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 14200,
+    "wikidata_id": "Q2610567",
+    "title": "La Faute de l'Abbé Mouret",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 13,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 17516,
+    "wikidata_id": "Q607232",
+    "title": "L'Argent",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 13,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 8712,
+    "wikidata_id": "Q634152",
+    "title": "La Conquête de Plassans",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 13,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 17553,
+    "wikidata_id": "Q962265",
+    "title": "La Curée",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 13,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 17517,
+    "wikidata_id": "Q1446938",
+    "title": "L'Œuvre",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 13,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 63445,
+    "wikidata_id": "Q2534897",
+    "title": "Indiana",
+    "authors": [
+      "George Sand"
+    ],
+    "sitelinks": 13,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 360,
+    "wikidata_id": "Q2713465",
+    "title": "What Is Property?",
+    "authors": [
+      "Pierre-Joseph Proudhon"
+    ],
+    "sitelinks": 13,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1921,
+    "wikidata_id": "Q2631465",
+    "title": "Les Chouans",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 13,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1856,
+    "wikidata_id": "Q2699195",
+    "title": "Le Cousin Pons",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 13,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 4651,
+    "wikidata_id": "Q1985932",
+    "title": "The Huron; or, Pupil of Nature",
+    "authors": [
+      "Voltaire"
+    ],
+    "sitelinks": 13,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 445,
+    "wikidata_id": "Q3094058",
+    "title": "The Crowd: A Study of the Popular Mind",
+    "authors": [
+      "Gustave Le Bon"
+    ],
+    "sitelinks": 13,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 6994,
+    "wikidata_id": "Q2496854",
+    "title": "Han d'Islande",
+    "authors": [],
+    "sitelinks": 13,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56541,
+    "wikidata_id": "Q1212773",
+    "title": "La Joie de vivre",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 12,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 8563,
+    "wikidata_id": "Q1755607",
+    "title": "La Terre",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 12,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 22016,
+    "wikidata_id": "Q7714957",
+    "title": "The Autobiography of Benjamin Franklin",
+    "authors": [
+      "Benjamin Franklin"
+    ],
+    "sitelinks": 12,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1659,
+    "wikidata_id": "Q2718047",
+    "title": "The Girl with the Golden Eyes",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 12,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1957,
+    "wikidata_id": "Q2718331",
+    "title": "Béatrix",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 12,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 6739,
+    "wikidata_id": "Q27462",
+    "title": "Les Caves du Vatican",
+    "authors": [
+      "André Gide"
+    ],
+    "sitelinks": 12,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1235,
+    "wikidata_id": "Q5724235",
+    "title": "Captain Fracasse",
+    "authors": [
+      "Théophile Gautier"
+    ],
+    "sitelinks": 12,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 14156,
+    "wikidata_id": "Q3026751",
+    "title": "Dictionary of Received Ideas",
+    "authors": [
+      "Gustave Flaubert"
+    ],
+    "sitelinks": 12,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 10720,
+    "wikidata_id": "Q663632",
+    "title": "Doctor Pascal",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 11,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 8907,
+    "wikidata_id": "Q1165442",
+    "title": "Pot-Bouille",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 11,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56654,
+    "wikidata_id": "Q1754235",
+    "title": "Son Excellence Eugène Rougon",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 11,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1453,
+    "wikidata_id": "Q2532000",
+    "title": "The Quest of the Absolute",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 11,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1432,
+    "wikidata_id": "Q2543893",
+    "title": "Séraphîta",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 11,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1220,
+    "wikidata_id": "Q2081946",
+    "title": "The Atheist's Mass",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 11,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 54528,
+    "wikidata_id": "Q665830",
+    "title": "La 628-E8",
+    "authors": [
+      "Octave Mirbeau"
+    ],
+    "sitelinks": 11,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 44139,
+    "wikidata_id": "Q2470642",
+    "title": "Le Calvaire",
+    "authors": [
+      "Octave Mirbeau"
+    ],
+    "sitelinks": 11,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 18006,
+    "wikidata_id": "Q2334970",
+    "title": "Le Chevalier de Maison-Rouge",
+    "authors": [
+      "Alexandre Dumas"
+    ],
+    "sitelinks": 11,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 23,
+    "wikidata_id": "Q2904743",
+    "title": "Narrative of the Life of Frederick Douglass, an American Slave",
+    "authors": [
+      "Frederick Douglass",
+      "William Lloyd Garrison"
+    ],
+    "sitelinks": 11,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 52611,
+    "wikidata_id": "Q1994609",
+    "title": "The Devil in Love",
+    "authors": [
+      "Jacques Cazotte"
+    ],
+    "sitelinks": 11,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 17533,
+    "wikidata_id": "Q741570",
+    "title": "Le Rêve",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 10,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 2194,
+    "wikidata_id": "Q3300215",
+    "title": "Mauprat",
+    "authors": [
+      "George Sand"
+    ],
+    "sitelinks": 10,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 73425,
+    "wikidata_id": "Q2343322",
+    "title": "The Guermantes Way",
+    "authors": [
+      "Marcel Proust"
+    ],
+    "sitelinks": 10,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1898,
+    "wikidata_id": "Q2740921",
+    "title": "Albert Savarus",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 10,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1649,
+    "wikidata_id": "Q3069616",
+    "title": "Ferragus: Chief of the Devorants",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 10,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 469,
+    "wikidata_id": "Q3208395",
+    "title": "La Duchesse de Langeais",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 10,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 29021,
+    "wikidata_id": "Q3235605",
+    "title": "The Ridiculous Wishes",
+    "authors": [
+      "Charles Perrault"
+    ],
+    "sitelinks": 10,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 12065,
+    "wikidata_id": "Q2126429",
+    "title": "Three Tales",
+    "authors": [
+      "Gustave Flaubert"
+    ],
+    "sitelinks": 10,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 13861,
+    "wikidata_id": "Q1605244",
+    "title": "Adolphe",
+    "authors": [
+      "Benjamin Constant"
+    ],
+    "sitelinks": 10,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 27690,
+    "wikidata_id": "Q2277224",
+    "title": "Nobody's Girl",
+    "authors": [
+      "Hector Malot"
+    ],
+    "sitelinks": 10,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 14301,
+    "wikidata_id": "Q3202526",
+    "title": "Atlantida",
+    "authors": [],
+    "sitelinks": 10,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 11596,
+    "wikidata_id": "Q3210330",
+    "title": "La Maison Tellier",
+    "authors": [
+      "Guy de Maupassant"
+    ],
+    "sitelinks": 9,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1352,
+    "wikidata_id": "Q2718396",
+    "title": "La Vieille Fille",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 9,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1482,
+    "wikidata_id": "Q2719097",
+    "title": "Modeste Mignon",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 9,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1737,
+    "wikidata_id": "Q3064139",
+    "title": "Facino Cane",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 9,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1196,
+    "wikidata_id": "Q3206807",
+    "title": "La Bourse",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 9,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 3922,
+    "wikidata_id": "Q3224130",
+    "title": "The Red Lily",
+    "authors": [
+      "Anatole France"
+    ],
+    "sitelinks": 9,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 60810,
+    "wikidata_id": "Q3693562",
+    "title": "Corinne ou l'Italie",
+    "authors": [
+      "Germaine de Staël"
+    ],
+    "sitelinks": 9,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 14288,
+    "wikidata_id": "Q3275960",
+    "title": "Mademoiselle de Maupin",
+    "authors": [
+      "Théophile Gautier"
+    ],
+    "sitelinks": 9,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 13848,
+    "wikidata_id": "Q3232089",
+    "title": "Les Diaboliques",
+    "authors": [
+      "Jules Amédée Barbey d'Aurevilly"
+    ],
+    "sitelinks": 9,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1294,
+    "wikidata_id": "Q3210327",
+    "title": "The Firm of Nucingen",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 8,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1899,
+    "wikidata_id": "Q2718088",
+    "title": "Le Curé de village",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 8,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1841,
+    "wikidata_id": "Q3107447",
+    "title": "Z. Marcas",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 8,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1350,
+    "wikidata_id": "Q967862",
+    "title": "The Country Doctor",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 8,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 26806,
+    "wikidata_id": "Q3095005",
+    "title": "Gamiani",
+    "authors": [
+      "Alfred de Musset"
+    ],
+    "sitelinks": 8,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56646,
+    "wikidata_id": "Q3209669",
+    "title": "War of the Buttons",
+    "authors": [
+      "Louis Pergaud"
+    ],
+    "sitelinks": 8,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 6484,
+    "wikidata_id": "Q1612826",
+    "title": "Chéri",
+    "authors": [
+      "Colette"
+    ],
+    "sitelinks": 8,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 55167,
+    "wikidata_id": "Q3319936",
+    "title": "Q3319936",
+    "authors": [
+      "Guy de Maupassant"
+    ],
+    "sitelinks": 7,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1428,
+    "wikidata_id": "Q3209596",
+    "title": "La Grenadière",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 7,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1344,
+    "wikidata_id": "Q3235378",
+    "title": "Les Secrets de la princesse de Cadignan",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 7,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1230,
+    "wikidata_id": "Q3298903",
+    "title": "Pierre Grassou",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 7,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1454,
+    "wikidata_id": "Q3303246",
+    "title": "Maître Cornélius",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 7,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1555,
+    "wikidata_id": "Q3549692",
+    "title": "A Passion in the Desert",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 7,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1481,
+    "wikidata_id": "Q2564464",
+    "title": "Une fille d'Ève",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 7,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1427,
+    "wikidata_id": "Q2728424",
+    "title": "Un drame au bord de la mer",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 7,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1554,
+    "wikidata_id": "Q2824405",
+    "title": "Adieu",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 7,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1189,
+    "wikidata_id": "Q513017",
+    "title": "The Message",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 7,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 18271,
+    "wikidata_id": "Q3017080",
+    "title": "Georges",
+    "authors": [
+      "Alexandre Dumas"
+    ],
+    "sitelinks": 7,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 11645,
+    "wikidata_id": "Q1211706",
+    "title": "At the Sign of the Reine Pédauque",
+    "authors": [
+      "Anatole France"
+    ],
+    "sitelinks": 7,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56645,
+    "wikidata_id": "Q2316161",
+    "title": "The poet assassinated",
+    "authors": [
+      "Guillaume Apollinaire"
+    ],
+    "sitelinks": 7,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1423,
+    "wikidata_id": "Q7045074",
+    "title": "No Thoroughfare",
+    "authors": [
+      "Charles Dickens",
+      "Wilkie Collins"
+    ],
+    "sitelinks": 6,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 11199,
+    "wikidata_id": "Q2974973",
+    "title": "In the Moonlight",
+    "authors": [
+      "Guy de Maupassant"
+    ],
+    "sitelinks": 6,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 11714,
+    "wikidata_id": "Q2995560",
+    "title": "Contes de la bécasse",
+    "authors": [
+      "Guy de Maupassant"
+    ],
+    "sitelinks": 6,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 50311,
+    "wikidata_id": "Q3321615",
+    "title": "Mont-Oriol",
+    "authors": [
+      "Guy de Maupassant"
+    ],
+    "sitelinks": 6,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1704,
+    "wikidata_id": "Q24402",
+    "title": "Pierrette",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 6,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1729,
+    "wikidata_id": "Q3208668",
+    "title": "The Deserted Woman",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 6,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1426,
+    "wikidata_id": "Q3226750",
+    "title": "The Conscript",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 6,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1811,
+    "wikidata_id": "Q3297737",
+    "title": "Massimilla Doni",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 6,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1456,
+    "wikidata_id": "Q3549147",
+    "title": "An Episode Under the Terror",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 6,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1556,
+    "wikidata_id": "Q2742935",
+    "title": "Le Contrat de mariage",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 6,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1683,
+    "wikidata_id": "Q2742986",
+    "title": "Honorine",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 6,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1873,
+    "wikidata_id": "Q3094928",
+    "title": "Gambara",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 6,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 39738,
+    "wikidata_id": "Q612570",
+    "title": "Lelia",
+    "authors": [
+      "George Sand"
+    ],
+    "sitelinks": 6,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 13871,
+    "wikidata_id": "Q7757999",
+    "title": "The Practice of the Presence of God",
+    "authors": [
+      "Brother Lawrence"
+    ],
+    "sitelinks": 6,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 67930,
+    "wikidata_id": "Q3208942",
+    "title": "The Last of Chéri",
+    "authors": [
+      "Colette"
+    ],
+    "sitelinks": 6,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56852,
+    "wikidata_id": "Q185825",
+    "title": "Time and Free Will",
+    "authors": [
+      "Henri Bergson"
+    ],
+    "sitelinks": 6,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 25211,
+    "wikidata_id": "Q3843036",
+    "title": "Mafarka the Futurist",
+    "authors": [
+      "Filippo Tommaso Marinetti"
+    ],
+    "sitelinks": 5,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 11175,
+    "wikidata_id": "Q7901800",
+    "title": "Useless Beauty",
+    "authors": [
+      "Guy de Maupassant"
+    ],
+    "sitelinks": 5,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 11199,
+    "wikidata_id": "Q2385639",
+    "title": "Clair de lune",
+    "authors": [
+      "Guy de Maupassant"
+    ],
+    "sitelinks": 5,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1710,
+    "wikidata_id": "Q3209463",
+    "title": "La Grande Bretèche",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 5,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 70371,
+    "wikidata_id": "Q11812903",
+    "title": "Colas Breugnon",
+    "authors": [
+      "Romain Rolland"
+    ],
+    "sitelinks": 5,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 7416,
+    "wikidata_id": "Q3137468",
+    "title": "The Thirteen",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 5,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1410,
+    "wikidata_id": "Q633656",
+    "title": "L'Interdiction",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 5,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 58967,
+    "wikidata_id": "Q3225979",
+    "title": "The Procurator of Judea",
+    "authors": [
+      "Anatole France"
+    ],
+    "sitelinks": 5,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 46495,
+    "wikidata_id": "Q93673",
+    "title": "Memoirs of Judas",
+    "authors": [
+      "Ferdinando Petruccelli della Gattina"
+    ],
+    "sitelinks": 5,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 26820,
+    "wikidata_id": "Q3358443",
+    "title": "Ourika",
+    "authors": [
+      "Claire de Duras"
+    ],
+    "sitelinks": 5,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 28602,
+    "wikidata_id": "Q2943673",
+    "title": "This is not a story",
+    "authors": [
+      "Denis Diderot"
+    ],
+    "sitelinks": 4,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 802,
+    "wikidata_id": "Q3561344",
+    "title": "Vittoria Accoramboni, duchess of Bracciano",
+    "authors": [
+      "Stendhal"
+    ],
+    "sitelinks": 4,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 14330,
+    "wikidata_id": "Q3821327",
+    "title": "The Abbess of Castro",
+    "authors": [
+      "Stendhal"
+    ],
+    "sitelinks": 4,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 11199,
+    "wikidata_id": "Q2974972",
+    "title": "Q2974972",
+    "authors": [
+      "Guy de Maupassant"
+    ],
+    "sitelinks": 4,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 11450,
+    "wikidata_id": "Q3078117",
+    "title": "Like Death",
+    "authors": [
+      "Guy de Maupassant"
+    ],
+    "sitelinks": 4,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 30587,
+    "wikidata_id": "Q3208695",
+    "title": "Q3208695",
+    "authors": [
+      "Guy de Maupassant"
+    ],
+    "sitelinks": 4,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 53247,
+    "wikidata_id": "Q3225453",
+    "title": "Q3225453",
+    "authors": [
+      "Guy de Maupassant"
+    ],
+    "sitelinks": 4,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 53247,
+    "wikidata_id": "Q3235685",
+    "title": "Q3235685",
+    "authors": [
+      "Guy de Maupassant"
+    ],
+    "sitelinks": 4,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1277,
+    "wikidata_id": "Q3305214",
+    "title": "Melmoth",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 4,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1475,
+    "wikidata_id": "Q3099394",
+    "title": "Gaudissart II",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 4,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 69443,
+    "wikidata_id": "Q2744849",
+    "title": "Q2744849",
+    "authors": [
+      "François Mauriac"
+    ],
+    "sitelinks": 4,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 18211,
+    "wikidata_id": "Q3480554",
+    "title": "Servitude et grandeur militaires",
+    "authors": [
+      "Alfred de Vigny"
+    ],
+    "sitelinks": 4,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 58260,
+    "wikidata_id": "Q656736",
+    "title": "La Samaritaine",
+    "authors": [
+      "Edmond Rostand"
+    ],
+    "sitelinks": 4,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 26804,
+    "wikidata_id": "Q3202134",
+    "title": "Anti-Justine",
+    "authors": [
+      "Nicolas-Edme Rétif"
+    ],
+    "sitelinks": 4,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 8726,
+    "wikidata_id": "Q3940410",
+    "title": "Rome",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 3,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 12447,
+    "wikidata_id": "Q40157156",
+    "title": "Q40157156",
+    "authors": [
+      "George Sand"
+    ],
+    "sitelinks": 3,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 11495,
+    "wikidata_id": "Q3210302",
+    "title": "Q3210302",
+    "authors": [
+      "Guy de Maupassant"
+    ],
+    "sitelinks": 3,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 58881,
+    "wikidata_id": "Q19169639",
+    "title": "Philosophical Essay on Probabilities",
+    "authors": [
+      "Pierre-Simon Laplace"
+    ],
+    "sitelinks": 3,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 3976,
+    "wikidata_id": "Q5505748",
+    "title": "Fromont and Risler",
+    "authors": [
+      "Alphonse Daudet"
+    ],
+    "sitelinks": 3,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 26648,
+    "wikidata_id": "Q17108976",
+    "title": "Les lauriers sont coupés",
+    "authors": [
+      "Édouard Dujardin"
+    ],
+    "sitelinks": 3,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 55638,
+    "wikidata_id": "Q19516277",
+    "title": "The Cubist Painters, Aesthetic Meditations",
+    "authors": [
+      "Guillaume Apollinaire"
+    ],
+    "sitelinks": 3,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 60199,
+    "wikidata_id": "Q3220430",
+    "title": "Le Bestiaire ou Cortège d'Orphée",
+    "authors": [
+      "Guillaume Apollinaire"
+    ],
+    "sitelinks": 3,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 22662,
+    "wikidata_id": "Q3225607",
+    "title": "The Mummy's Foot",
+    "authors": [
+      "Théophile Gautier"
+    ],
+    "sitelinks": 3,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 15579,
+    "wikidata_id": "Q3201512",
+    "title": "The Widow Lerouge",
+    "authors": [
+      "Émile Gaboriau"
+    ],
+    "sitelinks": 3,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 10053,
+    "wikidata_id": "Q3821271",
+    "title": "The Vampire Countess",
+    "authors": [
+      "Paul Féval"
+    ],
+    "sitelinks": 3,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 10381,
+    "wikidata_id": "Q3136618",
+    "title": "The History of a Crime",
+    "authors": [],
+    "sitelinks": 3,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 55849,
+    "wikidata_id": "Q4009998",
+    "title": "Vérité",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 2,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 803,
+    "wikidata_id": "Q3822202",
+    "title": "Q3822202",
+    "authors": [
+      "Stendhal"
+    ],
+    "sitelinks": 2,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 63083,
+    "wikidata_id": "Q19196151",
+    "title": "The Marquis de Villemer",
+    "authors": [
+      "George Sand"
+    ],
+    "sitelinks": 2,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 51381,
+    "wikidata_id": "Q3548867",
+    "title": "Q3548867",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 2,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 57762,
+    "wikidata_id": "Q13100892",
+    "title": "Les Musardises",
+    "authors": [
+      "Edmond Rostand"
+    ],
+    "sitelinks": 2,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 5105,
+    "wikidata_id": "Q56323182",
+    "title": "Tartarin on the Alps",
+    "authors": [
+      "Alphonse Daudet"
+    ],
+    "sitelinks": 2,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 32808,
+    "wikidata_id": "Q14268897",
+    "title": "Q14268897",
+    "authors": [
+      "Étienne Pivert de Senancour"
+    ],
+    "sitelinks": 2,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 27878,
+    "wikidata_id": "Q21065374",
+    "title": "Mémoires de Monsieur d'Artagnan",
+    "authors": [
+      "Gatien de Courtilz de Sandras"
+    ],
+    "sitelinks": 2,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 15305,
+    "wikidata_id": "Q3204182",
+    "title": "The Influence of a Book",
+    "authors": [
+      "Phillipe-Ignace François Aubert de Gaspé"
+    ],
+    "sitelinks": 2,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 71047,
+    "wikidata_id": "Q23307575",
+    "title": "Lewis and Irene",
+    "authors": [
+      "Paul Morand"
+    ],
+    "sitelinks": 1,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 58698,
+    "wikidata_id": "Q68085860",
+    "title": "Les plaisirs et les jours (1896)",
+    "authors": [
+      "Marcel Proust"
+    ],
+    "sitelinks": 1,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56523,
+    "wikidata_id": "Q51051046",
+    "title": "Complete works of Guy de Maupassant, Conard edition",
+    "authors": [
+      "Guy de Maupassant"
+    ],
+    "sitelinks": 1,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 14163,
+    "wikidata_id": "Q59781621",
+    "title": "Les Enfants du capitaine Grant",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 1,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 63794,
+    "wikidata_id": "Q42192620",
+    "title": "The Man Who Married a Dumb Wife",
+    "authors": [
+      "Anatole France"
+    ],
+    "sitelinks": 1,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 1639,
+    "wikidata_id": "Q3577314",
+    "title": "Eve and David",
+    "authors": [
+      "Honoré de Balzac"
+    ],
+    "sitelinks": 1,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 14310,
+    "wikidata_id": "Q19195789",
+    "title": "Q19195789",
+    "authors": [
+      "Marceline Desbordes-Valmore"
+    ],
+    "sitelinks": 1,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 15907,
+    "wikidata_id": "Q19153634",
+    "title": "De la littérature des Nègres (1808)",
+    "authors": [
+      "Henri Grégoire"
+    ],
+    "sitelinks": 1,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 27855,
+    "wikidata_id": "Q3997032",
+    "title": "Q3997032",
+    "authors": [
+      "Delly"
+    ],
+    "sitelinks": 1,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 15593,
+    "wikidata_id": "Q6530121",
+    "title": "Les aventures de M. Colin-Tampon",
+    "authors": [
+      "Jules Girardin"
+    ],
+    "sitelinks": 1,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 30912,
+    "wikidata_id": "Q28111200",
+    "title": "Récits d'une tante",
+    "authors": [
+      "Adèle d'Osmond"
+    ],
+    "sitelinks": 1,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 17838,
+    "wikidata_id": "Q3818198",
+    "title": "Q3818198",
+    "authors": [
+      "Filippo Tommaso Marinetti"
+    ],
+    "sitelinks": 1,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56393,
+    "wikidata_id": "Q3301649",
+    "title": "Q3301649",
+    "authors": [
+      "Jean Aicard"
+    ],
+    "sitelinks": 1,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56808,
+    "wikidata_id": "Q87343534",
+    "title": "La vérité en marche",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 5711,
+    "wikidata_id": "Q140779644",
+    "title": "Q140779644",
+    "authors": [
+      "Émile Zola"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 58299,
+    "wikidata_id": "Q68085775",
+    "title": "Q68085775",
+    "authors": [
+      "George Sand"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 57567,
+    "wikidata_id": "Q129725328",
+    "title": "OEuvres complètes de Guy de Maupassant - volume 14 (French)",
+    "authors": [
+      "Guy de Maupassant"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 11589,
+    "wikidata_id": "Q126918536",
+    "title": "Q126918536",
+    "authors": [
+      "Jules Verne",
+      "Paul Verne"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 7442,
+    "wikidata_id": "Q140826783",
+    "title": "Q140826783",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 4548,
+    "wikidata_id": "Q140827875",
+    "title": "Q140827875",
+    "authors": [
+      "Jules Verne"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 39687,
+    "wikidata_id": "Q113340288",
+    "title": "Q113340288",
+    "authors": [
+      "Romain Rolland"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 26863,
+    "wikidata_id": "Q111382540",
+    "title": "Q111382540",
+    "authors": [
+      "Marie d'Agoult"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 62051,
+    "wikidata_id": "Q94096373",
+    "title": "Q94096373",
+    "authors": [
+      "Étienne de La Boétie",
+      "Jean-François Payen"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 68327,
+    "wikidata_id": "Q128107110",
+    "title": "Q128107110",
+    "authors": [
+      "Marceline Desbordes-Valmore"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 41114,
+    "wikidata_id": "Q42190897",
+    "title": "History of English Literature",
+    "authors": [
+      "Hippolyte Taine"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56440,
+    "wikidata_id": "Q85943807",
+    "title": "Physiological Researches upon Life and Death",
+    "authors": [
+      "Xavier Bichat"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 58251,
+    "wikidata_id": "Q68086328",
+    "title": "Fables de Florian (French)",
+    "authors": [
+      "Jean-Pierre Claris de Florian"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 73831,
+    "wikidata_id": "Q128120336",
+    "title": "Q128120336",
+    "authors": [
+      "Mathilde Alanic"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 40248,
+    "wikidata_id": "Q140807449",
+    "title": "Q140807449",
+    "authors": [
+      "Xavier de Maistre"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 73864,
+    "wikidata_id": "Q128116634",
+    "title": "Q128116634",
+    "authors": [
+      "Jeanne Leroy-Allais"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 61920,
+    "wikidata_id": "Q91971388",
+    "title": "Les amours du chevalier de Faublas Volume 1",
+    "authors": [
+      "Jean-Baptiste Louvet de Couvrai"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 61980,
+    "wikidata_id": "Q93348849",
+    "title": "Q93348849",
+    "authors": [
+      "Jean-Baptiste Louvet de Couvrai"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 62024,
+    "wikidata_id": "Q93864339",
+    "title": "Q93864339",
+    "authors": [
+      "Jean-Baptiste Louvet de Couvrai"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 57419,
+    "wikidata_id": "Q96245603",
+    "title": "Q96245603",
+    "authors": [
+      "Camille Mauclair"
+    ],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56517,
+    "wikidata_id": "Q68080926",
+    "title": "The Philosophy of Auguste Comte",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56474,
+    "wikidata_id": "Q68080976",
+    "title": "Lettres à une inconnue, Tome Deuxième (French)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56461,
+    "wikidata_id": "Q68080990",
+    "title": "La première canadienne du Nord-ouest (French)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 58532,
+    "wikidata_id": "Q68081823",
+    "title": "Q68081823",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 58317,
+    "wikidata_id": "Q68085721",
+    "title": "Q68085721",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 58309,
+    "wikidata_id": "Q68085741",
+    "title": "Q68085741",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 58290,
+    "wikidata_id": "Q68085806",
+    "title": "Q68085806",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 58510,
+    "wikidata_id": "Q68085863",
+    "title": "Madame Adam (French)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 58259,
+    "wikidata_id": "Q68086293",
+    "title": "Amis (French)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 58265,
+    "wikidata_id": "Q68086305",
+    "title": "Q68086305",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 58254,
+    "wikidata_id": "Q68086331",
+    "title": "Q68086331",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 58244,
+    "wikidata_id": "Q68086373",
+    "title": "La Comédie humaine - Volume X (French)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56545,
+    "wikidata_id": "Q68823908",
+    "title": "Q68823908",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56558,
+    "wikidata_id": "Q68823983",
+    "title": "Q68823983",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56473,
+    "wikidata_id": "Q68824130",
+    "title": "Q68824130",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56511,
+    "wikidata_id": "Q68824308",
+    "title": "Les nécessités de la vie et les conséquences des rêves (French)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56515,
+    "wikidata_id": "Q68825161",
+    "title": "Q68825161",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 56518,
+    "wikidata_id": "Q68825168",
+    "title": "Q68825168",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "fr"
+  },
+  {
+    "gutenberg_id": 2554,
+    "wikidata_id": "Q165318",
+    "title": "Crime and Punishment",
+    "authors": [
+      "Fyodor Dostoyevsky"
+    ],
+    "sitelinks": 108,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 28054,
+    "wikidata_id": "Q183157",
+    "title": "The Brothers Karamazov",
+    "authors": [
+      "Fyodor Dostoyevsky"
+    ],
+    "sitelinks": 89,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 2638,
+    "wikidata_id": "Q210784",
+    "title": "The Idiot",
+    "authors": [
+      "Fyodor Dostoyevsky"
+    ],
+    "sitelinks": 70,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 19200,
+    "wikidata_id": "Q26193",
+    "title": "The Protocols of the Elders of Zion",
+    "authors": [
+      "Matvei Golovinski"
+    ],
+    "sitelinks": 70,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 8117,
+    "wikidata_id": "Q329989",
+    "title": "Demons",
+    "authors": [
+      "Fyodor Dostoyevsky"
+    ],
+    "sitelinks": 53,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 600,
+    "wikidata_id": "Q695116",
+    "title": "Notes from Underground",
+    "authors": [
+      "Fyodor Dostoyevsky"
+    ],
+    "sitelinks": 50,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 2197,
+    "wikidata_id": "Q223688",
+    "title": "The Gambler",
+    "authors": [
+      "Fyodor Dostoyevsky"
+    ],
+    "sitelinks": 49,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 2302,
+    "wikidata_id": "Q117293",
+    "title": "Poor Folk",
+    "authors": [
+      "Fyodor Dostoyevsky"
+    ],
+    "sitelinks": 47,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 1938,
+    "wikidata_id": "Q146866",
+    "title": "Resurrection",
+    "authors": [
+      "Leo Tolstoy"
+    ],
+    "sitelinks": 44,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 37536,
+    "wikidata_id": "Q1161171",
+    "title": "The House of the Dead",
+    "authors": [
+      "Fyodor Dostoyevsky"
+    ],
+    "sitelinks": 42,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 1754,
+    "wikidata_id": "Q650063",
+    "title": "The Seagull",
+    "authors": [
+      "Anton Chekhov"
+    ],
+    "sitelinks": 42,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 913,
+    "wikidata_id": "Q1304649",
+    "title": "A Hero of Our Time",
+    "authors": [
+      "Mikhail Lermontov"
+    ],
+    "sitelinks": 36,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 689,
+    "wikidata_id": "Q1214091",
+    "title": "The Kreutzer Sonata",
+    "authors": [
+      "Leo Tolstoy"
+    ],
+    "sitelinks": 31,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 8578,
+    "wikidata_id": "Q1113102",
+    "title": "The Grand Inquisitor",
+    "authors": [
+      "Fyodor Dostoyevsky"
+    ],
+    "sitelinks": 26,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 9911,
+    "wikidata_id": "Q1189993",
+    "title": "First Love",
+    "authors": [
+      "Ivan Turgenev"
+    ],
+    "sitelinks": 26,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 6157,
+    "wikidata_id": "Q1269280",
+    "title": "How Much Land Does a Man Need?",
+    "authors": [
+      "Leo Tolstoy"
+    ],
+    "sitelinks": 24,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 6902,
+    "wikidata_id": "Q144547",
+    "title": "On the Eve",
+    "authors": [
+      "Ivan Turgenev"
+    ],
+    "sitelinks": 18,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 32526,
+    "wikidata_id": "Q3625043",
+    "title": "Asya",
+    "authors": [
+      "Ivan Turgenev"
+    ],
+    "sitelinks": 16,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 64908,
+    "wikidata_id": "Q4517325",
+    "title": "What Is Art?",
+    "authors": [
+      "Leo Tolstoy"
+    ],
+    "sitelinks": 15,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 26661,
+    "wikidata_id": "Q1214669",
+    "title": "The Power of Darkness",
+    "authors": [
+      "Leo Tolstoy"
+    ],
+    "sitelinks": 14,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 40813,
+    "wikidata_id": "Q5724762",
+    "title": "Smoke",
+    "authors": [
+      "Ivan Turgenev"
+    ],
+    "sitelinks": 14,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 986,
+    "wikidata_id": "Q1302957",
+    "title": "Master and Man",
+    "authors": [
+      "Leo Tolstoy"
+    ],
+    "sitelinks": 13,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 9911,
+    "wikidata_id": "Q1826666",
+    "title": "Torrents of Spring",
+    "authors": [
+      "Ivan Turgenev"
+    ],
+    "sitelinks": 13,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 2450,
+    "wikidata_id": "Q965704",
+    "title": "Boyhood",
+    "authors": [
+      "Leo Tolstoy"
+    ],
+    "sitelinks": 11,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 13416,
+    "wikidata_id": "Q394219",
+    "title": "The Darling",
+    "authors": [
+      "Anton Chekhov"
+    ],
+    "sitelinks": 10,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 9615,
+    "wikidata_id": "Q7730115",
+    "title": "The Diary of a Superfluous Man",
+    "authors": [
+      "Ivan Turgenev"
+    ],
+    "sitelinks": 10,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 52642,
+    "wikidata_id": "Q3548983",
+    "title": "King Lear of the Steppes",
+    "authors": [
+      "Ivan Turgenev"
+    ],
+    "sitelinks": 6,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 59981,
+    "wikidata_id": "Q7772632",
+    "title": "The Village",
+    "authors": [
+      "Ivan Bunin"
+    ],
+    "sitelinks": 6,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 38690,
+    "wikidata_id": "Q7991265",
+    "title": "What Is to Be Done?",
+    "authors": [
+      "Leo Tolstoy"
+    ],
+    "sitelinks": 4,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 681,
+    "wikidata_id": "Q19068247",
+    "title": "Creatures That Once Were Men",
+    "authors": [
+      "Maxim Gorky"
+    ],
+    "sitelinks": 4,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 9051,
+    "wikidata_id": "Q17088580",
+    "title": "Sanin",
+    "authors": [
+      "Mikhail Artsybashev"
+    ],
+    "sitelinks": 3,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 2638,
+    "wikidata_id": "Q24036344",
+    "title": "The Idiot",
+    "authors": [
+      "Fyodor Dostoyevsky"
+    ],
+    "sitelinks": 1,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 2288,
+    "wikidata_id": "Q13181913",
+    "title": "Through Russia",
+    "authors": [
+      "Maxim Gorky"
+    ],
+    "sitelinks": 0,
+    "source_language": "ru"
+  },
+  {
+    "gutenberg_id": 1982,
+    "wikidata_id": "Q1076912",
+    "title": "Rashōmon",
+    "authors": [
+      "Ryūnosuke Akutagawa"
+    ],
+    "sitelinks": 29,
+    "source_language": "ja"
+  },
+  {
+    "gutenberg_id": 8868,
+    "wikidata_id": "Q1190533",
+    "title": "Botchan",
+    "authors": [
+      "Natsume Sōseki"
+    ],
+    "sitelinks": 17,
+    "source_language": "ja"
+  },
+  {
+    "gutenberg_id": 34636,
+    "wikidata_id": "Q5530223",
+    "title": "Geisha in Rivalry",
+    "authors": [
+      "Kafū Nagai"
+    ],
+    "sitelinks": 2,
+    "source_language": "ja"
+  },
+  {
+    "gutenberg_id": 61,
+    "wikidata_id": "Q40591",
+    "title": "The Communist Manifesto",
+    "authors": [
+      "Karl Marx",
+      "Friedrich Engels"
+    ],
+    "sitelinks": 143,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 5200,
+    "wikidata_id": "Q184222",
+    "title": "The Metamorphosis",
+    "authors": [
+      "Franz Kafka"
+    ],
+    "sitelinks": 84,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 21000,
+    "wikidata_id": "Q29478",
+    "title": "Faust",
+    "authors": [
+      "Johann Wolfgang von Goethe"
+    ],
+    "sitelinks": 84,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 7849,
+    "wikidata_id": "Q36097",
+    "title": "The Trial",
+    "authors": [
+      "Franz Kafka"
+    ],
+    "sitelinks": 73,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 2527,
+    "wikidata_id": "Q151883",
+    "title": "The Sorrows of Young Werther",
+    "authors": [
+      "Johann Wolfgang von Goethe"
+    ],
+    "sitelinks": 64,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 4280,
+    "wikidata_id": "Q220002",
+    "title": "Critique of Pure Reason",
+    "authors": [
+      "Immanuel Kant"
+    ],
+    "sitelinks": 59,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 58344,
+    "wikidata_id": "Q457289",
+    "title": "Siddhartha",
+    "authors": [
+      "Hermann Hesse"
+    ],
+    "sitelinks": 59,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 12108,
+    "wikidata_id": "Q828296",
+    "title": "Death in Venice",
+    "authors": [
+      "Thomas Mann"
+    ],
+    "sitelinks": 45,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 40739,
+    "wikidata_id": "Q726382",
+    "title": "The Interpretation of Dreams",
+    "authors": [
+      "Sigmund Freud"
+    ],
+    "sitelinks": 44,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 7204,
+    "wikidata_id": "Q579794",
+    "title": "Beyond Good and Evil",
+    "authors": [
+      "Friedrich Nietzsche"
+    ],
+    "sitelinks": 43,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 7202,
+    "wikidata_id": "Q861527",
+    "title": "Ecce Homo",
+    "authors": [
+      "Friedrich Nietzsche"
+    ],
+    "sitelinks": 40,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 25282,
+    "wikidata_id": "Q1141090",
+    "title": "Der Judenstaat",
+    "authors": [
+      "Theodor Herzl"
+    ],
+    "sitelinks": 39,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 12116,
+    "wikidata_id": "Q27912",
+    "title": "Struwwelpeter",
+    "authors": [
+      "Heinrich Hoffmann"
+    ],
+    "sitelinks": 37,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 5683,
+    "wikidata_id": "Q870851",
+    "title": "Critique of Practical Reason",
+    "authors": [
+      "Immanuel Kant"
+    ],
+    "sitelinks": 32,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 5322,
+    "wikidata_id": "Q657215",
+    "title": "Woyzeck",
+    "authors": [],
+    "sitelinks": 29,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 38145,
+    "wikidata_id": "Q1364539",
+    "title": "Human, All Too Human",
+    "authors": [
+      "Friedrich Nietzsche"
+    ],
+    "sitelinks": 28,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 17161,
+    "wikidata_id": "Q316894",
+    "title": "Max and Moritz",
+    "authors": [
+      "Wilhelm Busch"
+    ],
+    "sitelinks": 28,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 36483,
+    "wikidata_id": "Q1194031",
+    "title": "Wilhelm Meister's Apprenticeship",
+    "authors": [
+      "Johann Wolfgang von Goethe"
+    ],
+    "sitelinks": 27,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 52521,
+    "wikidata_id": "Q641414",
+    "title": "Mary's Child",
+    "authors": [
+      "Brothers Grimm"
+    ],
+    "sitelinks": 26,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 31284,
+    "wikidata_id": "Q255423",
+    "title": "Josephine Mutzenbacher",
+    "authors": [
+      "Felix Salten"
+    ],
+    "sitelinks": 25,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 23313,
+    "wikidata_id": "Q692988",
+    "title": "Tonio Kröger",
+    "authors": [
+      "Thomas Mann"
+    ],
+    "sitelinks": 23,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 2403,
+    "wikidata_id": "Q951198",
+    "title": "Elective Affinities",
+    "authors": [
+      "Johann Wolfgang von Goethe"
+    ],
+    "sitelinks": 21,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 1722,
+    "wikidata_id": "Q1194041",
+    "title": "Luther's Large Catechism",
+    "authors": [
+      "Martin Luther"
+    ],
+    "sitelinks": 21,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 34580,
+    "wikidata_id": "Q1193108",
+    "title": "The Ego and Its Own",
+    "authors": [
+      "Max Stirner"
+    ],
+    "sitelinks": 21,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 2319,
+    "wikidata_id": "Q1229968",
+    "title": "West–Eastern Diwan",
+    "authors": [
+      "Johann Wolfgang von Goethe"
+    ],
+    "sitelinks": 20,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 2188,
+    "wikidata_id": "Q968544",
+    "title": "Die Aufzeichnungen des Malte Laurids Brigge",
+    "authors": [
+      "Rainer Maria Rilke"
+    ],
+    "sitelinks": 20,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 18752,
+    "wikidata_id": "Q664813",
+    "title": "Undine",
+    "authors": [
+      "Friedrich de la Motte Fouqué"
+    ],
+    "sitelinks": 20,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 9260,
+    "wikidata_id": "Q2112787",
+    "title": "Prometheus",
+    "authors": [
+      "Johann Wolfgang von Goethe"
+    ],
+    "sitelinks": 19,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 5323,
+    "wikidata_id": "Q1296168",
+    "title": "Effi Briest",
+    "authors": [
+      "Theodor Fontane"
+    ],
+    "sitelinks": 19,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 57850,
+    "wikidata_id": "Q675609",
+    "title": "Amok",
+    "authors": [
+      "Stefan Zweig"
+    ],
+    "sitelinks": 19,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 28220,
+    "wikidata_id": "Q466271",
+    "title": "Beyond the Pleasure Principle",
+    "authors": [
+      "Sigmund Freud"
+    ],
+    "sitelinks": 18,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 10705,
+    "wikidata_id": "Q1500229",
+    "title": "The History of Rome",
+    "authors": [
+      "Theodor Mommsen"
+    ],
+    "sitelinks": 18,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 2054,
+    "wikidata_id": "Q475063",
+    "title": "Iphigenia in Tauris",
+    "authors": [
+      "Johann Wolfgang von Goethe"
+    ],
+    "sitelinks": 17,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 67332,
+    "wikidata_id": "Q27592",
+    "title": "The Psychopathology of Everyday Life",
+    "authors": [
+      "Sigmund Freud"
+    ],
+    "sitelinks": 17,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 17622,
+    "wikidata_id": "Q577787",
+    "title": "Knulp",
+    "authors": [
+      "Hermann Hesse"
+    ],
+    "sitelinks": 17,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 34099,
+    "wikidata_id": "Q1660671",
+    "title": "Storm of Steel",
+    "authors": [
+      "Ernst Jünger"
+    ],
+    "sitelinks": 17,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 34717,
+    "wikidata_id": "Q1112285",
+    "title": "The Confusions of Young Törless",
+    "authors": [
+      "Robert Musil"
+    ],
+    "sitelinks": 17,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 20050,
+    "wikidata_id": "Q11827",
+    "title": "Hans in Luck",
+    "authors": [
+      "Brothers Grimm",
+      "Jacob Grimm",
+      "Wilhelm Grimm"
+    ],
+    "sitelinks": 16,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 2321,
+    "wikidata_id": "Q1369241",
+    "title": "Götz von Berlichingen",
+    "authors": [
+      "Johann Wolfgang von Goethe"
+    ],
+    "sitelinks": 16,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 7854,
+    "wikidata_id": "Q2456034",
+    "title": "Chymical Wedding of Christian Rosenkreutz",
+    "authors": [
+      "Johannes Valentinus Andreae"
+    ],
+    "sitelinks": 15,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 37005,
+    "wikidata_id": "Q600849",
+    "title": "The Devil's Elixirs",
+    "authors": [
+      "E. T. A. Hoffmann"
+    ],
+    "sitelinks": 15,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 5325,
+    "wikidata_id": "Q574133",
+    "title": "Roman Elegies",
+    "authors": [
+      "Johann Wolfgang von Goethe"
+    ],
+    "sitelinks": 14,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 56182,
+    "wikidata_id": "Q1215763",
+    "title": "Religion within the Bounds of Bare Reason",
+    "authors": [
+      "Immanuel Kant"
+    ],
+    "sitelinks": 14,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 61266,
+    "wikidata_id": "Q1515513",
+    "title": "Gertrud",
+    "authors": [
+      "Hermann Hesse"
+    ],
+    "sitelinks": 14,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 24766,
+    "wikidata_id": "Q1431871",
+    "title": "Psychopathia Sexualis",
+    "authors": [
+      "Richard von Krafft-Ebing"
+    ],
+    "sitelinks": 14,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 10425,
+    "wikidata_id": "Q1432001",
+    "title": "Torquato Tasso",
+    "authors": [
+      "Johann Wolfgang von Goethe"
+    ],
+    "sitelinks": 13,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 31873,
+    "wikidata_id": "Q58178849",
+    "title": "Heinrich von Ofterdingen",
+    "authors": [
+      "Novalis"
+    ],
+    "sitelinks": 13,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 1107134,
+    "wikidata_id": "Q569377",
+    "title": "From my Life : Poetry and Truth",
+    "authors": [
+      "Johann Wolfgang von Goethe"
+    ],
+    "sitelinks": 12,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 24249,
+    "wikidata_id": "Q323160",
+    "title": "Die Harzreise",
+    "authors": [
+      "Heinrich Heine"
+    ],
+    "sitelinks": 11,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 6790,
+    "wikidata_id": "Q1185535",
+    "title": "Demetrius",
+    "authors": [
+      "Friedrich Schiller"
+    ],
+    "sitelinks": 10,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 6781,
+    "wikidata_id": "Q1193812",
+    "title": "The Ghost-Seer",
+    "authors": [
+      "Friedrich Schiller"
+    ],
+    "sitelinks": 9,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 22030,
+    "wikidata_id": "Q777658",
+    "title": "Aus dem Leben eines Taugenichts",
+    "authors": [
+      "Joseph von Eichendorff"
+    ],
+    "sitelinks": 9,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 75907,
+    "wikidata_id": "Q379108",
+    "title": "The Death Ship",
+    "authors": [
+      "B. Traven"
+    ],
+    "sitelinks": 9,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 42338,
+    "wikidata_id": "Q442608",
+    "title": "Klingsor's Last Summer",
+    "authors": [
+      "Hermann Hesse"
+    ],
+    "sitelinks": 8,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 36172,
+    "wikidata_id": "Q1510146",
+    "title": "Geschwister Tanner",
+    "authors": [
+      "Robert Walser"
+    ],
+    "sitelinks": 8,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 2187,
+    "wikidata_id": "Q1431054",
+    "title": "Oberon",
+    "authors": [
+      "Christoph Martin Wieland"
+    ],
+    "sitelinks": 8,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 6646,
+    "wikidata_id": "Q316826",
+    "title": "Das Käthchen von Heilbronn",
+    "authors": [],
+    "sitelinks": 7,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 6648,
+    "wikidata_id": "Q451932",
+    "title": "Penthesilea",
+    "authors": [],
+    "sitelinks": 7,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 36275,
+    "wikidata_id": "Q13553989",
+    "title": "Gradiva",
+    "authors": [
+      "Wilhelm Jensen"
+    ],
+    "sitelinks": 6,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 8743,
+    "wikidata_id": "Q974886",
+    "title": "The Amber Witch",
+    "authors": [
+      "Wilhelm Meinhold"
+    ],
+    "sitelinks": 6,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 65903,
+    "wikidata_id": "Q3333474",
+    "title": "Symbols of Transformation",
+    "authors": [
+      "Carl Jung"
+    ],
+    "sitelinks": 5,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 7810,
+    "wikidata_id": "Q1723840",
+    "title": "Kannitverstan",
+    "authors": [
+      "Johann Peter Hebel"
+    ],
+    "sitelinks": 5,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 9160,
+    "wikidata_id": "Q1212262",
+    "title": "The education of the human race",
+    "authors": [
+      "Gotthold Ephraim Lessing"
+    ],
+    "sitelinks": 4,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 5526,
+    "wikidata_id": "Q1951309",
+    "title": "Q1951309",
+    "authors": [
+      "Eduard Mörike"
+    ],
+    "sitelinks": 4,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 6645,
+    "wikidata_id": "Q302229",
+    "title": "St. Cecilia, or the Power of Music",
+    "authors": [],
+    "sitelinks": 4,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 6645,
+    "wikidata_id": "Q21031099",
+    "title": "The duell",
+    "authors": [],
+    "sitelinks": 4,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 6726,
+    "wikidata_id": "Q1823410",
+    "title": "Lichtenstein",
+    "authors": [
+      "Wilhelm Hauff"
+    ],
+    "sitelinks": 3,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 59464,
+    "wikidata_id": "Q1218645",
+    "title": "The ugly duchess",
+    "authors": [
+      "Lion Feuchtwanger"
+    ],
+    "sitelinks": 3,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 5249,
+    "wikidata_id": "Q6296548",
+    "title": "Journeys of a German in England in 1782",
+    "authors": [
+      "Karl Philipp Moritz"
+    ],
+    "sitelinks": 3,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 1493,
+    "wikidata_id": "Q30641627",
+    "title": "Legends of the Jews",
+    "authors": [
+      "Louis Ginzberg"
+    ],
+    "sitelinks": 3,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 75795,
+    "wikidata_id": "Q9026284",
+    "title": "The Cotton-Pickers",
+    "authors": [
+      "B. Traven"
+    ],
+    "sitelinks": 3,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 6645,
+    "wikidata_id": "Q1217163",
+    "title": "Q1217163",
+    "authors": [],
+    "sitelinks": 3,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 2320,
+    "wikidata_id": "Q2002895",
+    "title": "Novelle",
+    "authors": [
+      "Johann Wolfgang von Goethe"
+    ],
+    "sitelinks": 2,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 64525,
+    "wikidata_id": "Q2258670",
+    "title": "Q2258670",
+    "authors": [
+      "Hermann Hesse"
+    ],
+    "sitelinks": 2,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 12053,
+    "wikidata_id": "Q2257036",
+    "title": "Q2257036",
+    "authors": [
+      "Thomas Mann"
+    ],
+    "sitelinks": 2,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 2190,
+    "wikidata_id": "Q35783041",
+    "title": "Q35783041",
+    "authors": [
+      "Ludwig Achim von Arnim"
+    ],
+    "sitelinks": 2,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 62389,
+    "wikidata_id": "Q106368323",
+    "title": "Holbein der jüngere",
+    "authors": [
+      "Hermann Knackfuß"
+    ],
+    "sitelinks": 1,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 24782,
+    "wikidata_id": "Q17539079",
+    "title": "Q17539079",
+    "authors": [
+      "Ludwig Bechstein"
+    ],
+    "sitelinks": 1,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 49059,
+    "wikidata_id": "Q1197996",
+    "title": "The She-Devil",
+    "authors": [
+      "Karl Schönherr"
+    ],
+    "sitelinks": 1,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 32014,
+    "wikidata_id": "Q3793313",
+    "title": "Q3793313",
+    "authors": [
+      "Gustav Meyrink"
+    ],
+    "sitelinks": 1,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 9495,
+    "wikidata_id": "Q3879142",
+    "title": "Q3879142",
+    "authors": [
+      "Conrad Ferdinand Meyer"
+    ],
+    "sitelinks": 1,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 58543,
+    "wikidata_id": "Q68081807",
+    "title": "Velazquez",
+    "authors": [
+      "Hermann Knackfuß"
+    ],
+    "sitelinks": 1,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 56475,
+    "wikidata_id": "Q68824140",
+    "title": "Sämmtliche Werke 8: Briefwechsel II, Hans Küchelgarten (German)",
+    "authors": [],
+    "sitelinks": 1,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 2402,
+    "wikidata_id": "Q114723254",
+    "title": "Q114723254",
+    "authors": [
+      "Johann Wolfgang von Goethe"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 2146,
+    "wikidata_id": "Q140785163",
+    "title": "Q140785163",
+    "authors": [
+      "Johann Wolfgang von Goethe"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 2312,
+    "wikidata_id": "Q140807164",
+    "title": "Q140807164",
+    "authors": [
+      "Johann Wolfgang von Goethe"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 58238,
+    "wikidata_id": "Q68086355",
+    "title": "Collected Works: Crime and Punishment",
+    "authors": [
+      "Fyodor Dostoyevsky"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 44957,
+    "wikidata_id": "Q109923052",
+    "title": "Anna Karenina",
+    "authors": [
+      "Leo Tolstoy"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 7206,
+    "wikidata_id": "Q140808741",
+    "title": "Q140808741",
+    "authors": [
+      "Friedrich Nietzsche"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 47804,
+    "wikidata_id": "Q140771470",
+    "title": "Q140771470",
+    "authors": [
+      "Friedrich Schiller"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 45009,
+    "wikidata_id": "Q101228999",
+    "title": "Gabriel Schilling's Flight",
+    "authors": [
+      "Gerhart Hauptmann"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 52012,
+    "wikidata_id": "Q105517304",
+    "title": "Shakespeare",
+    "authors": [
+      "Gustav Landauer"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 15505,
+    "wikidata_id": "Q84606039",
+    "title": "Q84606039",
+    "authors": [
+      "Justus Möser"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 61928,
+    "wikidata_id": "Q91972165",
+    "title": "Q91972165",
+    "authors": [
+      "Wilhelm Bölsche"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 40218,
+    "wikidata_id": "Q136795666",
+    "title": "Q136795666",
+    "authors": [
+      "Emmy Hennings"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 49248,
+    "wikidata_id": "Q116922930",
+    "title": "Balboa",
+    "authors": [
+      "Heinrich Joseph von Collin"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 56156,
+    "wikidata_id": "Q140772079",
+    "title": "Q140772079",
+    "authors": [
+      "Leopold von Sacher-Masoch"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 61873,
+    "wikidata_id": "Q91221493",
+    "title": "Q91221493",
+    "authors": [
+      "Otto Ule"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 47941,
+    "wikidata_id": "Q114894032",
+    "title": "The Labyrinth",
+    "authors": [
+      "Ina Seidel"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 31538,
+    "wikidata_id": "Q140809967",
+    "title": "Q140809967",
+    "authors": [
+      "Adelbert von Chamisso"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 54469,
+    "wikidata_id": "Q136801470",
+    "title": "Q136801470",
+    "authors": [
+      "Anna Schieber"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 67701,
+    "wikidata_id": "Q136801473",
+    "title": "Q136801473",
+    "authors": [
+      "Anna Schieber"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 69575,
+    "wikidata_id": "Q136801479",
+    "title": "Q136801479",
+    "authors": [
+      "Anna Schieber"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 34424,
+    "wikidata_id": "Q136801476",
+    "title": "Q136801476",
+    "authors": [
+      "Anna Schieber"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 48902,
+    "wikidata_id": "Q139819886",
+    "title": "Sidsel Langröckchen",
+    "authors": [
+      "Hans Aanrud"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 66501,
+    "wikidata_id": "Q140761941",
+    "title": "Q140761941",
+    "authors": [
+      "Arthur Holitscher"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 58949,
+    "wikidata_id": "Q136466774",
+    "title": "Q136466774",
+    "authors": [
+      "Louis August Wollenweber"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 61479,
+    "wikidata_id": "Q136801461",
+    "title": "Q136801461",
+    "authors": [
+      "Felicitas Rose"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 67409,
+    "wikidata_id": "Q136801467",
+    "title": "Q136801467",
+    "authors": [
+      "Felicitas Rose"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 67192,
+    "wikidata_id": "Q136801464",
+    "title": "Q136801464",
+    "authors": [
+      "Felicitas Rose"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 54305,
+    "wikidata_id": "Q136801482",
+    "title": "Q136801482",
+    "authors": [
+      "Hermine Villinger"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 34811,
+    "wikidata_id": "Q42149458",
+    "title": "Buddenbrooks (1909 Deutsche Buchgemeinschaft ed.)",
+    "authors": [
+      "Thomas Mann"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 68228,
+    "wikidata_id": "Q49803769",
+    "title": "Preacher of Death",
+    "authors": [
+      "Gustav Landauer"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 59187,
+    "wikidata_id": "Q68081427",
+    "title": "Q68081427",
+    "authors": [
+      "Albrecht Schaeffer"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 57952,
+    "wikidata_id": "Q51509052",
+    "title": "Die naturwissenschaften in ihrer entwicklung und in ihrem zusammenhange",
+    "authors": [
+      "Friedrich Dannemann"
+    ],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 45644,
+    "wikidata_id": "Q64452611",
+    "title": "Guirlanden um Die Urnen der Zukunft",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 59161,
+    "wikidata_id": "Q68081162",
+    "title": "Eiszeit und Klimawechsel (German)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 59229,
+    "wikidata_id": "Q68081315",
+    "title": "Henriette, oder die schöne Sängerin (German)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 59222,
+    "wikidata_id": "Q68081331",
+    "title": "Schwedenklees Erlebnis (German)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 59219,
+    "wikidata_id": "Q68081340",
+    "title": "Q68081340",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 59218,
+    "wikidata_id": "Q68081346",
+    "title": "Q68081346",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 59186,
+    "wikidata_id": "Q68081423",
+    "title": "Wie wir einst so glücklich waren! (German)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 59185,
+    "wikidata_id": "Q68081431",
+    "title": "Die Hohkönigsburg (German)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 59088,
+    "wikidata_id": "Q68081463",
+    "title": "Elf Jahre Gouverneur in Deutsch-Südwestafrika (German)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 59081,
+    "wikidata_id": "Q68081488",
+    "title": "Geschichte der Belagerung, Eroberung und Zerstörung Magdeburg's (German)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 59059,
+    "wikidata_id": "Q68081521",
+    "title": "Q68081521",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 59046,
+    "wikidata_id": "Q68081553",
+    "title": "Erzgebirgische Christ- und Mettenspiele (German)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 58989,
+    "wikidata_id": "Q68081590",
+    "title": "Q68081590",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 58957,
+    "wikidata_id": "Q68081691",
+    "title": "Karlsschüler und Dichter (German)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 58399,
+    "wikidata_id": "Q68082614",
+    "title": "Die Welt der Planeten (German)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 58640,
+    "wikidata_id": "Q68082657",
+    "title": "Reise ins heilige Land (German)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 58641,
+    "wikidata_id": "Q68082660",
+    "title": "Wenn Landsleute sich begegnen (German)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 58306,
+    "wikidata_id": "Q68085758",
+    "title": "Novellenbuch 1. Band (German)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 58300,
+    "wikidata_id": "Q68085772",
+    "title": "Das erste Schuljahr (German)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 58506,
+    "wikidata_id": "Q68085856",
+    "title": "Was mir das Sternenlicht erzählt (German)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 56546,
+    "wikidata_id": "Q68823911",
+    "title": "Nietzsche (German)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 56483,
+    "wikidata_id": "Q68824231",
+    "title": "Der tolle Koffer",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 56499,
+    "wikidata_id": "Q68824273",
+    "title": "Der Spiegel (German)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 56512,
+    "wikidata_id": "Q68824315",
+    "title": "Schiff vor Anker (German)",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 56520,
+    "wikidata_id": "Q68825180",
+    "title": "Der Weihnachtsabend",
+    "authors": [],
+    "sitelinks": 0,
+    "source_language": "de"
+  },
+  {
+    "gutenberg_id": 57303,
+    "wikidata_id": "Q40185",
+    "title": "The Divine Comedy",
+    "authors": [
+      "Dante Alighieri"
+    ],
+    "sitelinks": 129,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 57037,
+    "wikidata_id": "Q131719",
+    "title": "The Prince",
+    "authors": [
+      "Niccolò Machiavelli"
+    ],
+    "sitelinks": 100,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 3747,
+    "wikidata_id": "Q48922",
+    "title": "Orlando Furioso",
+    "authors": [
+      "Ludovico Ariosto"
+    ],
+    "sitelinks": 44,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 45334,
+    "wikidata_id": "Q28491",
+    "title": "The Betrothed",
+    "authors": [
+      "Alessandro Manzoni"
+    ],
+    "sitelinks": 38,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 18457,
+    "wikidata_id": "Q641651",
+    "title": "Six Characters in Search of an Author",
+    "authors": [
+      "Luigi Pirandello"
+    ],
+    "sitelinks": 33,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 2816,
+    "wikidata_id": "Q913656",
+    "title": "The City of the Sun",
+    "authors": [
+      "Tommaso Campanella"
+    ],
+    "sitelinks": 33,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 28961,
+    "wikidata_id": "Q11336",
+    "title": "Heart",
+    "authors": [
+      "Edmondo de Amicis"
+    ],
+    "sitelinks": 32,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 28144,
+    "wikidata_id": "Q1983009",
+    "title": "Futurist Manifesto",
+    "authors": [
+      "Filippo Tommaso Marinetti"
+    ],
+    "sitelinks": 28,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 57787,
+    "wikidata_id": "Q2465530",
+    "title": "Orlando Innamorato",
+    "authors": [
+      "Matteo Maria Boiardo"
+    ],
+    "sitelinks": 13,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 55236,
+    "wikidata_id": "Q3655711",
+    "title": "Canti",
+    "authors": [
+      "Giacomo Leopardi"
+    ],
+    "sitelinks": 12,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 59047,
+    "wikidata_id": "Q1962786",
+    "title": "La scienza in cucina e l'arte di mangiar bene",
+    "authors": [
+      "Pellegrino Artusi"
+    ],
+    "sitelinks": 7,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 20015,
+    "wikidata_id": "Q3795119",
+    "title": "Il Piacere",
+    "authors": [
+      "Gabriele D'Annunzio"
+    ],
+    "sitelinks": 5,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 8455,
+    "wikidata_id": "Q3792929",
+    "title": "The Saint",
+    "authors": [
+      "Antonio Fogazzaro"
+    ],
+    "sitelinks": 5,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 67313,
+    "wikidata_id": "Q3829175",
+    "title": "The Maidens of the Rocks",
+    "authors": [
+      "Gabriele D'Annunzio"
+    ],
+    "sitelinks": 4,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 25180,
+    "wikidata_id": "Q3822291",
+    "title": "Q3822291",
+    "authors": [
+      "Emilio Salgari"
+    ],
+    "sitelinks": 4,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 31080,
+    "wikidata_id": "Q3963990",
+    "title": "Sophonisba",
+    "authors": [
+      "Vittorio Alfieri"
+    ],
+    "sitelinks": 4,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 44797,
+    "wikidata_id": "Q19129908",
+    "title": "Ettore Fieramosca",
+    "authors": [
+      "Massimo d'Azeglio"
+    ],
+    "sitelinks": 3,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 43226,
+    "wikidata_id": "Q4690699",
+    "title": "After the divorce",
+    "authors": [
+      "Grazia Deledda"
+    ],
+    "sitelinks": 2,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 61209,
+    "wikidata_id": "Q3790431",
+    "title": "I Robinson italiani",
+    "authors": [
+      "Emilio Salgari"
+    ],
+    "sitelinks": 2,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 48850,
+    "wikidata_id": "Q3792623",
+    "title": "Man of Smoke",
+    "authors": [
+      "Aldo Palazzeschi"
+    ],
+    "sitelinks": 2,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 7151,
+    "wikidata_id": "Q3794286",
+    "title": "Q3794286",
+    "authors": [
+      "Giuseppe Garibaldi"
+    ],
+    "sitelinks": 1,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 53184,
+    "wikidata_id": "Q3828889",
+    "title": "Le novelle della Pescara",
+    "authors": [
+      "Gabriele D'Annunzio"
+    ],
+    "sitelinks": 1,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 58648,
+    "wikidata_id": "Q20009664",
+    "title": "Elegie romane",
+    "authors": [
+      "Gabriele D'Annunzio"
+    ],
+    "sitelinks": 1,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 37979,
+    "wikidata_id": "Q3818374",
+    "title": "Q3818374",
+    "authors": [
+      "Giovanni Verga"
+    ],
+    "sitelinks": 1,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 67143,
+    "wikidata_id": "Q63677351",
+    "title": "Q63677351",
+    "authors": [
+      "Matilde Serao"
+    ],
+    "sitelinks": 1,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 41342,
+    "wikidata_id": "Q19138128",
+    "title": "Q19138128",
+    "authors": [
+      "Alfredo Panzini"
+    ],
+    "sitelinks": 1,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 42347,
+    "wikidata_id": "Q63648026",
+    "title": "Q63648026",
+    "authors": [
+      "Alfredo Panzini"
+    ],
+    "sitelinks": 1,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 42335,
+    "wikidata_id": "Q63648029",
+    "title": "Q63648029",
+    "authors": [
+      "Alfredo Panzini"
+    ],
+    "sitelinks": 1,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 19024,
+    "wikidata_id": "Q3821404",
+    "title": "Q3821404",
+    "authors": [
+      "Francesco Domenico Guerrazzi"
+    ],
+    "sitelinks": 1,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 46874,
+    "wikidata_id": "Q16580958",
+    "title": "Q16580958",
+    "authors": [
+      "Annie Vivanti"
+    ],
+    "sitelinks": 1,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 8516,
+    "wikidata_id": "Q95690820",
+    "title": "Lourdes",
+    "authors": [
+      "Rosa Matteucci"
+    ],
+    "sitelinks": 1,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 48400,
+    "wikidata_id": "Q102331826",
+    "title": "Q102331826",
+    "authors": [
+      "Federico de Roberto"
+    ],
+    "sitelinks": 1,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 34519,
+    "wikidata_id": "Q3851655",
+    "title": "Mastr'Impicca",
+    "authors": [
+      "Vittorio Imbriani"
+    ],
+    "sitelinks": 1,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 41446,
+    "wikidata_id": "Q53780199",
+    "title": "Il cuore di Pinocchio",
+    "authors": [
+      "Paolo Lorenzini"
+    ],
+    "sitelinks": 1,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 56498,
+    "wikidata_id": "Q68824271",
+    "title": "La mandragola - La Clizia - Belfagor (Italian)",
+    "authors": [
+      "Niccolò Machiavelli"
+    ],
+    "sitelinks": 0,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 56711,
+    "wikidata_id": "Q102108713",
+    "title": "Poesie di Giosuè Carducci : 1850-1900",
+    "authors": [
+      "Giosuè Carducci"
+    ],
+    "sitelinks": 0,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 62047,
+    "wikidata_id": "Q140773869",
+    "title": "Q140773869",
+    "authors": [
+      "John Stuart Mill"
+    ],
+    "sitelinks": 0,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 58479,
+    "wikidata_id": "Q140773716",
+    "title": "Q140773716",
+    "authors": [
+      "Lew Wallace"
+    ],
+    "sitelinks": 0,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 61849,
+    "wikidata_id": "Q90900579",
+    "title": "Dalla spuma del mare",
+    "authors": [
+      "Salvatore Farina"
+    ],
+    "sitelinks": 0,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 27433,
+    "wikidata_id": "Q136682122",
+    "title": "Quadriregio",
+    "authors": [
+      "Federico Frezzi"
+    ],
+    "sitelinks": 0,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 25614,
+    "wikidata_id": "Q140809885",
+    "title": "Q140809885",
+    "authors": [
+      "Federico de Roberto"
+    ],
+    "sitelinks": 0,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 60292,
+    "wikidata_id": "Q64225197",
+    "title": "Q64225197",
+    "authors": [
+      "Anna Radius Zuccari"
+    ],
+    "sitelinks": 0,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 61929,
+    "wikidata_id": "Q91973625",
+    "title": "Q91973625",
+    "authors": [
+      "Antonio Caccianiga"
+    ],
+    "sitelinks": 0,
+    "source_language": "it"
+  },
+  {
+    "gutenberg_id": 60471,
+    "wikidata_id": "Q446972",
+    "title": "Bostan",
+    "authors": [
+      "Saadi"
+    ],
+    "sitelinks": 26,
+    "source_language": "fa"
+  },
+  {
+    "gutenberg_id": 57317,
+    "wikidata_id": "Q7763197",
+    "title": "The Secrets of the Self",
+    "authors": [
+      "Muhammad Iqbal"
+    ],
+    "sitelinks": 8,
+    "source_language": "fa"
+  },
+  {
+    "gutenberg_id": 2853,
+    "wikidata_id": "Q335315",
+    "title": "Quo Vadis",
+    "authors": [
+      "Henryk Sienkiewicz"
+    ],
+    "sitelinks": 45,
+    "source_language": "pl"
+  },
+  {
+    "gutenberg_id": 20228,
+    "wikidata_id": "Q140772218",
+    "title": "Q140772218",
+    "authors": [
+      "José Rizal"
+    ],
+    "sitelinks": 0,
+    "source_language": "tl"
   }
 ]
