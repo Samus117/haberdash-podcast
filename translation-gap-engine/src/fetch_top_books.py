@@ -70,7 +70,7 @@ LIMIT {limit}
 """
 
 
-def fetch_top_books(count, language="en", retries=4, backoff=3.0):
+def fetch_top_books(count, language="en", retries=4, backoff=3.0, timeout=90):
     # Over-fetch: some Wikidata works have more than one linked Gutenberg
     # edition, which produces duplicate rows for the same book that get
     # collapsed below -- asking for a bit more than `count` keeps us from
@@ -80,7 +80,7 @@ def fetch_top_books(count, language="en", retries=4, backoff=3.0):
     for attempt in range(retries):
         try:
             resp = requests.get(
-                SPARQL_URL, params={"query": query}, headers=HEADERS, timeout=90
+                SPARQL_URL, params={"query": query}, headers=HEADERS, timeout=timeout
             )
         except requests.RequestException as exc:
             wait = backoff * (2 ** attempt)

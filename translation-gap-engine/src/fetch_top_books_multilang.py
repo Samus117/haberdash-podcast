@@ -62,7 +62,15 @@ def main():
     for i, lang in enumerate(languages, 1):
         print(f"[{i}/{len(languages)}] {lang['name']} ({lang['iso1']})...", file=sys.stderr)
         try:
-            books = fetch_top_books(args.count_per_language, language=lang["iso1"])
+            # Fail fast per language rather than the module default's full
+            # retry budget (~6.3 min worst case): with 50 languages to get
+            # through and failed ones already tolerated/skipped, burning
+            # minutes retrying one throttled language before moving on is
+            # the wrong trade here. ~65s worst case instead.
+            books = fetch_top_books(
+                args.count_per_language, language=lang["iso1"],
+                retries=2, backoff=5.0, timeout=30,
+            )
         except Exception as exc:  # noqa: BLE001 -- one bad language shouldn't kill the run
             print(f"    failed ({exc}), skipping", file=sys.stderr)
             books = []
@@ -73,7 +81,7 @@ def main():
         args.out.parent.mkdir(parents=True, exist_ok=True)
         args.out.write_text(json.dumps(all_books, indent=2, ensure_ascii=False), encoding="utf-8")
 
-        time.sleep(1.0)  # be a good citizen of a free public API between languages
+        time.sleep(2.0)  # be a good citizen of a free public API between languages
 
     print(f"\nDone. {len(all_books)} books across {len(languages)} languages.", file=sys.stderr)
     print("Per-language yield:", file=sys.stderr)
