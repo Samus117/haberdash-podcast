@@ -65,45 +65,49 @@ HEADERS = {
     "Accept": "application/json",
 }
 
-GUTENBERG_BRANCH = """
-  {{
-    ?work wdt:P2034 ?gutenbergId .
-    ?work wdt:P407 ?langItem .
-  }}
-"""
-
-# A "written work" type filter (wdt:P31/wdt:P279* wd:Q47461344) was tried
-# here to keep out non-book Wikisource-linked items (e.g. author bio pages,
-# which link to a "human" Wikidata item instead) -- live-tested and made
-# things WORSE, not better: every one of 10 test languages timed out
-# identically at exactly the 30s client timeout, including tiny Wikisource
-# editions (e.g. Punjabi) that have nowhere near enough pages to explain a
-# timeout on their own. That uniformity across wildly different data sizes
-# points at the P279* transitive property-path traversal itself as the
-# cost, not the join against any particular Wikisource -- Wikidata's query
-# service (BlazeGraph) evaluates a `*` path by walking the class hierarchy
-# graph, which is expensive independent of how many final matches exist.
-# So: no type filter. schema:isPartOf pinned to one exact Wikisource site
-# IRI is the only anchor, same shape as the (working) Gutenberg branch's
-# P2034 anchor.
-WIKISOURCE_BRANCH = """
-  UNION {{
-    ?wsArticle schema:about ?work ;
-               schema:isPartOf <https://{language}.wikisource.org/> ;
-               schema:name ?wikisourceTitle .
-    ?work wdt:P407 ?langItem .
-    BIND(CONCAT("https://{language}.wikisource.org/wiki/", ENCODE_FOR_URI(?wikisourceTitle)) AS ?wikisourceUrl)
-  }}
-"""
-
-QUERY_TEMPLATE = """
+# Two fully separate queries, not one UNION -- tried the UNION shape first
+# and live-tested it badly: even with no extra type filter, every one of 10
+# test languages timed out identically at 30s, including tiny Wikisource
+# editions (e.g. Punjabi) with nowhere near enough pages to explain that on
+# data size alone. That uniformity points at BlazeGraph (Wikidata's query
+# service) picking a bad join plan for two very differently-shaped branches
+# combined in one UNION, not at either branch being inherently slow. Two
+# independent queries, each shaped like the original (proven-fast, ~3s)
+# Gutenberg-only query, sidestep that entirely -- and as a bonus, a slow or
+# failing Wikisource query for one language no longer costs that language
+# its (working) Gutenberg results too.
+GUTENBERG_QUERY_TEMPLATE = """
 SELECT ?work ?workLabel ?sitelinks
        (SAMPLE(?gutenbergId) AS ?gutenbergIdSample)
+       (GROUP_CONCAT(DISTINCT ?authorLabel; separator="; ") AS ?authors)
+WHERE {{
+  ?langItem wdt:P218 "{language}" .
+  ?work wdt:P2034 ?gutenbergId .
+  ?work wdt:P407 ?langItem .
+  ?work wikibase:sitelinks ?sitelinks .
+  OPTIONAL {{
+    ?work wdt:P50 ?author .
+    ?author rdfs:label ?authorLabel .
+    FILTER(LANG(?authorLabel) = "en")
+  }}
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+}}
+GROUP BY ?work ?workLabel ?sitelinks
+ORDER BY DESC(?sitelinks)
+LIMIT {limit}
+"""
+
+WIKISOURCE_QUERY_TEMPLATE = """
+SELECT ?work ?workLabel ?sitelinks
        (SAMPLE(?wikisourceUrl) AS ?wikisourceUrlSample)
        (GROUP_CONCAT(DISTINCT ?authorLabel; separator="; ") AS ?authors)
 WHERE {{
   ?langItem wdt:P218 "{language}" .
-  {gutenberg_branch}{wikisource_branch}
+  ?wsArticle schema:about ?work ;
+             schema:isPartOf <https://{language}.wikisource.org/> ;
+             schema:name ?wikisourceTitle .
+  ?work wdt:P407 ?langItem .
+  BIND(CONCAT("https://{language}.wikisource.org/wiki/", ENCODE_FOR_URI(?wikisourceTitle)) AS ?wikisourceUrl)
   ?work wikibase:sitelinks ?sitelinks .
   OPTIONAL {{
     ?work wdt:P50 ?author .
@@ -118,28 +122,7 @@ LIMIT {limit}
 """
 
 
-def fetch_top_books(count, language="en", retries=4, backoff=3.0, timeout=90):
-    # Over-fetch: some Wikidata works have more than one linked Gutenberg
-    # edition, or match both the Gutenberg and Wikisource branches of the
-    # query, producing duplicate rows for the same book that get collapsed
-    # below -- asking for a bit more than `count` keeps us from falling
-    # short after deduplication.
-    #
-    # English skips the Wikisource branch entirely rather than trying to
-    # tune the type filter further: even bounded to "written work", it
-    # still 504-timed-out live (English Wikisource is by far the largest,
-    # ~250k+ pages). It's also unneeded -- Gutenberg's English catalog is
-    # already comprehensive, and English is this project's *target*
-    # language (what a translation is missing *into*), never a source
-    # language we need extra non-Gutenberg coverage for.
-    wikisource_branch = "" if language == "en" else WIKISOURCE_BRANCH.format(language=language)
-    query = QUERY_TEMPLATE.format(
-        limit=int(count * 1.3) + 20,
-        language=language,
-        gutenberg_branch=GUTENBERG_BRANCH.format(),
-        wikisource_branch=wikisource_branch,
-    )
-
+def _run_sparql_query(query, retries, backoff, timeout):
     for attempt in range(retries):
         try:
             resp = requests.get(
@@ -151,60 +134,82 @@ def fetch_top_books(count, language="en", retries=4, backoff=3.0, timeout=90):
             time.sleep(wait)
             continue
         if resp.status_code == 200:
-            break
+            return resp.json()["results"]["bindings"]
         if resp.status_code == 429:
             wait = backoff * (2 ** attempt)
             print(f"  rate limited, waiting {wait:.0f}s...", file=sys.stderr)
             time.sleep(wait)
             continue
         resp.raise_for_status()
-    else:
-        raise RuntimeError(f"Wikidata query failed after {retries} attempts")
+    raise RuntimeError(f"Wikidata query failed after {retries} attempts")
 
-    bindings = resp.json()["results"]["bindings"]
 
-    books = []
-    seen_works = set()
-    for row in bindings:
-        work_uri = row["work"]["value"]
-        if work_uri in seen_works:
-            continue  # same book linked to more than one Gutenberg/Wikisource edition
-        seen_works.add(work_uri)
+def _parse_gutenberg_id(raw):
+    try:
+        return int(raw)
+    except ValueError:
+        # A handful of P2034 values are ranges ("1234-1235") for
+        # multi-volume works -- keep the first volume's ID.
+        return int(raw.split("-")[0])
 
-        gutenberg_id = None
-        gutenberg_id_raw = row.get("gutenbergIdSample", {}).get("value", "").strip()
-        if gutenberg_id_raw:
-            try:
-                gutenberg_id = int(gutenberg_id_raw)
-            except ValueError:
-                # A handful of P2034 values are ranges ("1234-1235") for
-                # multi-volume works -- keep the first volume's ID.
-                gutenberg_id = int(gutenberg_id_raw.split("-")[0])
 
-        wikisource_url = row.get("wikisourceUrlSample", {}).get("value", "").strip() or None
+def fetch_top_books(count, language="en", retries=4, backoff=3.0, timeout=90):
+    # Over-fetch: some Wikidata works have more than one linked Gutenberg
+    # edition, or show up in both the Gutenberg and Wikisource results,
+    # producing duplicates that get collapsed below -- asking for a bit
+    # more than `count` from each source keeps us from falling short.
+    limit = int(count * 1.3) + 20
 
-        if gutenberg_id is not None:
-            source = "gutenberg"
-        else:
-            source = "wikisource"  # the query requires one or the other to exist
+    books_by_id = {}
 
+    gutenberg_query = GUTENBERG_QUERY_TEMPLATE.format(limit=limit, language=language)
+    for row in _run_sparql_query(gutenberg_query, retries, backoff, timeout):
+        work_id = row["work"]["value"].rsplit("/", 1)[-1]
         authors_raw = row.get("authors", {}).get("value", "")
-        authors = [a.strip() for a in authors_raw.split(";") if a.strip()]
-
-        books.append({
-            "wikidata_id": work_uri.rsplit("/", 1)[-1],
+        books_by_id[work_id] = {
+            "wikidata_id": work_id,
             "title": row["workLabel"]["value"],
-            "authors": authors,
+            "authors": [a.strip() for a in authors_raw.split(";") if a.strip()],
             "sitelinks": int(row["sitelinks"]["value"]),
             "source_language": language,
-            "source": source,
-            "gutenberg_id": gutenberg_id,
-            "wikisource_url": wikisource_url,
-        })
-        if len(books) >= count:
-            break
+            "source": "gutenberg",
+            "gutenberg_id": _parse_gutenberg_id(row["gutenbergIdSample"]["value"].strip()),
+            "wikisource_url": None,
+        }
 
-    return books
+    # English skips the Wikisource query entirely: Gutenberg's English
+    # catalog is already comprehensive, and English is this project's
+    # *target* language (what a translation is missing *into*), never a
+    # source language that needs the extra non-Gutenberg coverage.
+    if language != "en":
+        try:
+            wikisource_query = WIKISOURCE_QUERY_TEMPLATE.format(limit=limit, language=language)
+            wikisource_rows = _run_sparql_query(wikisource_query, retries, backoff, timeout)
+        except Exception as exc:  # noqa: BLE001 -- a slow/failed Wikisource query shouldn't cost the (already-fetched) Gutenberg results
+            print(f"  Wikisource query failed ({type(exc).__name__}: {exc}), "
+                  f"keeping Gutenberg-only results for this language", file=sys.stderr)
+            wikisource_rows = []
+        for row in wikisource_rows:
+            work_id = row["work"]["value"].rsplit("/", 1)[-1]
+            wikisource_url = row["wikisourceUrlSample"]["value"].strip()
+            if work_id in books_by_id:
+                # Already have it via Gutenberg -- just record the extra edition.
+                books_by_id[work_id]["wikisource_url"] = wikisource_url
+                continue
+            authors_raw = row.get("authors", {}).get("value", "")
+            books_by_id[work_id] = {
+                "wikidata_id": work_id,
+                "title": row["workLabel"]["value"],
+                "authors": [a.strip() for a in authors_raw.split(";") if a.strip()],
+                "sitelinks": int(row["sitelinks"]["value"]),
+                "source_language": language,
+                "source": "wikisource",
+                "gutenberg_id": None,
+                "wikisource_url": wikisource_url,
+            }
+
+    books = sorted(books_by_id.values(), key=lambda b: b["sitelinks"], reverse=True)
+    return books[:count]
 
 
 def main():
