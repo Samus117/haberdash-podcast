@@ -76,10 +76,17 @@ WHERE {{
     ?work wdt:P2034 ?gutenbergId .
     ?work wdt:P407 ?langItem .
   }} UNION {{
+    # wd:Q47461344 = "written work" -- without this type constraint, the
+    # join against a large Wikisource (e.g. English, ~250k+ pages) times
+    # out on Wikidata's query service (confirmed live: 504 Gateway
+    # Timeout). It also excludes non-book Wikisource-linked items that
+    # otherwise share a schema:about edge, e.g. author bio pages, which
+    # link to a "human" Wikidata item, not a written-work one.
     ?wsArticle schema:about ?work ;
                schema:isPartOf <https://{language}.wikisource.org/> ;
                schema:name ?wikisourceTitle .
-    ?work wdt:P407 ?langItem .
+    ?work wdt:P407 ?langItem ;
+          wdt:P31/wdt:P279* wd:Q47461344 .
     BIND(CONCAT("https://{language}.wikisource.org/wiki/", ENCODE_FOR_URI(?wikisourceTitle)) AS ?wikisourceUrl)
   }}
   ?work wikibase:sitelinks ?sitelinks .
