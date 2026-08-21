@@ -65,23 +65,23 @@ HEADERS = {
     "Accept": "application/json",
 }
 
-QUERY_TEMPLATE = """
-SELECT ?work ?workLabel ?sitelinks
-       (SAMPLE(?gutenbergId) AS ?gutenbergIdSample)
-       (SAMPLE(?wikisourceUrl) AS ?wikisourceUrlSample)
-       (GROUP_CONCAT(DISTINCT ?authorLabel; separator="; ") AS ?authors)
-WHERE {{
-  ?langItem wdt:P218 "{language}" .
+GUTENBERG_BRANCH = """
   {{
     ?work wdt:P2034 ?gutenbergId .
     ?work wdt:P407 ?langItem .
-  }} UNION {{
-    # wd:Q47461344 = "written work" -- without this type constraint, the
-    # join against a large Wikisource (e.g. English, ~250k+ pages) times
-    # out on Wikidata's query service (confirmed live: 504 Gateway
-    # Timeout). It also excludes non-book Wikisource-linked items that
-    # otherwise share a schema:about edge, e.g. author bio pages, which
-    # link to a "human" Wikidata item, not a written-work one.
+  }}
+"""
+
+# wd:Q47461344 = "written work" -- without this type constraint, the join
+# against a large Wikisource (e.g. French, German, ~100k+ pages) times out
+# on Wikidata's query service (confirmed live: 504 Gateway Timeout even
+# with the filter, on English specifically -- see below for why English
+# skips this branch entirely rather than tuning the filter further). It
+# also excludes non-book Wikisource-linked items that otherwise share a
+# schema:about edge, e.g. author bio pages, which link to a "human"
+# Wikidata item, not a written-work one.
+WIKISOURCE_BRANCH = """
+  UNION {{
     ?wsArticle schema:about ?work ;
                schema:isPartOf <https://{language}.wikisource.org/> ;
                schema:name ?wikisourceTitle .
@@ -89,6 +89,16 @@ WHERE {{
           wdt:P31/wdt:P279* wd:Q47461344 .
     BIND(CONCAT("https://{language}.wikisource.org/wiki/", ENCODE_FOR_URI(?wikisourceTitle)) AS ?wikisourceUrl)
   }}
+"""
+
+QUERY_TEMPLATE = """
+SELECT ?work ?workLabel ?sitelinks
+       (SAMPLE(?gutenbergId) AS ?gutenbergIdSample)
+       (SAMPLE(?wikisourceUrl) AS ?wikisourceUrlSample)
+       (GROUP_CONCAT(DISTINCT ?authorLabel; separator="; ") AS ?authors)
+WHERE {{
+  ?langItem wdt:P218 "{language}" .
+  {gutenberg_branch}{wikisource_branch}
   ?work wikibase:sitelinks ?sitelinks .
   OPTIONAL {{
     ?work wdt:P50 ?author .
@@ -109,7 +119,20 @@ def fetch_top_books(count, language="en", retries=4, backoff=3.0, timeout=90):
     # query, producing duplicate rows for the same book that get collapsed
     # below -- asking for a bit more than `count` keeps us from falling
     # short after deduplication.
-    query = QUERY_TEMPLATE.format(limit=int(count * 1.3) + 20, language=language)
+    #
+    # English skips the Wikisource branch entirely rather than trying to
+    # tune the type filter further: even bounded to "written work", it
+    # still 504-timed-out live (English Wikisource is by far the largest,
+    # ~250k+ pages). It's also unneeded -- Gutenberg's English catalog is
+    # already comprehensive, and English is this project's *target*
+    # language (what a translation is missing *into*), never a source
+    # language we need extra non-Gutenberg coverage for.
+    wikisource_branch = "" if language == "en" else WIKISOURCE_BRANCH.format(language=language)
+    query = QUERY_TEMPLATE.format(
+        limit=int(count * 1.3) + 20,
+        gutenberg_branch=GUTENBERG_BRANCH.format(),
+        wikisource_branch=wikisource_branch,
+    )
 
     for attempt in range(retries):
         try:
