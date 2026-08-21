@@ -135,6 +135,7 @@ def fetch_top_books(count, language="en", retries=4, backoff=3.0, timeout=90):
     wikisource_branch = "" if language == "en" else WIKISOURCE_BRANCH.format(language=language)
     query = QUERY_TEMPLATE.format(
         limit=int(count * 1.3) + 20,
+        language=language,
         gutenberg_branch=GUTENBERG_BRANCH.format(),
         wikisource_branch=wikisource_branch,
     )

@@ -72,7 +72,11 @@ def main():
                 retries=2, backoff=5.0, timeout=30,
             )
         except Exception as exc:  # noqa: BLE001 -- one bad language shouldn't kill the run
-            print(f"    failed ({exc}), skipping", file=sys.stderr)
+            # Include the exception type, not just str(exc) -- a bare
+            # KeyError's message is just the missing key (e.g. "'language'"),
+            # which reads like a network/data problem and hid a real bug
+            # (a missing .format() kwarg) for several live runs.
+            print(f"    failed ({type(exc).__name__}: {exc}), skipping", file=sys.stderr)
             books = []
         print(f"    got {len(books)} books", file=sys.stderr)
         per_language_counts[lang["name"]] = len(books)
