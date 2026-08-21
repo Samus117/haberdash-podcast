@@ -94,14 +94,14 @@ def main():
 
     cache = {}
     if args.outfile.exists():
-        cache = {b["gutenberg_id"]: b for b in json.loads(args.outfile.read_text(encoding="utf-8"))}
+        cache = {b["wikidata_id"]: b for b in json.loads(args.outfile.read_text(encoding="utf-8"))}
         print(f"Resuming: {len(cache)} books already cached in {args.outfile}", file=sys.stderr)
 
     results = []
     for i, book in enumerate(books, 1):
-        gid = book["gutenberg_id"]
-        if gid in cache:
-            results.append(cache[gid])
+        wid = book["wikidata_id"]
+        if wid in cache:
+            results.append(cache[wid])
             continue
 
         print(f"[{i}/{len(books)}] {book['title']}", file=sys.stderr)

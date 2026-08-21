@@ -20,14 +20,30 @@ standard, widely-used fame/notability proxy in bibliometrics, queried in
 bulk against Wikidata's own public SPARQL endpoint, which is explicitly
 designed for exactly this kind of bulk querying (no scraping concerns).
 
-Every result already has a confirmed Project Gutenberg ebook ID (Wikidata
-property P2034), so "public domain" here still means "hosted by Project
-Gutenberg" -- see the note in this repo's README about what that does and
-doesn't guarantee.
+A book counts as "public domain and available" if it has EITHER a
+confirmed Project Gutenberg ebook ID (Wikidata property P2034) OR a
+full-text edition on that language's own Wikisource (e.g. fr.wikisource.org,
+hi.wikisource.org) -- Wikidata models the latter as a sitelink whose page
+is `schema:about` the work. Gutenberg's non-English catalog is real but
+heavily skewed toward Western European languages; Wikisource exists
+per-language (over 70 language editions) and is where a lot of the
+world's non-English public-domain text actually lives, so relying on
+Gutenberg alone silently returns zero books for most of the world's major
+languages. Each result records which source(s) it came from -- see
+"source" / "gutenberg_id" / "wikisource_url" below -- so that distinction
+isn't lost downstream. Public domain status is still whatever Gutenberg or
+Wikisource enforce for their own jurisdiction, not independently verified
+here -- see this repo's README.
 
 Language is selected by ISO 639-1 code (e.g. "fr", "de", "fi") and resolved
 to a Wikidata language item dynamically via P218, so no hardcoded table of
-language -> Wikidata-item IDs is needed here.
+language -> Wikidata-item IDs is needed here. The same code is tried as
+the Wikisource subdomain (e.g. "fr" -> fr.wikisource.org); that's usually
+right but not guaranteed for every language, since Wikisource subdomains
+don't always follow ISO 639-1 exactly (e.g. some languages use a
+different code or have no Wikisource at all) -- when it's wrong, that
+language's Wikisource results are just silently empty, same as Gutenberg
+coverage gaps already are.
 
 Usage:
     python fetch_top_books.py --count 1000 --language en --out data/top_books.json
@@ -50,12 +66,22 @@ HEADERS = {
 }
 
 QUERY_TEMPLATE = """
-SELECT ?work ?workLabel ?gutenbergId ?sitelinks
+SELECT ?work ?workLabel ?sitelinks
+       (SAMPLE(?gutenbergId) AS ?gutenbergIdSample)
+       (SAMPLE(?wikisourceUrl) AS ?wikisourceUrlSample)
        (GROUP_CONCAT(DISTINCT ?authorLabel; separator="; ") AS ?authors)
 WHERE {{
   ?langItem wdt:P218 "{language}" .
-  ?work wdt:P2034 ?gutenbergId .
-  ?work wdt:P407 ?langItem .
+  {{
+    ?work wdt:P2034 ?gutenbergId .
+    ?work wdt:P407 ?langItem .
+  }} UNION {{
+    ?wsArticle schema:about ?work ;
+               schema:isPartOf <https://{language}.wikisource.org/> ;
+               schema:name ?wikisourceTitle .
+    ?work wdt:P407 ?langItem .
+    BIND(CONCAT("https://{language}.wikisource.org/wiki/", ENCODE_FOR_URI(?wikisourceTitle)) AS ?wikisourceUrl)
+  }}
   ?work wikibase:sitelinks ?sitelinks .
   OPTIONAL {{
     ?work wdt:P50 ?author .
@@ -64,7 +90,7 @@ WHERE {{
   }}
   SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
 }}
-GROUP BY ?work ?workLabel ?gutenbergId ?sitelinks
+GROUP BY ?work ?workLabel ?sitelinks
 ORDER BY DESC(?sitelinks)
 LIMIT {limit}
 """
@@ -72,9 +98,10 @@ LIMIT {limit}
 
 def fetch_top_books(count, language="en", retries=4, backoff=3.0, timeout=90):
     # Over-fetch: some Wikidata works have more than one linked Gutenberg
-    # edition, which produces duplicate rows for the same book that get
-    # collapsed below -- asking for a bit more than `count` keeps us from
-    # falling short after deduplication.
+    # edition, or match both the Gutenberg and Wikisource branches of the
+    # query, producing duplicate rows for the same book that get collapsed
+    # below -- asking for a bit more than `count` keeps us from falling
+    # short after deduplication.
     query = QUERY_TEMPLATE.format(limit=int(count * 1.3) + 20, language=language)
 
     for attempt in range(retries):
@@ -105,27 +132,38 @@ def fetch_top_books(count, language="en", retries=4, backoff=3.0, timeout=90):
     for row in bindings:
         work_uri = row["work"]["value"]
         if work_uri in seen_works:
-            continue  # same book linked to more than one Gutenberg edition
+            continue  # same book linked to more than one Gutenberg/Wikisource edition
         seen_works.add(work_uri)
 
-        gutenberg_id_raw = row["gutenbergId"]["value"].strip()
-        try:
-            gutenberg_id = int(gutenberg_id_raw)
-        except ValueError:
-            # A handful of P2034 values are ranges ("1234-1235") for
-            # multi-volume works -- keep the first volume's ID.
-            gutenberg_id = int(gutenberg_id_raw.split("-")[0])
+        gutenberg_id = None
+        gutenberg_id_raw = row.get("gutenbergIdSample", {}).get("value", "").strip()
+        if gutenberg_id_raw:
+            try:
+                gutenberg_id = int(gutenberg_id_raw)
+            except ValueError:
+                # A handful of P2034 values are ranges ("1234-1235") for
+                # multi-volume works -- keep the first volume's ID.
+                gutenberg_id = int(gutenberg_id_raw.split("-")[0])
+
+        wikisource_url = row.get("wikisourceUrlSample", {}).get("value", "").strip() or None
+
+        if gutenberg_id is not None:
+            source = "gutenberg"
+        else:
+            source = "wikisource"  # the query requires one or the other to exist
 
         authors_raw = row.get("authors", {}).get("value", "")
         authors = [a.strip() for a in authors_raw.split(";") if a.strip()]
 
         books.append({
-            "gutenberg_id": gutenberg_id,
             "wikidata_id": work_uri.rsplit("/", 1)[-1],
             "title": row["workLabel"]["value"],
             "authors": authors,
             "sitelinks": int(row["sitelinks"]["value"]),
             "source_language": language,
+            "source": source,
+            "gutenberg_id": gutenberg_id,
+            "wikisource_url": wikisource_url,
         })
         if len(books) >= count:
             break

@@ -38,7 +38,11 @@ def compute_opportunities(books):
             "title": book["title"],
             "authors": "; ".join(authors),
             "source_language": book.get("source_language", ""),
-            "gutenberg_id": book["gutenberg_id"],
+            "source": book.get("source", "gutenberg"),
+            "source_url": book.get("wikisource_url") or (
+                f"https://www.gutenberg.org/ebooks/{book['gutenberg_id']}"
+                if book.get("gutenberg_id") is not None else ""
+            ),
             "sitelinks": book.get("sitelinks", 0),
             "known_languages": "; ".join(sorted(have)) or "(none catalogued)",
             "edition_count": book.get("edition_count", 0),
@@ -59,7 +63,7 @@ def compute_opportunities(books):
 def write_csv(rows, path):
     path.parent.mkdir(parents=True, exist_ok=True)
     fieldnames = list(rows[0].keys()) if rows else [
-        "title", "authors", "source_language", "gutenberg_id",
+        "title", "authors", "source_language", "source", "source_url",
         "sitelinks", "known_languages", "edition_count", "flag",
     ]
     with path.open("w", newline="", encoding="utf-8") as f:
@@ -109,12 +113,13 @@ def write_summary(rows, books, path, top_n=100):
         "",
         f"## Top {len(top)} opportunities",
         "",
-        "| Rank | Book | Author | Source language | Sitelinks | Known languages | Flag |",
-        "|---|---|---|---|---|---|---|",
+        "| Rank | Book | Author | Source language | Text | Sitelinks | Known languages | Flag |",
+        "|---|---|---|---|---|---|---|---|",
     ]
     for i, o in enumerate(top, 1):
+        text_link = f"[{o['source']}]({o['source_url']})" if o["source_url"] else o["source"]
         lines.append(
-            f"| {i} | {o['title']} | {o['authors']} | {o['source_language']} | "
+            f"| {i} | {o['title']} | {o['authors']} | {o['source_language']} | {text_link} | "
             f"{o['sitelinks']} | {o['known_languages']} | {o['flag']} |"
         )
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")

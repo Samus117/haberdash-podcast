@@ -62,7 +62,11 @@ def compute_gaps(books, languages, min_speakers=1.0):
             gaps.append({
                 "title": book["title"],
                 "authors": "; ".join(book.get("authors", [])),
-                "gutenberg_id": book["gutenberg_id"],
+                "source": book.get("source", "gutenberg"),
+                "source_url": book.get("wikisource_url") or (
+                    f"https://www.gutenberg.org/ebooks/{book['gutenberg_id']}"
+                    if book.get("gutenberg_id") is not None else ""
+                ),
                 "sitelinks": book.get("sitelinks", 0),
                 "missing_language": lang["name"],
                 "language_marc": lang["marc"],
@@ -77,7 +81,7 @@ def compute_gaps(books, languages, min_speakers=1.0):
 def write_csv(gaps, path):
     path.parent.mkdir(parents=True, exist_ok=True)
     fieldnames = list(gaps[0].keys()) if gaps else [
-        "title", "authors", "gutenberg_id", "sitelinks",
+        "title", "authors", "source", "source_url", "sitelinks",
         "missing_language", "language_marc", "speakers_millions", "opportunity_score",
     ]
     with path.open("w", newline="", encoding="utf-8") as f:

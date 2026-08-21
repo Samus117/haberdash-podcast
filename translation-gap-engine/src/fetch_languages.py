@@ -22,17 +22,28 @@ Source and scope, honestly stated:
   those would massively double-count. This script filters to P31 = "modern
   language" (Q1288568) specifically, which excludes families/branches.
 
-- Even after that filter, Wikidata still models regional/spoken varieties
-  of the same written/literary language as separate items with their own
-  P1098 value (e.g. Mandarin, Wu, Cantonese, Hakka are each "a language"
-  in Wikidata, all colloquially "Chinese"; Egyptian/Levantine/Algerian
-  Arabic likewise vs. Standard Arabic). For a book-publishing gap
-  analysis, what matters is the written/literary standard a market
-  publishes in, not spoken dialect variation -- so this script further
-  restricts to items that have an ISO 639-1 code (P218), which in
-  practice keeps national/literary standard languages and drops
-  dialect-level entries. That's ~184 possible languages, of which however
-  many have both an ISO 639-1 code AND a P1098 speaker count end up here.
+- Wikidata still models regional/spoken varieties of the same written/
+  literary language as separate items with their own P1098 value (e.g.
+  Mandarin, Wu, Cantonese, Hakka are each "a language" in Wikidata, all
+  colloquially "Chinese"; Egyptian/Levantine/Algerian Arabic likewise vs.
+  Standard Arabic). For a book-publishing gap analysis, what matters is
+  the written/literary standard a market publishes in, not spoken dialect
+  variation -- so this script restricts to items that have an ISO 639-1
+  code (P218), which is only ever assigned to major/national/literary
+  standard languages (~184 codes total, by design), not dialects or
+  spoken varieties. That filter alone is tight enough to do the job.
+
+  An earlier version of this script *also* required P31 = "modern
+  language" (Q1288568) on top of the ISO 639-1 filter, reasoning that
+  it would be extra insurance against families/dialects slipping through.
+  In practice it silently dropped real, major languages instead -- Hindi
+  (Q1568), spoken by ~600 million people, turned out not to be typed as
+  Q1288568 on Wikidata (its P31 values are different), so the entire
+  first version of this table shipped with no Hindi entry at all despite
+  it easily belonging in the top 5 by population. Wikidata's typing of
+  "what kind of language is this" is inconsistent across items even for
+  major languages, so P218 does the real filtering work here and the P31
+  check has been dropped rather than trusted.
 
 - A handful of ISO 639-1 codes still appear on more than one Wikidata item
   (e.g. two separate "French" items with slightly different speaker
@@ -61,9 +72,8 @@ HEADERS = {
 
 QUERY = """
 SELECT ?langLabel ?iso1 ?iso2 ?speakers WHERE {
-  ?lang wdt:P31 wd:Q1288568 .
-  ?lang wdt:P1098 ?speakers .
   ?lang wdt:P218 ?iso1 .
+  ?lang wdt:P1098 ?speakers .
   OPTIONAL { ?lang wdt:P219 ?iso2 . }
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
 }
