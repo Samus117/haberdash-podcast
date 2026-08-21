@@ -59,5 +59,65 @@
     "source": "gutenberg",
     "gutenberg_id": 64317,
     "wikisource_url": null
+  },
+  {
+    "wikidata_id": "Q164974",
+    "title": "Oliver Twist",
+    "authors": [
+      "Charles Dickens"
+    ],
+    "sitelinks": 83,
+    "source_language": "en",
+    "source": "gutenberg",
+    "gutenberg_id": 56586,
+    "wikisource_url": null
+  },
+  {
+    "wikidata_id": "Q6511",
+    "title": "Ulysses",
+    "authors": [
+      "James Joyce"
+    ],
+    "sitelinks": 83,
+    "source_language": "en",
+    "source": "gutenberg",
+    "gutenberg_id": 4300,
+    "wikisource_url": null
+  },
+  {
+    "wikidata_id": "Q82464",
+    "title": "The Picture of Dorian Gray",
+    "authors": [
+      "Oscar Wilde"
+    ],
+    "sitelinks": 82,
+    "source_language": "en",
+    "source": "gutenberg",
+    "gutenberg_id": 4078,
+    "wikisource_url": null
+  },
+  {
+    "wikidata_id": "Q326914",
+    "title": "The Adventures of Tom Sawyer",
+    "authors": [
+      "Mark Twain"
+    ],
+    "sitelinks": 76,
+    "source_language": "en",
+    "source": "gutenberg",
+    "gutenberg_id": 74,
+    "wikisource_url": null
+  },
+  {
+    "wikidata_id": "Q41542",
+    "title": "Dracula",
+    "authors": [
+      "Bram Stoker"
+    ],
+    "sitelinks": 75,
+    "source_language": "en",
+    "source": "gutenberg",
+    "gutenberg_id": 345,
+    "wikisource_url": null
   }
 ]
