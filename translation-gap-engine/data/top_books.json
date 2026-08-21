@@ -1,6 +1,5 @@
 [
   {
-    "gutenberg_id": 17,
     "wikidata_id": "Q459842",
     "title": "Book of Mormon",
     "authors": [
@@ -8,96 +7,57 @@
       "Mormon"
     ],
     "sitelinks": 126,
-    "source_language": "en"
+    "source_language": "en",
+    "source": "gutenberg",
+    "gutenberg_id": 17,
+    "wikisource_url": null
   },
   {
-    "gutenberg_id": 1342,
     "wikidata_id": "Q170583",
     "title": "Pride and Prejudice",
     "authors": [
       "Jane Austen"
     ],
     "sitelinks": 99,
-    "source_language": "en"
+    "source_language": "en",
+    "source": "gutenberg",
+    "gutenberg_id": 1342,
+    "wikisource_url": null
   },
   {
-    "gutenberg_id": 70841,
     "wikidata_id": "Q483034",
     "title": "Robinson Crusoe",
     "authors": [
       "Daniel Defoe"
     ],
     "sitelinks": 98,
-    "source_language": "en"
+    "source_language": "en",
+    "source": "gutenberg",
+    "gutenberg_id": 70841,
+    "wikisource_url": null
   },
   {
-    "gutenberg_id": 120,
     "wikidata_id": "Q185118",
     "title": "Treasure Island",
     "authors": [
       "Robert Louis Stevenson"
     ],
     "sitelinks": 85,
-    "source_language": "en"
+    "source_language": "en",
+    "source": "gutenberg",
+    "gutenberg_id": 120,
+    "wikisource_url": null
   },
   {
-    "gutenberg_id": 64317,
     "wikidata_id": "Q214371",
     "title": "The Great Gatsby",
     "authors": [
       "F. Scott Fitzgerald"
     ],
     "sitelinks": 84,
-    "source_language": "en"
-  },
-  {
-    "gutenberg_id": 56586,
-    "wikidata_id": "Q164974",
-    "title": "Oliver Twist",
-    "authors": [
-      "Charles Dickens"
-    ],
-    "sitelinks": 83,
-    "source_language": "en"
-  },
-  {
-    "gutenberg_id": 4300,
-    "wikidata_id": "Q6511",
-    "title": "Ulysses",
-    "authors": [
-      "James Joyce"
-    ],
-    "sitelinks": 83,
-    "source_language": "en"
-  },
-  {
-    "gutenberg_id": 4078,
-    "wikidata_id": "Q82464",
-    "title": "The Picture of Dorian Gray",
-    "authors": [
-      "Oscar Wilde"
-    ],
-    "sitelinks": 82,
-    "source_language": "en"
-  },
-  {
-    "gutenberg_id": 74,
-    "wikidata_id": "Q326914",
-    "title": "The Adventures of Tom Sawyer",
-    "authors": [
-      "Mark Twain"
-    ],
-    "sitelinks": 76,
-    "source_language": "en"
-  },
-  {
-    "gutenberg_id": 46,
-    "wikidata_id": "Q62879",
-    "title": "A Christmas Carol",
-    "authors": [
-      "Charles Dickens"
-    ],
-    "sitelinks": 75,
-    "source_language": "en"
+    "source_language": "en",
+    "source": "gutenberg",
+    "gutenberg_id": 64317,
+    "wikisource_url": null
   }
 ]
