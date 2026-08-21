@@ -72,21 +72,26 @@ GUTENBERG_BRANCH = """
   }}
 """
 
-# wd:Q47461344 = "written work" -- without this type constraint, the join
-# against a large Wikisource (e.g. French, German, ~100k+ pages) times out
-# on Wikidata's query service (confirmed live: 504 Gateway Timeout even
-# with the filter, on English specifically -- see below for why English
-# skips this branch entirely rather than tuning the filter further). It
-# also excludes non-book Wikisource-linked items that otherwise share a
-# schema:about edge, e.g. author bio pages, which link to a "human"
-# Wikidata item, not a written-work one.
+# A "written work" type filter (wdt:P31/wdt:P279* wd:Q47461344) was tried
+# here to keep out non-book Wikisource-linked items (e.g. author bio pages,
+# which link to a "human" Wikidata item instead) -- live-tested and made
+# things WORSE, not better: every one of 10 test languages timed out
+# identically at exactly the 30s client timeout, including tiny Wikisource
+# editions (e.g. Punjabi) that have nowhere near enough pages to explain a
+# timeout on their own. That uniformity across wildly different data sizes
+# points at the P279* transitive property-path traversal itself as the
+# cost, not the join against any particular Wikisource -- Wikidata's query
+# service (BlazeGraph) evaluates a `*` path by walking the class hierarchy
+# graph, which is expensive independent of how many final matches exist.
+# So: no type filter. schema:isPartOf pinned to one exact Wikisource site
+# IRI is the only anchor, same shape as the (working) Gutenberg branch's
+# P2034 anchor.
 WIKISOURCE_BRANCH = """
   UNION {{
     ?wsArticle schema:about ?work ;
                schema:isPartOf <https://{language}.wikisource.org/> ;
                schema:name ?wikisourceTitle .
-    ?work wdt:P407 ?langItem ;
-          wdt:P31/wdt:P279* wd:Q47461344 .
+    ?work wdt:P407 ?langItem .
     BIND(CONCAT("https://{language}.wikisource.org/wiki/", ENCODE_FOR_URI(?wikisourceTitle)) AS ?wikisourceUrl)
   }}
 """
